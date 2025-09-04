@@ -22,12 +22,13 @@ Startup:
 
 Producto:
 
-| Integrantes                  | Código     |
-| ---------------------------- | ---------- |
-| Andrés Alberto Torres García | U202220528 |
-| Piero Alberto Velarde Luyo   | U20211A620 |
-| Marllely Anahi Arias Segil   | u202223984 |
-|                              | -          |
+| Integrantes                        | Código     |
+| ---------------------------------- | ---------- |
+| Andrés Alberto Torres García       | U202220528 |
+| Piero Alberto Velarde Luyo         | U20211A620 |
+| Marllely Anahi Arias Segil         | U202223984 |
+| Luciana Celeste Sanchez Silva      | U202215979 |
+| Alejandro Franklin Mendoza Vergara | U202312343 |
 
 Septiembre 2025
 
@@ -119,7 +120,6 @@ del ABET – EAC - Student Outcome 4.</p>
 - [3.2. User Stories](#32-user-stories)
 - [3.3. Product Backlog](#33-product-backlog)
 - [3.4. Impact Mapping](#34-impact-mapping)
-- [Avance de Conclusiones, Bibliografía y Anexos](#avance-de-conclusiones-bibliografia-y-anexos)
 
 ## [Capítulo IV: Product Design](#capitulo-iv-product-design)
 
