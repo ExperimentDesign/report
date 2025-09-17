@@ -242,11 +242,11 @@ En esta sección se presentará una representación de la landing page tanto par
 
 **Landing Page para Desktop Web Browser:**
 
-![LandingPage](https://github.com/user-attachments/assets/bfa6fcee-356d-4d61-89e7-fd845174c53f)
+![LandingPage](/assets/chapter4/LandingPage.png)
 
 **Web Mobile Browser**
 
-![LandingPage](https://github.com/user-attachments/assets/ab8588de-5106-4559-9629-677e29b5287e)
+![LandingPage](/assets/chapter4/MobileBrowser.png)
 
 ## 4.4. Mobile Applications UX/UI Design.
 
