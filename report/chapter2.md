@@ -175,12 +175,6 @@ a los de EduSpace.
   educativas. Organizar webinars y eventos educativos que demuestren
   cómo EduSpace aborda los desafíos particulares del sector.
 
-- **Automatización de Cálculos Salariales y Control de Inventarios**:
-  Promocionar estas características en campañas de marketing y
-  presentaciones a clientes potenciales. Crear tutoriales y
-  demostraciones que muestren cómo estas funciones simplifican la
-  gestión y ahorran tiempo.
-
 2. Estrategias para Enfrentar las Debilidades de EduSpace
 
 - **Foco Limitado en el Sector Educativo**: Explorar oportunidades para
@@ -333,7 +327,7 @@ _Distrito:_ Villa Maria del Triunfo
 
 _Segmento objetivo:_ Administradores
 
-![](../../assets/interview1a.PNG)
+![](../assets/chapter2/interview1a.PNG)
 
 _Minuto de inicio de la entrevista:_ 0:00
 
@@ -360,7 +354,7 @@ _Edad:_ 55 años
 
 _Distrito:_ Villa Maria del Triunfo
 
-![](../../assets/entrevista2a.PNG)
+![](../assets/chapter2/entrevista2a.PNG)
 
 _Minuto de inicio de la entrevista:_ 4:43
 
@@ -392,7 +386,7 @@ _Distrito:_ Villa María del Triunfo
 
 _Segmento objetivo:_ Administradores
 
-![](../../assets/entrevista3a.PNG)
+![](../assets/chapter2/entrevista3a.PNG)
 
 _Minuto de inicio de la entrevista:_ 9:06
 
@@ -432,7 +426,7 @@ _Edad:_ 45 años
 
 _Distrito:_ Huamanga
 
-![](../../assets/teacher-interview-1.JPG)
+![](../assets/chapter2/teacher-interview-1.jpeg)
 
 _Minuto de inicio de la entrevista:_ 00:00
 
@@ -462,7 +456,7 @@ _Edad:_ 35 años
 
 _Distrito:_ Huamanga
 
-![](../../assets/teacher-interview-2.JPG)
+![](../assets/chapter2/teacher-interview-2.jpeg)
 
 #### Resumen de la entrevista:
 
@@ -490,7 +484,7 @@ Distrito: Tacna
 
 Video:
 
-![](../../assets/EntrevistaDocenteRosaLoayza.png)
+![](../assets/chapter2/EntrevistaDocenteRosaLoayza.png)
 
 Inicio: 9:10
 
