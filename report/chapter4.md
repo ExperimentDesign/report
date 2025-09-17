@@ -355,29 +355,56 @@ Los diagramas de componentes muestra una vista de las relaciones de los componen
 
 ### 4.9.2. Class Dictionary.
 
-- BC: Reservation Scheduling
+#### Bounded Context: IAM (Identity and Access Management)
 
-  - sharedSpaceId: number that identifies the shared space.
-  - teacherId: number that identifies the teacher.
-  - hour: time of the reservation.
-  - date: date of the reservation.
-  - title: title of the reservation.
-  - description: description of the reservation.
-  - classroomId: number that identifies the classroom.
-  - administratorId: number that identifies the administrator.
+| Nombre de la Clase  | Descripción                                                                                        | Atributos Principales                                                       | Métodos Principales                                                                               |
+| ------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Account (Aggregate) | Representa la cuenta de un usuario, que contiene sus credenciales y el rol asignado en el sistema. | - Id: int<br>- Username: string<br>- PasswordHash: string<br>- Role: ERoles | + UpdateUsername(username): Account<br>+ UpdatePasswordHash(hash): Account<br>+ GetRole(): string |
+| ERoles (Enum)       | Enumeración que define los roles de usuario válidos dentro del sistema (RoleAdmin, RoleTeacher).   | (Valores de la enumeración)                                                 | (No aplica)                                                                                       |
 
-- BC: Space and resource management
+#### Bounded Context: Profile Management
 
-  - name: name of the space
-  - description: description of the space
-  - classroomCode: code of the classroom
-  - sharedSpaceCode: code of the shared space
+| Nombre de la Clase                           | Descripción                                                                                         | Atributos Principales                                                                                                       | Métodos Principales                                                               |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Profile (Clase Base)**                     | Clase abstracta base para todos los perfiles del sistema. Contiene la información común.            | - Id: int<br>- ProfileName: ProfileName<br>- ProfilePrivateInformation: ProfilePrivateInformation<br>- AccountId: AccountId | + ProfileFullName(): string<br>+ ProfileEmail(): string<br>+ ProfileDni(): string |
+| **TeacherProfile**                           | Representa el perfil de un profesor. Hereda de Profile y añade información específica del profesor. | - AdministratorId: int                                                                                                      | (Hereda los métodos de Profile)                                                   |
+| **AdminProfile**                             | Representa el perfil de un administrador. Hereda de Profile.                                        | (No tiene atributos propios)                                                                                                | (Hereda los métodos de Profile)                                                   |
+| **ProfileName (Value Object)**               | Objeto de Valor que representa el nombre completo de un perfil, asegurando su consistencia.         | - FirstName: string<br>- LastName: string                                                                                   | + FullName(): string                                                              |
+| **ProfilePrivateInformation (Value Object)** | Objeto de Valor que agrupa la información de contacto y personal de un perfil.                      | - Email: string<br>- Dni: string<br>- Address: string<br>- Phone: string                                                    | + ObtainEmail(): string<br>+ ObtainDni(): string                                  |
+| **AccountId (Value Object)**                 | Objeto de Valor que representa el identificador único de la cuenta (Account) asociada al perfil.    | - Value: int                                                                                                                | constructores                                                                     |
 
-- BC: Breakdown Management
-  - year: year of the resources
-  - state: state of the resources
-  - listener: listen actions from the teacher
+#### Bounded Context: Reservation Scheduling Management
+
+| Nombre de la Clase                 | Descripción                                                                                | Atributos Principales                                                                                                                                                                                                                                     | Métodos Principales                                                                              |
+| ---------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Meeting (Aggregate)**            | Representa el agregado principal para la programación de una reunión o evento en un salón. | - Id: int<br>- Title: string<br>- Description: string<br>- Date: DateOnly<br>- StartTime: TimeOnly<br>- EndTime: TimeOnly<br>- AdministratorId: AdministratorId<br>- ClassroomId: ClassroomId<br>- MeetingParticipants: ICollection&lt;MeetingSession&gt; | + UpdateTitle(title): void<br>+ UpdateDate(date): void<br>+ AddTeacherToMeeting(meetingId): void |
+| **MeetingSession (Entity)**        | Entidad que representa la relación entre una reunión y un profesor participante.           | - MeetingId: int<br>- TeacherId: int                                                                                                                                                                                                                      | (Constructores)                                                                                  |
+| **AdministratorId (Value Object)** | Objeto de Valor que encapsula el identificador de un administrador.                        | - Id: int                                                                                                                                                                                                                                                 | (Constructor)                                                                                    |
+| **ClassroomId (Value Object)**     | Objeto de Valor que encapsula el identificador de un salón de clases.                      | - Id: int                                                                                                                                                                                                                                                 | (Constructor)                                                                                    |
+| **TeacherId (Value Object)**       | Objeto de Valor que encapsula el identificador de un profesor.                             | - TeacherIdentifier: int                                                                                                                                                                                                                                  | (Constructor)                                                                                    |
+| **MeetingDate (Value Object)**     | Objeto de Valor que agrupa la fecha y horas de una reunión, asegurando su consistencia.    | - Date: DateOnly<br>- Start: TimeOnly<br>- End: TimeOnly                                                                                                                                                                                                  | (Constructor)                                                                                    |
+
+#### Bounded Context: Space and Resource Management
+
+| Nombre de la Clase           | Descripción                                                                                              | Atributos Principales                                                                                                      | Métodos Principales                                                                             |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Classroom (Aggregate)**    | Representa un salón de clases, que es el contenedor principal de recursos y está asignado a un profesor. | - Id: int<br>- Name: string<br>- Description: string<br>- TeacherId: TeacherId<br>- Resources: ICollection&lt;Resource&gt; | + UpdateName(name): void<br>+ UpdateDescription(desc): void<br>+ UpdateTeacherId(id): void      |
+| **Resource (Aggregate)**     | Representa un objeto o material físico que se encuentra dentro de un salón de clases.                    | - Id: int<br>- Name: string<br>- KindOfResource: string<br>- ClassroomId: int                                              | + UpdateName(name): void<br>+ UpdateKindOfResource(kind): void<br>+ UpdateClassroomId(id): void |
+| **SharedArea (Aggregate)**   | Representa un área común que puede ser reservada, con una capacidad y descripción definidas.             | - Id: int<br>- Name: string<br>- Capacity: int<br>- Description: string                                                    | + UpdateName(name): void<br>+ UpdateDescription(desc): void<br>+ UpdateCapacity(cap): void      |
+| **TeacherId (Value Object)** | Objeto de Valor que encapsula el identificador de un profesor, asegurando su consistencia.               | - TeacherIdentifier: int                                                                                                   | (Constructor)                                                                                   |
+
+#### Bounded Context: Breakdown Management
+
+| Nombre de la Clase              | Descripción                                                                                                     | Atributos Principales                                                                                                                       | Métodos Principales                                                                        |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Report (Aggregate)**          | Representa un informe de incidencia o avería (breakdown) sobre un recurso específico.                           | - Id: int<br>- KindOfReport: string<br>- Description: string<br>- ResourceId: ResourceId<br>- CreatedAt: DateTime<br>- Status: ReportStatus | (Constructores para la creación del objeto)                                                |
+| **ReportStatus (Value Object)** | Objeto de Valor que representa los posibles estados de un informe, asegurando que solo se usen valores válidos. | - Value: string                                                                                                                             | + EnProceso(): ReportStatus<br>+ Completado(): ReportStatus<br>+ Cancelado(): ReportStatus |
+| **ResourceId (Value Object)**   | Objeto de Valor que encapsula el identificador de un recurso, asegurando que sea un valor válido (mayor a 0).   | - Id: int                                                                                                                                   | (Constructor con validación)                                                               |
 
 ## 4.10. Database Design.
 
 ### 4.10.1. Relational/Non-Relational Database Diagram.
+
+El diagrama de base de datos relacional muestra las tablas y sus relaciones en la base de datos de EduSpace.
+
+![EduSpace-Database-Diagram](../assets/chapter4/eduspace-database-diagram.png)
