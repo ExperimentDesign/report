@@ -52,9 +52,29 @@ Como equipo, hemos optado por incorporar el patrón de diseño en forma de Z en 
 
 ### 4.1.3. Mobile Style Guidelines.
 
+Debido a que nuestra solución móvil busca optimizar la gestión de espacios educativos y la comunicación interna, es fundamental que la aplicación tenga un diseño claro, consistente y adaptable a diferentes dispositivos. El estilo debe transmitir profesionalismo y orden, facilitar la navegación en pantallas pequeñas y permitir que administradores y docentes realicen sus tareas de manera rápida y eficiente.
+
 #### 4.1.3.1. iOS Mobile Style Guidelines.
 
+Para iOS, buscamos que la app se sienta natural dentro del ecosistema de Apple. Usamos UIColor.systemBackground para superficies, UIColor.label para texto y el mismo gradiente azul–verde, adaptado a Light y Dark Mode. Así logramos coherencia con Android sin perder la estética propia de iOS.
+
+La tipografía es San Francisco (SF Pro) con soporte para Dynamic Type. Los títulos de la barra de navegación usan Title de 17pt, los de tarjetas usan Title 3 y el contenido principal usa Body de 17pt. Esto asegura que la app se lea bien en todos los tamaños de pantalla y respete los ajustes de accesibilidad del usuario.
+
+Los íconos se basan en SF Symbols y se mantienen en el rango de 20 a 24pt para un aspecto consistente. Las tarjetas tienen esquinas redondeadas de 12pt y sombras muy sutiles, mientras que la lista de espacios se presenta en estilo Inset Grouped para sentirse nativa.
+
+Las acciones principales no usan FAB como en Android; en su lugar, se utiliza un botón en la barra de navegación (por ejemplo, un ícono “+” en la parte superior derecha). Los formularios se presentan como Sheet o pantallas de tipo Form, y se cierran deslizando hacia abajo. Las animaciones usan transiciones EaseInOut o Spring, manteniendo la fluidez característica de iOS.
+
+En accesibilidad, todas las áreas interactivas cumplen con el mínimo de 44pt, se incluyen descripciones para VoiceOver y se soporta Dynamic Type y Dark Mode de manera nativa.
+
 #### 4.1.3.2. Android Mobile Style Guidelines.
+
+En la versión Android de EduSpace, seguimos las recomendaciones de Material Design 3 para que la app se sienta nativa y familiar. Usamos un gradiente azul–verde como fondo principal, superficies blancas para tarjetas y modales, y texto en tonos oscuros para asegurar buena legibilidad. El color primario es azul (#1976D2) y aparece en botones y acciones importantes.
+
+La tipografía está basada en la escala de Material 3: los títulos de la barra superior usan Title Large de 22sp, las tarjetas usan Title Medium de 16sp y el texto de botones es Label Large de 14sp. Todo el contenido es escalable para respetar los ajustes de accesibilidad del sistema.
+
+Los íconos siguen el estilo de Material Symbols, con un tamaño de 24dp, y en el botón flotante (FAB) se usan de 36dp. Las tarjetas tienen bordes redondeados de 12dp y una ligera elevación para destacar del fondo. Los formularios usan campos OutlinedTextField, y el FAB circular de 56dp es el encargado de la acción principal de agregar espacios.
+
+La navegación se organiza con un TopAppBar con ícono de menú que abre el drawer lateral, y las animaciones son suaves, de 200–300 ms, con las curvas de movimiento estándar de Material. Además, se incluyen gestos como deslizar para cerrar modales. En cuanto a accesibilidad, todas las áreas táctiles cumplen con el mínimo de 48dp y los colores respetan el contraste WCAG 2.1 AA.
 
 ## 4.2. Information Architecture.
 
