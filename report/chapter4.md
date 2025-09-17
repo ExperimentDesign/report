@@ -115,7 +115,6 @@ En esta sección, se explica las estrategias empleadas para etiquetar y organiza
 - Classroom Changes and Meetings: Administración de cambios de aulas o reuniones.
 - Personal Data: Gestión de datos y roles de trabajadores.
 - Personnel Management: Asignación y reasignación de personal responsable de cada espacio.
-- Salary Calculation: Automatización y visualización de cálculos salariales.
 - Notifications: Alertas y actualizaciones importantes.
 - Profile: Información personal y profesional del administrador.
 - Log Out: Opción para cerrar sesión.
@@ -126,7 +125,6 @@ En esta sección, se explica las estrategias empleadas para etiquetar y organiza
 - Notifications: Notificaciones sobre cambios de aula o reuniones.
 - Reservations: Reserva de espacios deportivos y aulas.
 - Breakdown Reports: Reporte de averías en equipos o recursos.
-- Wages: Visualización de salarios y bonificaciones.
 - Availability: Consulta de espacios disponibles y ocupados.
 - Profile: Información personal y profesional del docente.
 - Log Out: Opción para cerrar sesión.
@@ -352,6 +350,26 @@ Los diagramas de componentes muestra una vista de las relaciones de los componen
 ## 4.9. Software Object-Oriented Design.
 
 ### 4.9.1. Class Diagrams.
+
+#### Bounded Context: IAM (Identity and Access Management)
+
+![](../assets/chapter4/class-diagram-iam.png)
+
+#### Bounded Context: Profile Management
+
+![](../assets/chapter4/class-diagram-profile.png)
+
+#### Bounded Context: Reservation Scheduling Management
+
+![](../assets/chapter4/class-diagram-reservation-scheduling.png)
+
+#### Bounded Context: Space and Resource Management
+
+![](../assets/chapter4/class-diagram-spaces-and-resources.png)
+
+#### Bounded Context: Breakdown Management
+
+![](../assets/chapter4/class-diagram-breakdown.png)
 
 ### 4.9.2. Class Dictionary.
 
