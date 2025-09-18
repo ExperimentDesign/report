@@ -191,13 +191,154 @@ Ruta de referencia: https://experimentdesign.github.io/landing-page/
 
 ### 5.2.1. Sprint Backlogs
 
+#### Sprint 1
+
+##### Sprint Planning
+
+Para este primer sprint nos enfocaremos en los tasks para la
+elaboración del producto. Nos dividiremos entre nosotros cada
+una de las tareas identificadas para el sprint.
+
+| Sprint #                        | Sprint 1                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sprint Planning Background      |                                                                                                                                                                                                                                                                                                                              |
+| Date                            | 30/08/2024                                                                                                                                                                                                                                                                                                                   |
+| Time                            | 06:00 PM                                                                                                                                                                                                                                                                                                                     |
+| Location                        | Servidor de Discord del Equipo                                                                                                                                                                                                                                                                                               |
+| Prepared By                     | Andres Torres                                                                                                                                                                                                                                                                                                                |
+| Attendees (to planning meeting) | Andres Torres / Piero Velarde / Marllely Arias / Luciana Sanchez / Alejandro Mendoza                                                                                                                                                                                                                                         |
+| Sprint 1 Review Summary         | En esta primera seccion se planteo el desarrollo para el proyecto                                                                                                                                                                                                                                                            |
+| Sprint 1 Retrospective Summary  | En esta seccion todos los integrantes mencionaron tener aciertos en partes del codigo y en otras partes poder mejorar sus habilidades realizando la Landing Page, la aplicacion web, aplicacion movil y la API RESTful.                                                                                                      |
+| Sprint Goal & User Stories      |                                                                                                                                                                                                                                                                                                                              |
+| Sprint 1 Goal                   | Desarrollar, desplegar y hacer visible la landing page, aplicacion web, aplicacion movil y la API RESTful, integrando todos sus componentes clave y garantizando una apariencia coherente con los mockups de la aplicación. El éxito se logrará cuando la página esté completamente funcional y accesible para los usuarios. |
+| Sprint 1 Velocity               | 42 Velocity                                                                                                                                                                                                                                                                                                                  |
+| Sum of Story Points             | 42 Story Points.                                                                                                                                                                                                                                                                                                             |
+
+##### Sprint Backlog 1
+
+| User Story Id | User Story Title                | Work-Item/Task Id                                         | Work-Item/Task Title                                                                                                                                                  | Description                      | Estimation | Assigned To       | Status |
+| ------------- | ------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- | ----------------- | ------ |
+| Orden         | User Story / Technical Story Id | Título                                                    | Descripción                                                                                                                                                           | Story Points (1 / 2 / 3 / 5 / 8) | Estimation | Assigned To       | Status |
+| 1             | US02                            | Encontrar información del propósito de la aplicación      | Como visitante, quiero saber sobre el propósito de la aplicación para entender qué beneficios y funcionalidades ofrece y decidir si es adecuada para mis necesidades. | 2                                | 1          | Andres Torres     | Done   |
+| 2             | US03                            | Visualización de imágenes y gráficos relevantes           | Como visitante, quiero que las imágenes y gráficos en la landing page sean de alta calidad y relevantes para captar mi interés.                                       | 2                                | 2          | Luciana Sanchez   | Done   |
+| 3             | US04                            | Tipografía cómoda y agradable estéticamente               | Como visitante, quiero que la tipografía en la landing page sea legible y estéticamente agradable para facilitar la lectura y la navegación.                          | 1                                | 1          | Piero Velarde     | Done   |
+| 4             | US01                            | Accesibilidad de la aplicación en diferentes dispositivos | Como visitante, quiero que la aplicación se adapte a diferentes dispositivos para que pueda acceder a la plataforma desde cualquier lugar y en cualquier momento.     | 5                                | 2          | Alejandro Mendoza | Done   |
+| 5             | US08                            | Registro de información personal del docente              | Como administrador, quiero registrar la información personal del docente, para tener una base de datos actualizada y poder gestionar al personal de manera eficiente. | 3                                | 3          | Andres Torres     | Done   |
+| 6             | US09                            | Registro de información de acceso del docente             | Como administrador, quiero registrar la información de acceso del docente, para que puedan iniciar sesión en la plataforma web sin problemas.                         | 3                                | 3          | Andres Torres     | Done   |
+| 7             | US10                            | Registro de salones                                       | Como administrador, quiero registrar los salones de la institución, para que puedan ser gestionados y asignados en la plataforma web de manera efectiva.              | 8                                | 3          | Andres Torres     | Done   |
+| 8             | US11                            | Registro de espacios compartidos                          | Como administrador, quiero registrar los espacios compartidos, para que puedan ser gestionados y reservados en la plataforma web.                                     | 8                                | 3          | Andres Torres     | Done   |
+| 9             | US14                            | Registro de la hora y lugar de la reunión                 | Como administrador, quiero registrar la hora y lugar de la reunión, para asegurar que todos los participantes tengan la información correcta sobre la reunión.        | 5                                | 3          | Andres Torres     | Done   |
+| 10            | US19                            | Registrar docente encargado de un ambiente                | Como administrador, deseo registrar qué docente está encargado de cada ambiente, para asignar responsabilidades y mejorar la gestión de los espacios.                 | 5                                | 3          | Andres Torres     | Done   |
+
 ### 5.2.2. Implemented Landing Page Evidence
 
+Se implementó una landing page funcional orientada a captar a nuestros usuarios y presentar los servicios que ofrece la plataforma de la plataforma.
+
+#### Sección Home:
+
+![](../assets/chapter5/landing-page/home.png)
+
+#### Sección About Us:
+
+![](../assets/chapter5/landing-page/aboutUs.png)
+
+#### Sección Package:
+
+![](../assets/chapter5/landing-page/planes.png)
+
+#### Sección Contact:
+
+![](../assets/chapter5/landing-page/contact.png)
+
+La landing page de EduSpace está accesible a través del siguiente enlace: https://experimentdesign.github.io/landing-page/
+
 ### 5.2.3. Implemented Frontend-Web Application Evidence
+
+Se implementó una aplicación web funcional que permite a los usuarios interactuar con la plataforma y acceder a sus funcionalidades principales.
+
+#### Vista Login:
+
+![](../assets/chapter5/web-app/login.png)
+
+#### Vista Register:
+
+![](../assets/chapter5/web-app/register.png)
+
+#### Vista Dashboard Admin:
+
+![](../assets/chapter5/web-app/admin/dashborad-admin.png)
+
+#### Vista Classrooms and Shared Areas:
+
+![](../assets/chapter5/web-app/admin/classrooms-and-shared-space.png)
+
+#### Vista Meetings:
+
+![](../assets/chapter5/web-app/admin/meetings.png)
+
+#### Vista Personal Data:
+
+![](../assets/chapter5/web-app/admin/personal-data.png)
+
+#### Vista Dashboard Teachers:
+
+![](../assets/chapter5/web-app/teacher/dashboard-teacher.png)
+
+#### Vista Notifications:
+
+![](../assets/chapter5/web-app/teacher/notifications.png)
+
+#### Vista Reports:
+
+![](../assets/chapter5/web-app/teacher/reports.png)
+
+#### Vista Spaces:
+
+![](../assets/chapter5/web-app/teacher/spaces.png)
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+
+#### Administrator profile
+
+![](../assets/chapter5/rest-api/administrator-profile.png)
+
+#### Authentication
+
+![](../assets/chapter5/rest-api/administrator-profile.png)
+
+#### Classrooms
+
+![](../assets/chapter5/rest-api/classrooms.png)
+
+#### Meeting Participants
+
+![](../assets/chapter5/rest-api/meeting-participants.png)
+
+#### Meetings
+
+![](../assets/chapter5/rest-api/meetings.png)
+
+#### Reports
+
+![](../assets/chapter5/rest-api/reports.png)
+
+#### Reservations
+
+![](../assets/chapter5/rest-api/reservations.png)
+
+#### Resources
+
+![](../assets/chapter5/rest-api/resources.png)
+
+#### Shared Area
+
+![](../assets/chapter5/rest-api/shared-area.png)
+
+#### Teacher Profile
+
+![](../assets/chapter5/rest-api/teacher-profile.png)
 
 ### 5.2.6. RESTful API documentation
 
