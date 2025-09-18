@@ -92,7 +92,8 @@ Flujo de trabajo GitFlow
 
 El flujo de trabajo a ser implementado para el desarrollo del proyecto se basará en el modelo propuesto por Vincent Driessen en "A successful Git branching model".
 
-![Flujo-de-trabajo]()
+![Flujo-de-trabajo](../assets/chapter5/gitflow-workflow1.png)
+![Flujo-de-trabajo-2](../assets/chapter5/gitflow-workflow2.png)
 
 Estructura de branches (Ramas):
 
