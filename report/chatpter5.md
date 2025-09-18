@@ -267,3 +267,5 @@ Colaboraciones de cada miembro del equipo:
 Commits:
 
 ## 5.3. Video About-the-Product
+
+Link del video: [Video about the product](https://youtu.be/tAP6TujgwuA)
