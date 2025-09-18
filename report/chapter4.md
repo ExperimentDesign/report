@@ -298,12 +298,17 @@ En esta sección se presentan los User Flow Diagrams de EduSpace, que describen 
 
 El prototipo para Android de EduSpace permite experimentar de manera práctica las principales funcionalidades de la aplicación en un entorno simulado. Este prototipo incluye los flujos definidos en los User Flow Diagrams y utiliza los mock-ups adaptados al ecosistema Android, respetando sus guías de diseño (Material Design), tipografías, patrones de interacción y componentes nativos.
 
+![PrototipoMobileAndroid](/assets/chapter4/PrototipoMobileAndroid.png)
+
+Link de video en Youtube: https://youtu.be/VKWHkonuago 
 
 ### 4.5.2. iOS Mobile Applications Prototyping.
 
 El prototipo para iOS de EduSpace presenta la aplicación adaptada al entorno visual y de interacción propio del sistema operativo de Apple. Basado en los mock-ups, este prototipo integra las guías de diseño de iOS (Human Interface Guidelines), aplicando tipografías, íconos y patrones de navegación característicos de la plataforma.
 
+![PrototipoMobileIos](/assets/chapter4/PrototipoMobileIos.png)
 
+Link de video en Youtube: https://youtu.be/5Jz9PoaT5I8
 
 ## 4.6. Web Applications UX/UI Design.
 
