@@ -272,7 +272,13 @@ En esta sección se presentará una representación de la landing page tanto par
 
 ### 4.4.1. Mobile Applications Wireframes.
 
+En esta sección se presentan los wireframes de la aplicación móvil, los cuales representan la estructura base de cada pantalla y su disposición de elementos antes de pasar a la etapa de diseño visual. Los wireframes fueron elaborados siguiendo los principios de diseño centrado en el usuario, priorizando la claridad, simplicidad y eficiencia en la navegación.
+
+![WireframeMobile1](/assets/chapter4/WireframeMobile1.png)
+
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
+
+
 
 ### 4.4.3. Mobile Applications Mock-ups.
 
