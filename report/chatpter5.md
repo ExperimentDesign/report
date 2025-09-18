@@ -235,24 +235,110 @@ una de las tareas identificadas para el sprint.
 Se implementó una landing page funcional orientada a captar a nuestros usuarios y presentar los servicios que ofrece la plataforma de la plataforma.
 
 #### Sección Home:
-![](../assets/chapter5/home.png)
+
+![](../assets/chapter5/landing-page/home.png)
 
 #### Sección About Us:
-![](../assets/chapter5/aboutUs.png)
+
+![](../assets/chapter5/landing-page/aboutUs.png)
 
 #### Sección Package:
-![](../assets/chapter5/planes.png)
+
+![](../assets/chapter5/landing-page/planes.png)
 
 #### Sección Contact:
-![](../assets/chapter5/contact.png)
 
-La landing page de EduSpace está accesible a través del siguiente enlace: https://experimentdesign.github.io/landing-page/ 
+![](../assets/chapter5/landing-page/contact.png)
+
+La landing page de EduSpace está accesible a través del siguiente enlace: https://experimentdesign.github.io/landing-page/
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence
+
+Se implementó una aplicación web funcional que permite a los usuarios interactuar con la plataforma y acceder a sus funcionalidades principales.
+
+#### Vista Login:
+
+![](../assets/chapter5/web-app/login.png)
+
+#### Vista Register:
+
+![](../assets/chapter5/web-app/register.png)
+
+#### Vista Dashboard Admin:
+
+![](../assets/chapter5/web-app/admin/dashborad-admin.png)
+
+#### Vista Classrooms and Shared Areas:
+
+![](../assets/chapter5/web-app/admin/classrooms-and-shared-space.png)
+
+#### Vista Meetings:
+
+![](../assets/chapter5/web-app/admin/meetings.png)
+
+#### Vista Personal Data:
+
+![](../assets/chapter5/web-app/admin/personal-data.png)
+
+#### Vista Dashboard Teachers:
+
+![](../assets/chapter5/web-app/teacher/dashboard-teacher.png)
+
+#### Vista Notifications:
+
+![](../assets/chapter5/web-app/teacher/notifications.png)
+
+#### Vista Reports:
+
+![](../assets/chapter5/web-app/teacher/reports.png)
+
+#### Vista Spaces:
+
+![](../assets/chapter5/web-app/teacher/spaces.png)
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+
+#### Administrator profile
+
+![](../assets/chapter5/rest-api/administrator-profile.png)
+
+#### Authentication
+
+![](../assets/chapter5/rest-api/administrator-profile.png)
+
+#### Classrooms
+
+![](../assets/chapter5/rest-api/classrooms.png)
+
+#### Meeting Participants
+
+![](../assets/chapter5/rest-api/meeting-participants.png)
+
+#### Meetings
+
+![](../assets/chapter5/rest-api/meetings.png)
+
+#### Reports
+
+![](../assets/chapter5/rest-api/reports.png)
+
+#### Reservations
+
+![](../assets/chapter5/rest-api/reservations.png)
+
+#### Resources
+
+![](../assets/chapter5/rest-api/resources.png)
+
+#### Shared Area
+
+![](../assets/chapter5/rest-api/shared-area.png)
+
+#### Teacher Profile
+
+![](../assets/chapter5/rest-api/teacher-profile.png)
 
 ### 5.2.6. RESTful API documentation
 
