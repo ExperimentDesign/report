@@ -52,9 +52,29 @@ Como equipo, hemos optado por incorporar el patrón de diseño en forma de Z en 
 
 ### 4.1.3. Mobile Style Guidelines.
 
+Debido a que nuestra solución móvil busca optimizar la gestión de espacios educativos y la comunicación interna, es fundamental que la aplicación tenga un diseño claro, consistente y adaptable a diferentes dispositivos. El estilo debe transmitir profesionalismo y orden, facilitar la navegación en pantallas pequeñas y permitir que administradores y docentes realicen sus tareas de manera rápida y eficiente.
+
 #### 4.1.3.1. iOS Mobile Style Guidelines.
 
+Para iOS, buscamos que la app se sienta natural dentro del ecosistema de Apple. Usamos UIColor.systemBackground para superficies, UIColor.label para texto y el mismo gradiente azul–verde, adaptado a Light y Dark Mode. Así logramos coherencia con Android sin perder la estética propia de iOS.
+
+La tipografía es San Francisco (SF Pro) con soporte para Dynamic Type. Los títulos de la barra de navegación usan Title de 17pt, los de tarjetas usan Title 3 y el contenido principal usa Body de 17pt. Esto asegura que la app se lea bien en todos los tamaños de pantalla y respete los ajustes de accesibilidad del usuario.
+
+Los íconos se basan en SF Symbols y se mantienen en el rango de 20 a 24pt para un aspecto consistente. Las tarjetas tienen esquinas redondeadas de 12pt y sombras muy sutiles, mientras que la lista de espacios se presenta en estilo Inset Grouped para sentirse nativa.
+
+Las acciones principales no usan FAB como en Android; en su lugar, se utiliza un botón en la barra de navegación (por ejemplo, un ícono “+” en la parte superior derecha). Los formularios se presentan como Sheet o pantallas de tipo Form, y se cierran deslizando hacia abajo. Las animaciones usan transiciones EaseInOut o Spring, manteniendo la fluidez característica de iOS.
+
+En accesibilidad, todas las áreas interactivas cumplen con el mínimo de 44pt, se incluyen descripciones para VoiceOver y se soporta Dynamic Type y Dark Mode de manera nativa.
+
 #### 4.1.3.2. Android Mobile Style Guidelines.
+
+En la versión Android de EduSpace, seguimos las recomendaciones de Material Design 3 para que la app se sienta nativa y familiar. Usamos un gradiente azul–verde como fondo principal, superficies blancas para tarjetas y modales, y texto en tonos oscuros para asegurar buena legibilidad. El color primario es azul (#1976D2) y aparece en botones y acciones importantes.
+
+La tipografía está basada en la escala de Material 3: los títulos de la barra superior usan Title Large de 22sp, las tarjetas usan Title Medium de 16sp y el texto de botones es Label Large de 14sp. Todo el contenido es escalable para respetar los ajustes de accesibilidad del sistema.
+
+Los íconos siguen el estilo de Material Symbols, con un tamaño de 24dp, y en el botón flotante (FAB) se usan de 36dp. Las tarjetas tienen bordes redondeados de 12dp y una ligera elevación para destacar del fondo. Los formularios usan campos OutlinedTextField, y el FAB circular de 56dp es el encargado de la acción principal de agregar espacios.
+
+La navegación se organiza con un TopAppBar con ícono de menú que abre el drawer lateral, y las animaciones son suaves, de 200–300 ms, con las curvas de movimiento estándar de Material. Además, se incluyen gestos como deslizar para cerrar modales. En cuanto a accesibilidad, todas las áreas táctiles cumplen con el mínimo de 48dp y los colores respetan el contraste WCAG 2.1 AA.
 
 ## 4.2. Information Architecture.
 
@@ -242,27 +262,58 @@ En esta sección se presentará una representación de la landing page tanto par
 
 **Landing Page para Desktop Web Browser:**
 
-![LandingPage](https://github.com/user-attachments/assets/bfa6fcee-356d-4d61-89e7-fd845174c53f)
+![LandingPage](/assets/chapter4/LandingPage.png)
 
 **Web Mobile Browser**
 
-![LandingPage](https://github.com/user-attachments/assets/ab8588de-5106-4559-9629-677e29b5287e)
+![LandingPage](/assets/chapter4/MobileBrowser.png)
 
 ## 4.4. Mobile Applications UX/UI Design.
 
 ### 4.4.1. Mobile Applications Wireframes.
 
+En esta sección se presentan los wireframes de la aplicación móvil, los cuales representan la estructura base de cada pantalla y su disposición de elementos antes de pasar a la etapa de diseño visual. Los wireframes fueron elaborados siguiendo los principios de diseño centrado en el usuario, priorizando la claridad, simplicidad y eficiencia en la navegación.
+
+![WireframeMobile1](/assets/chapter4/WireframeMobile1.png)
+
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
+
+En esta sección se presentan los wireflows de la aplicación móvil, que muestran la secuencia de navegación entre pantallas y el comportamiento de la interfaz según las interacciones del usuario. Cada wireflow está diseñado en torno a un User Goal específico y se basa en los User Personas definidos para el proyecto.
+
+![WireflowMobile1](/assets/chapter4/WireflowMobile.png)
 
 ### 4.4.3. Mobile Applications Mock-ups.
 
+En esta sección se presentan los Mock-ups de la aplicación mobile de EduSpace, que representan una versión más elaborada de los wireframes iniciales. Los mock-ups permiten visualizar la propuesta de diseño con un mayor nivel de detalle gráfico, aplicando los principios de diseño de interfaces, los elementos de diseño visual, y asegurando la integración de un diseño inclusivo y accesible para todos los usuarios.
+
+![MockUpsMobile1](/assets/chapter4/mockups.png)
+
+Link del figma: [Figma mobile](https://www.figma.com/design/qUn8pAF3qzp0iGbJJZ8Aeq/EduSpace-Mobile?node-id=5-2&t=JWZjVwhiNOdh3fyN-1)
+
 ### 4.4.4. Mobile Applications User Flow Diagrams.
 
+En esta sección se presentan los User Flow Diagrams de EduSpace, que describen de manera visual y estructurada los recorridos que realizan los usuarios al interactuar con la aplicación
+
+![UserflowMobile1](/assets/chapter4/userFlow.png)
+
+Link del video: [Ver Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/ESvVuWYZQNxAjYTT9hkmZagBbYaMuJ3fYdusq5y7VxWY4Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=sFRpAq)
 ## 4.5. Mobile Applications Prototyping.
 
 ### 4.5.1. Android Mobile Applications Prototyping.
 
+El prototipo para Android de EduSpace permite experimentar de manera práctica las principales funcionalidades de la aplicación en un entorno simulado. Este prototipo incluye los flujos definidos en los User Flow Diagrams y utiliza los mock-ups adaptados al ecosistema Android, respetando sus guías de diseño (Material Design), tipografías, patrones de interacción y componentes nativos.
+
+![PrototipoMobileAndroid](/assets/chapter4/PrototipoMobileAndroid.png)
+
+Link de video en Youtube: https://youtu.be/VKWHkonuago 
+
 ### 4.5.2. iOS Mobile Applications Prototyping.
+
+El prototipo para iOS de EduSpace presenta la aplicación adaptada al entorno visual y de interacción propio del sistema operativo de Apple. Basado en los mock-ups, este prototipo integra las guías de diseño de iOS (Human Interface Guidelines), aplicando tipografías, íconos y patrones de navegación característicos de la plataforma.
+
+![PrototipoMobileIos](/assets/chapter4/PrototipoMobileIos.png)
+
+Link de video en Youtube: https://youtu.be/5Jz9PoaT5I8
 
 ## 4.6. Web Applications UX/UI Design.
 
