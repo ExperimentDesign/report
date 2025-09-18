@@ -286,12 +286,17 @@ En esta sección se presentan los wireflows de la aplicación móvil, que muestr
 
 En esta sección se presentan los Mock-ups de la aplicación mobile de EduSpace, que representan una versión más elaborada de los wireframes iniciales. Los mock-ups permiten visualizar la propuesta de diseño con un mayor nivel de detalle gráfico, aplicando los principios de diseño de interfaces, los elementos de diseño visual, y asegurando la integración de un diseño inclusivo y accesible para todos los usuarios.
 
+![MockUpsMobile1](/assets/chapter4/mockups.png)
+
 Link del figma: [Figma mobile](https://www.figma.com/design/qUn8pAF3qzp0iGbJJZ8Aeq/EduSpace-Mobile?node-id=5-2&t=JWZjVwhiNOdh3fyN-1)
 
 ### 4.4.4. Mobile Applications User Flow Diagrams.
 
 En esta sección se presentan los User Flow Diagrams de EduSpace, que describen de manera visual y estructurada los recorridos que realizan los usuarios al interactuar con la aplicación
 
+![UserflowMobile1](/assets/chapter4/userFlow.png)
+
+Link del video: [Ver Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/ESvVuWYZQNxAjYTT9hkmZagBbYaMuJ3fYdusq5y7VxWY4Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=sFRpAq)
 ## 4.5. Mobile Applications Prototyping.
 
 ### 4.5.1. Android Mobile Applications Prototyping.
