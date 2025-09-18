@@ -18,7 +18,7 @@ Profesor: Noriega Melendez, Julio Manuel
 
 “Informe de TB1”
 
-Startup:
+Startup: EduSpace
 
 Producto:
 
@@ -48,7 +48,7 @@ Septiembre 2025
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | ------- | ----- | ----- | --------------------------- |
-| 1.0     |       |       |                             |
+| 1.0     |   17/09    | Luciana Sanchez Silva  | Diseño de wireframes de la aplicacion Mobile         |
 
 # **Project Report Collaboration Insights**
 
