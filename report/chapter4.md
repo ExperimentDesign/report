@@ -278,7 +278,9 @@ En esta sección se presentan los wireframes de la aplicación móvil, los cuale
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
 
+En esta sección se presentan los wireflows de la aplicación móvil, que muestran la secuencia de navegación entre pantallas y el comportamiento de la interfaz según las interacciones del usuario. Cada wireflow está diseñado en torno a un User Goal específico y se basa en los User Personas definidos para el proyecto.
 
+![WireflowMobile1](/assets/chapter4/WireflowMobile.png)
 
 ### 4.4.3. Mobile Applications Mock-ups.
 
