@@ -588,8 +588,104 @@ En esta sección se presenta el Empathy Mapping de nuestros 2 segmentos objetivo
 **Segmento 1: Administrador**
 ![](../../assets/Michael%20Sanchez-e.png)
 
+Ve (SEE):
+
+Múltiples aulas y recursos por coordinar
+
+Reportes en hojas de cálculo y sistemas aislados
+
+Falta de comunicación rápida entre personal
+
+Oye (HEAR):
+
+Quejas de docentes por cambios de última hora
+
+Presión de la dirección por eficiencia y costos
+
+Solicitudes constantes de información de inventarios
+
+Piensa y Siente (THINK & FEEL):
+
+Estrés por mantener todo organizado
+
+Miedo a errores que impacten en la operación
+
+Deseo de automatizar tareas y reducir carga administrativa
+
+Dice y Hace (SAY & DO):
+
+“Necesitamos un sistema que centralice todo”
+
+Coordina manualmente horarios y personal
+
+Revisa constantemente reportes y correos
+
+Dolor (PAINS):
+
+Procesos manuales lentos y propensos a errores
+
+Falta de visibilidad en tiempo real de espacios y recursos
+
+Costos elevados por mala asignación de recursos
+
+Ganancias (GAINS):
+
+Plataforma que centralice información
+
+Reportes automáticos y en tiempo real
+
+Menos errores y ahorro de tiempo/costos
+
 **Segmento 2: Docente**
 ![](../../assets/Ana.png)
+
+Ve (SEE):
+
+Horarios cambiantes y poca claridad en asignaciones
+
+Problemas de comunicación con administración
+
+Aulas ocupadas sin previo aviso
+
+Oye (HEAR):
+
+Reclamaciones de alumnos por retrasos o cambios
+
+Indicaciones de última hora de supervisores
+
+Comentarios sobre falta de coordinación
+
+Piensa y Siente (THINK & FEEL):
+
+Frustración por no tener información actualizada
+
+Preocupación por cumplir con horarios y tareas
+
+Deseo de simplificar comunicación con administración
+
+Dice y Hace (SAY & DO):
+
+“Avísenme con anticipación los cambios”
+
+Busca información en correos o chats informales
+
+Reorganiza clases o actividades sobre la marcha
+
+Dolor (PAINS):
+
+Pérdida de tiempo buscando información
+
+Falta de claridad en responsabilidades
+
+Descoordinación que impacta en la experiencia del estudiante
+
+Ganancias (GAINS):
+
+Notificaciones inmediatas de cambios
+
+Acceso fácil a horarios y asignaciones
+
+Mejor comunicación y menos confusión
 
 ### 2.3.5 As-is Scenario Mapping
 
