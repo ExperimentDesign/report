@@ -232,6 +232,22 @@ una de las tareas identificadas para el sprint.
 
 ### 5.2.2. Implemented Landing Page Evidence
 
+Se implementó una landing page funcional orientada a captar a nuestros usuarios y presentar los servicios que ofrece la plataforma de la plataforma.
+
+#### Sección Home:
+![](../assets/chapter5/home.png)
+
+#### Sección About Us:
+![](../assets/chapter5/aboutUs.png)
+
+#### Sección Package:
+![](../assets/chapter5/planes.png)
+
+#### Sección Contact:
+![](../assets/chapter5/contact.png)
+
+La landing page de EduSpace está accesible a través del siguiente enlace: https://experimentdesign.github.io/landing-page/ 
+
 ### 5.2.3. Implemented Frontend-Web Application Evidence
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence
