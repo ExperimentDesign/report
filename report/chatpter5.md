@@ -298,6 +298,43 @@ Se implementó una aplicación web funcional que permite a los usuarios interact
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence
 
+Se implementó una aplicación Mobile funcional que permite a los usuarios de android e IOS interactuar con la plataforma y acceder a sus funcionalidades principales.
+
+#### Vista Login:
+
+![](../assets/chapter5/MobileApp/Admin/IniciarSesion.png)
+![](../assets/chapter5/MobileApp/Admin/CrearCuenta.png)
+
+#### Vista Home:
+
+![](../assets/chapter5/MobileApp/Admin/Bienvenido.png)
+
+#### Vista Menú desplegable:
+
+![](../assets/chapter5/MobileApp/Admin/Menu.png)
+
+#### Vista Salones:
+
+![](../assets/chapter5/MobileApp/Admin/Salon.png)
+
+![](../assets/chapter5/MobileApp/Admin/ASalon.png)
+
+#### Vista Espacios:
+
+![](../assets/chapter5/MobileApp/Admin/Espacios.png)
+
+![](../assets/chapter5/MobileApp/Admin/AEspacios.png)
+
+#### Vista Gestión de profesores:
+
+![](../assets/chapter5/MobileApp/Admin/Profesores.png)
+
+#### Vista Reuniones:
+
+![](../assets/chapter5/MobileApp/Admin/Reuniones.png)
+
+![](../assets/chapter5/MobileApp/Admin/AReuniones.png)
+
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 
 #### Administrator profile
