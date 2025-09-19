@@ -302,38 +302,38 @@ Se implementó una aplicación Mobile funcional que permite a los usuarios de an
 
 #### Vista Login:
 
-![](../assets/chapter5/MobileApp/Admin/IniciarSesion.png)
-![](../assets/chapter5/MobileApp/Admin/CrearCuenta.png)
+![](../assets/chapter5/MobileApp/Admin/IniciarSesion.jpeg)
+![](../assets/chapter5/MobileApp/Admin/CrearCuenta.jpeg)
 
 #### Vista Home:
 
-![](../assets/chapter5/MobileApp/Admin/Bienvenido.png)
+![](../assets/chapter5/MobileApp/Admin/Bienvenido.jpeg)
 
 #### Vista Menú desplegable:
 
-![](../assets/chapter5/MobileApp/Admin/Menu.png)
+![](../assets/chapter5/MobileApp/Admin/Menu.jpeg)
 
 #### Vista Salones:
 
-![](../assets/chapter5/MobileApp/Admin/Salon.png)
+![](../assets/chapter5/MobileApp/Admin/Salon.jpeg)
 
-![](../assets/chapter5/MobileApp/Admin/ASalon.png)
+![](../assets/chapter5/MobileApp/Admin/ASalon.jpeg)
 
 #### Vista Espacios:
 
-![](../assets/chapter5/MobileApp/Admin/Espacios.png)
+![](../assets/chapter5/MobileApp/Admin/Espacios.jpeg)
 
-![](../assets/chapter5/MobileApp/Admin/AEspacios.png)
+![](../assets/chapter5/MobileApp/Admin/AEspacios.jpeg)
 
 #### Vista Gestión de profesores:
 
-![](../assets/chapter5/MobileApp/Admin/Profesores.png)
+![](../assets/chapter5/MobileApp/Admin/Profesores.jpeg)
 
 #### Vista Reuniones:
 
-![](../assets/chapter5/MobileApp/Admin/Reuniones.png)
+![](../assets/chapter5/MobileApp/Admin/Reuniones.jpeg)
 
-![](../assets/chapter5/MobileApp/Admin/AReuniones.png)
+![](../assets/chapter5/MobileApp/Admin/AReuniones.jpeg)
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 
