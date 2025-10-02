@@ -296,7 +296,9 @@ Se implementó una aplicación web funcional que permite a los usuarios interact
 
 ![](../assets/chapter5/web-app/teacher/spaces.png)
 
-### 5.2.4. Implemented Native-Mobile Application Evidence
+### 5.2.4. Acuerdo de Servicio - SaaS
+
+### 5.2.5. Implemented Native-Mobile Application Evidence
 
 Se implementó una aplicación Mobile funcional que permite a los usuarios de android e IOS interactuar con la plataforma y acceder a sus funcionalidades principales.
 
@@ -335,7 +337,7 @@ Se implementó una aplicación Mobile funcional que permite a los usuarios de an
 
 ![](../assets/chapter5/MobileApp/Admin/AReuniones.jpeg)
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
 #### Administrator profile
 
@@ -377,7 +379,7 @@ Se implementó una aplicación Mobile funcional que permite a los usuarios de an
 
 ![](../assets/chapter5/rest-api/teacher-profile.png)
 
-### 5.2.6. RESTful API documentation
+### 5.2.7. RESTful API documentation
 
 | Acción Implementada                         | Verbo HTTP | Sintaxis de Llamada                                                        | Parámetros                                                                 | Ejemplo y Explicación del Response                                                                                     |
 | ------------------------------------------- | ---------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -428,7 +430,7 @@ Se implementó una aplicación Mobile funcional que permite a los usuarios de an
 | **MeetingParticipants**                     |            |                                                                            |                                                                            |                                                                                                                        |
 | Añadir un profesor a una reunión            | POST       | /api/v1/meetings/{meetingId}/teachers/{teacherId}                          | meetingId, teacherId (en la ruta).                                         | Response (201 - Created): Confirma la adición del participante.                                                        |
 
-### 5.2.7. Team Collaboration Insights
+### 5.2.8. Team Collaboration Insights
 
 Para el desarrollo de este primer sprint, todos los miembros del equipo desarrollaron y colaboraron de manera activa y continua. De tal modo, se muestra como evidencia los insights de cada miembro del equipo.
 
