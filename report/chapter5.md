@@ -961,21 +961,29 @@ Se implementó una aplicación Mobile funcional que permite a los usuarios de an
 
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
-#### Administrator profile
+#### Classrooms
 
-![](../assets/chapter5/rest-api/administrator-profile.png)
+![](../assets/chapter5/rest-api/classrooms.png)
+
+#### Shared Area
+
+![](../assets/chapter5/rest-api/shared-area.png)
+
+#### Meeting Participants
+
+![](../assets/chapter5/rest-api/meeting-participants.png)
 
 #### Authentication
 
 ![](../assets/chapter5/rest-api/administrator-profile.png)
 
-#### Classrooms
+#### Administrator profile
 
-![](../assets/chapter5/rest-api/classrooms.png)
+![](../assets/chapter5/rest-api/administrator-profile.png)
 
-#### Meeting Participants
+#### Resources
 
-![](../assets/chapter5/rest-api/meeting-participants.png)
+![](../assets/chapter5/rest-api/resources.png)
 
 #### Meetings
 
@@ -989,68 +997,386 @@ Se implementó una aplicación Mobile funcional que permite a los usuarios de an
 
 ![](../assets/chapter5/rest-api/reservations.png)
 
-#### Resources
-
-![](../assets/chapter5/rest-api/resources.png)
-
-#### Shared Area
-
-![](../assets/chapter5/rest-api/shared-area.png)
-
 #### Teacher Profile
 
 ![](../assets/chapter5/rest-api/teacher-profile.png)
 
 ### 5.2.7. RESTful API documentation
 
-| Acción Implementada                         | Verbo HTTP | Sintaxis de Llamada                                                        | Parámetros                                                                 | Ejemplo y Explicación del Response                                                                                     |
-| ------------------------------------------- | ---------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Authentication**                          |            |                                                                            |                                                                            |                                                                                                                        |
-| Registrar un nuevo usuario                  | POST       | /api/v1/authentication/sign-up                                             | (en Body): Datos del usuario (nombre, email, contraseña, etc.)             | Response (201 - Created): Devuelve un objeto con la información básica del usuario creado.                             |
-| Iniciar sesión de usuario                   | POST       | /api/v1/authentication/sign-in                                             | (en Body): Credenciales (email, contraseña).                               | Response (200 - OK): Devuelve un token de acceso (JWT) para autenticar solicitudes futuras. { "accessToken": "ey..." } |
-| **AdministratorProfiles**                   |            |                                                                            |                                                                            |                                                                                                                        |
-| Crear un perfil de administrador            | POST       | /api/v1/administrator-profiles                                             | (en Body): Datos del perfil del administrador.                             | Response (201 - Created): Devuelve el perfil del administrador recién creado.                                          |
-| Obtener todos los perfiles de administrador | GET        | /api/v1/administrator-profiles                                             | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista con todos los perfiles de administradores.                                     |
-| Obtener un perfil de administrador por ID   | GET        | /api/v1/administrator-profiles/{administratorId}                           | administratorId (en la ruta).                                              | Response (200 - OK): Devuelve el perfil del administrador especificado.                                                |
-| **Meetings**                                |            |                                                                            |                                                                            |                                                                                                                        |
-| Crear una reunión para un aula              | POST       | /api/v1/administrators/{administratorId}/classrooms/{classroomId}/meetings | administratorId, classroomId (en la ruta). (en Body): Datos de la reunión. | Response (201 - Created): Devuelve la reunión recién creada.                                                           |
-| Obtener todas las reuniones                 | GET        | /api/v1/meetings                                                           | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista de todas las reuniones.                                                        |
-| Actualizar una reunión                      | PUT        | /api/v1/meetings/{id}                                                      | id (en la ruta). (en Body): Datos actualizados de la reunión.              | Response (200 - OK): Devuelve la reunión con los datos actualizados.                                                   |
-| Eliminar una reunión                        | DELETE     | /api/v1/meetings/{id}                                                      | id (en la ruta).                                                           | Response (204 - No Content): No devuelve contenido, indicando que la eliminación fue exitosa.                          |
-| **Reports**                                 |            |                                                                            |                                                                            |                                                                                                                        |
-| Crear un reporte                            | POST       | /api/v1/reports                                                            | (en Body): Datos del reporte a generar.                                    | Response (201 - Created): Devuelve el reporte recién creado.                                                           |
-| Obtener todos los reportes                  | GET        | /api/v1/reports                                                            | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista con todos los reportes.                                                        |
-| Obtener reportes por recurso                | GET        | /api/v1/reports/resources/{resourceId}                                     | resourceId (en la ruta).                                                   | Response (200 - OK): Devuelve los reportes asociados al recurso especificado.                                          |
-| **Reservations**                            |            |                                                                            |                                                                            |                                                                                                                        |
-| Crear una reservación                       | POST       | /api/v1/teachers/{teacherId}/areas/{areaId}/reservations                   | teacherId, areaId (en la ruta). (en Body): Datos de la reservación.        | Response (201 - Created): Devuelve la reservación recién creada.                                                       |
-| Obtener todas las reservaciones             | GET        | /api/v1/reservations                                                       | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista de todas las reservaciones.                                                    |
-| Obtener reservaciones por área              | GET        | /api/v1/areas/{areaId}/reservations                                        | areaId (en la ruta).                                                       | Response (200 - OK): Devuelve las reservaciones del área especificada.                                                 |
-| **TeachersProfiles**                        |            |                                                                            |                                                                            |                                                                                                                        |
-| Crear un perfil de profesor                 | POST       | /api/v1/teachers-profiles                                                  | (en Body): Datos del perfil del profesor.                                  | Response (201 - Created): Devuelve el perfil del profesor recién creado.                                               |
-| Obtener todos los perfiles de profesor      | GET        | /api/v1/teachers-profiles                                                  | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista con todos los perfiles de profesores.                                          |
-| Obtener un perfil de profesor por ID        | GET        | /api/v1/teachers-profiles/{teacherId}                                      | teacherId (en la ruta).                                                    | Response (200 - OK): Devuelve el perfil del profesor especificado.                                                     |
-| **Classrooms**                              |            |                                                                            |                                                                            |                                                                                                                        |
-| Obtener todos los recursos de un aula       | GET        | /api/v1/classrooms/{id}/resources                                          | id (en la ruta).                                                           | Response (200 - OK): Devuelve una lista de los recursos del aula especificada.                                         |
-| Obtener un aula por ID                      | GET        | /api/v1/classrooms/{id}                                                    | id (en la ruta).                                                           | Response (200 - OK): Devuelve el aula especificada.                                                                    |
-| Actualizar un aula                          | PUT        | /api/v1/classrooms/{id}                                                    | id (en la ruta). (en Body): Datos actualizados del aula.                   | Response (200 - OK): Devuelve el aula con la información actualizada.                                                  |
-| Eliminar un aula                            | DELETE     | /api/v1/classrooms/{id}                                                    | id (en la ruta).                                                           | Response (204 - No Content): Indica que el aula fue eliminada.                                                         |
-| Crear un aula con un profesor a cargo       | POST       | /api/v1/classrooms/teachers/{teacherId}                                    | teacherId (en la ruta). (en Body): Datos del aula.                         | Response (201 - Created): Devuelve el aula recién creada.                                                              |
-| Obtener aulas por profesor                  | GET        | /api/v1/classrooms/teachers/{teacherId}                                    | teacherId (en la ruta).                                                    | Response (200 - OK): Devuelve una lista de aulas a cargo del profesor.                                                 |
-| Obtener todas las aulas                     | GET        | /api/v1/classrooms                                                         | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista de todas las aulas.                                                            |
-| **Resource**                                |            |                                                                            |                                                                            |                                                                                                                        |
-| Obtener un recurso por su ID                | GET        | /api/v1/classrooms/resources/{resourceId}                                  | resourceId (en la ruta).                                                   | Response (200 - OK): Devuelve el recurso especificado.                                                                 |
-| Crear un nuevo recurso en un aula           | POST       | /api/v1/classrooms/{classroomId}/resources                                 | classroomId (en la ruta). (en Body): Datos del recurso.                    | Response (201 - Created): Devuelve el recurso recién creado.                                                           |
-| Obtener todos los recursos                  | GET        | /api/v1/resources                                                          | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista de todos los recursos.                                                         |
-| Actualizar un recurso                       | PUT        | /api/v1/resources/{id}                                                     | id (en la ruta). (en Body): Datos actualizados del recurso.                | Response (200 - OK): Devuelve el recurso con la información actualizada.                                               |
-| Eliminar un recurso                         | DELETE     | /api/v1/resources/{id}                                                     | id (en la ruta).                                                           | Response (204 - No Content): Indica que el recurso fue eliminado.                                                      |
-| **SharedArea**                              |            |                                                                            |                                                                            |                                                                                                                        |
-| Obtener un área compartida por ID           | GET        | /api/v1/shared-area/{id}                                                   | id (en la ruta).                                                           | Response (200 - OK): Devuelve el área compartida especificada.                                                         |
-| Actualizar un área compartida               | PUT        | /api/v1/shared-areas/{id}                                                  | id (en la ruta). (en Body): Datos actualizados del área.                   | Response (200 - OK): Devuelve el área con la información actualizada.                                                  |
-| Eliminar un área compartida                 | DELETE     | /api/v1/shared-areas/{id}                                                  | id (en la ruta).                                                           | Response (204 - No Content): Indica que el área fue eliminada.                                                         |
-| Crear un área compartida                    | POST       | /api/v1/shared-area                                                        | (en Body): Datos del área a crear.                                         | Response (201 - Created): Devuelve el área compartida recién creada.                                                   |
-| Obtener todas las áreas compartidas         | GET        | /api/v1/shared-area                                                        | Ninguno.                                                                   | Response (200 - OK): Devuelve una lista de todas las áreas compartidas.                                                |
-| **MeetingParticipants**                     |            |                                                                            |                                                                            |                                                                                                                        |
-| Añadir un profesor a una reunión            | POST       | /api/v1/meetings/{meetingId}/teachers/{teacherId}                          | meetingId, teacherId (en la ruta).                                         | Response (201 - Created): Confirma la adición del participante.                                                        |
+# Documentación de la API RESTful - EduSpace
+
+## Tabla de Endpoints
+
+| **Módulo**                                        | **Endpoint**                                                                 | **Método** | **Descripción**                                     | **Request Body**               | **Response**                         |
+| ------------------------------------------------- | ---------------------------------------------------------------------------- | ---------- | --------------------------------------------------- | ------------------------------ | ------------------------------------ |
+| **Breakdown Management - Reports**                |
+|                                                   | `/api/v1/Reports`                                                            | POST       | Crea un reporte para un recurso específico          | `CreateReportResource`         | `ReportResource` (201)               |
+|                                                   | `/api/v1/Reports`                                                            | GET        | Obtiene todos los reportes                          | -                              | `ReportResource[]` (200)             |
+|                                                   | `/api/v1/Reports/resources/{resourceId}`                                     | GET        | Obtiene todos los reportes de un recurso específico | -                              | `ReportResource[]` (200)             |
+| **IAM - Authentication**                          |
+|                                                   | `/api/v1/Authentication/sign-up`                                             | POST       | Registra un nuevo usuario                           | `SignUpResource`               | `{ message: string }` (200)          |
+|                                                   | `/api/v1/Authentication/sign-in`                                             | POST       | Autentica un usuario y retorna un token             | `SignInResource`               | `AuthenticatedAccountResource` (200) |
+| **Profiles - Administrator**                      |
+|                                                   | `/api/v1/administrator-profiles`                                             | POST       | Crea un perfil de administrador                     | `CreateAdminProfileResource`   | `AdminProfileResource` (200)         |
+|                                                   | `/api/v1/administrator-profiles`                                             | GET        | Obtiene todos los perfiles de administrador         | -                              | `AdminProfileResource[]` (200)       |
+|                                                   | `/api/v1/administrator-profiles/{administratorId}`                           | GET        | Obtiene un perfil de administrador por ID           | -                              | `AdminProfileResource` (200/404)     |
+| **Profiles - Teachers**                           |
+|                                                   | `/api/v1/teachers-profiles`                                                  | POST       | Crea un perfil de profesor                          | `CreateTeacherProfileResource` | `TeacherProfileResource` (200)       |
+|                                                   | `/api/v1/teachers-profiles`                                                  | GET        | Obtiene todos los perfiles de profesores            | -                              | `TeacherProfileResource[]` (200)     |
+|                                                   | `/api/v1/teachers-profiles/{teacherId}`                                      | GET        | Obtiene un perfil de profesor por ID                | -                              | `TeacherProfileResource` (200/404)   |
+| **Reservation Scheduling - Meetings**             |
+|                                                   | `/api/v1/administrators/{administratorId}/classrooms/{classroomId}/meetings` | POST       | Crea una reunión                                    | `CreateMeetingResource`        | `MeetingResource` (200)              |
+|                                                   | `/api/v1/meetings`                                                           | GET        | Obtiene todas las reuniones                         | -                              | `MeetingResource[]` (200)            |
+|                                                   | `/api/v1/meetings/{id}`                                                      | PUT        | Actualiza una reunión                               | `UpdateMeetingResource`        | `MeetingResource` (200/404)          |
+|                                                   | `/api/v1/meetings/{id}`                                                      | DELETE     | Elimina una reunión                                 | -                              | `string` (200/404)                   |
+| **Reservation Scheduling - Meeting Participants** |
+|                                                   | `/api/v1/meetings/{meetingId}/teachers/{teacherId}`                          | POST       | Agrega un profesor a una reunión                    | -                              | `string` (200)                       |
+| **Reservations**                                  |
+|                                                   | `/api/v1/teachers/{teacherId}/areas/{areaId}/reservations`                   | POST       | Crea una reservación                                | `CreateReservationResource`    | `ReservationResource` (200)          |
+|                                                   | `/api/v1/reservations`                                                       | GET        | Obtiene todas las reservaciones                     | -                              | `ReservationResource[]` (200)        |
+|                                                   | `/api/v1/areas/{areaId}/reservations`                                        | GET        | Obtiene todas las reservaciones de un área          | -                              | `ReservationResource[]` (200)        |
+| **Spaces & Resource Management - Classrooms**     |
+|                                                   | `/api/v1/Classrooms/teachers/{teacherId}`                                    | POST       | Crea un aula                                        | `CreateClassroomResource`      | `ClassroomResource` (201)            |
+|                                                   | `/api/v1/Classrooms`                                                         | GET        | Obtiene todas las aulas                             | -                              | `ClassroomResource[]` (200)          |
+|                                                   | `/api/v1/Classrooms/{id}`                                                    | GET        | Obtiene un aula por ID                              | -                              | `ClassroomResource` (200/404)        |
+|                                                   | `/api/v1/Classrooms/teachers/{teacherId}`                                    | GET        | Obtiene todas las aulas de un profesor              | -                              | `ClassroomResource[]` (200)          |
+|                                                   | `/api/v1/Classrooms/{id}`                                                    | PUT        | Actualiza un aula                                   | `UpdateClassroomResource`      | `ClassroomResource` (200/404)        |
+|                                                   | `/api/v1/Classrooms/{id}`                                                    | DELETE     | Elimina un aula                                     | -                              | `string` (200/404)                   |
+| **Spaces & Resource Management - Resources**      |
+|                                                   | `/api/v1/classrooms/{classroomId}/resources`                                 | POST       | Crea un recurso en un aula                          | `CreateResourceResource`       | `ResourceResource` (201)             |
+|                                                   | `/api/v1/classrooms/{classroomId}/resources`                                 | GET        | Obtiene todos los recursos de un aula               | -                              | `ResourceResource[]` (200)           |
+|                                                   | `/api/v1/classrooms/{classroomId}/resources/{resourceId}`                    | GET        | Obtiene un recurso por ID                           | -                              | `ResourceResource` (200/404)         |
+|                                                   | `/api/v1/classrooms/{classroomId}/resources/{resourceId}`                    | PUT        | Actualiza un recurso                                | `UpdateResourceResource`       | `ResourceResource` (200)             |
+|                                                   | `/api/v1/classrooms/{classroomId}/resources/{resourceId}`                    | DELETE     | Elimina un recurso                                  | -                              | (204)                                |
+| **Spaces & Resource Management - Shared Areas**   |
+|                                                   | `/api/v1/shared-area`                                                        | POST       | Crea un área compartida                             | `CreateSharedAreaResource`     | `SharedAreaResource` (201)           |
+|                                                   | `/api/v1/shared-area`                                                        | GET        | Obtiene todas las áreas compartidas                 | -                              | `SharedAreaResource[]` (200)         |
+|                                                   | `/api/v1/shared-area/{id}`                                                   | GET        | Obtiene un área compartida por ID                   | -                              | `SharedAreaResource` (200/404)       |
+|                                                   | `/api/v1/shared-area/{id}`                                                   | PUT        | Actualiza un área compartida                        | `UpdateSharedAreaResource`     | `SharedAreaResource` (200/404)       |
+|                                                   | `/api/v1/shared-area/{id}`                                                   | DELETE     | Elimina un área compartida                          | -                              | `string` (200/404)                   |
+
+## Modelos de Request/Response
+
+### Breakdown Management
+
+**CreateReportResource**
+
+```json
+{
+  "kindOfReport": "string",
+  "description": "string",
+  "resourceId": "integer",
+  "createdAt": "datetime"
+}
+```
+
+**ReportResource**
+
+```json
+{
+  "id": "integer",
+  "kindOfReport": "string",
+  "description": "string",
+  "resourceId": "integer",
+  "createdAt": "datetime",
+  "status": "string"
+}
+```
+
+### IAM - Authentication
+
+**SignUpResource**
+
+```json
+{
+  "username": "string",
+  "password": "string",
+  "role": "string"
+}
+```
+
+**SignInResource**
+
+```json
+{
+  "username": "string",
+  "password": "string"
+}
+```
+
+**AuthenticatedAccountResource**
+
+```json
+{
+  "id": "integer",
+  "username": "string",
+  "role": "string",
+  "token": "string"
+}
+```
+
+### Profiles
+
+**CreateAdminProfileResource**
+
+```json
+{
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "dni": "string",
+  "address": "string",
+  "phone": "string",
+  "username": "string",
+  "password": "string"
+}
+```
+
+**AdminProfileResource**
+
+```json
+{
+  "id": "integer",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "dni": "string",
+  "address": "string",
+  "phone": "string"
+}
+```
+
+**CreateTeacherProfileResource**
+
+```json
+{
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "dni": "string",
+  "address": "string",
+  "phone": "string",
+  "administratorId": "integer",
+  "username": "string",
+  "password": "string"
+}
+```
+
+**TeacherProfileResource**
+
+```json
+{
+  "id": "integer",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "dni": "string",
+  "address": "string",
+  "phone": "string"
+}
+```
+
+### Reservation Scheduling
+
+**CreateMeetingResource**
+
+```json
+{
+  "title": "string",
+  "description": "string",
+  "date": "DateOnly",
+  "start": "TimeOnly",
+  "end": "TimeOnly"
+}
+```
+
+**UpdateMeetingResource**
+
+```json
+{
+  "meetingId": "integer",
+  "title": "string",
+  "description": "string",
+  "date": "DateOnly",
+  "start": "TimeOnly",
+  "end": "TimeOnly",
+  "administratorId": "integer",
+  "classroomId": "integer"
+}
+```
+
+**MeetingResource**
+
+```json
+{
+  "meetingId": "integer",
+  "title": "string",
+  "description": "string",
+  "date": "DateOnly",
+  "start": "TimeOnly",
+  "end": "TimeOnly",
+  "administratorId": {
+    "administratorIdentifier": "integer"
+  },
+  "classroomId": {
+    "classroomIdentifier": "integer"
+  },
+  "teachers": [
+    {
+      "id": "integer",
+      "firstName": "string",
+      "lastName": "string"
+    }
+  ]
+}
+```
+
+### Reservations
+
+**CreateReservationResource**
+
+```json
+{
+  "title": "string",
+  "start": "datetime",
+  "end": "datetime"
+}
+```
+
+**ReservationResource**
+
+```json
+{
+  "id": "integer",
+  "start": "datetime",
+  "end": "datetime",
+  "title": "string",
+  "areaId": "integer"
+}
+```
+
+### Spaces & Resource Management
+
+**CreateClassroomResource**
+
+```json
+{
+  "name": "string",
+  "description": "string"
+}
+```
+
+**UpdateClassroomResource**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "description": "string",
+  "teacherId": "integer"
+}
+```
+
+**ClassroomResource**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "description": "string",
+  "teacherId": "integer"
+}
+```
+
+**CreateResourceResource**
+
+```json
+{
+  "name": "string",
+  "kindOfResource": "string"
+}
+```
+
+**UpdateResourceResource**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "kindOfResource": "string",
+  "classroomId": "integer"
+}
+```
+
+**ResourceResource**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "kindOfResource": "string",
+  "classroom": {
+    "id": "integer",
+    "name": "string",
+    "description": "string",
+    "teacherId": "integer"
+  }
+}
+```
+
+**CreateSharedAreaResource**
+
+```json
+{
+  "name": "string",
+  "capacity": "integer",
+  "description": "string"
+}
+```
+
+**UpdateSharedAreaResource**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "capacity": "integer",
+  "description": "string"
+}
+```
+
+**SharedAreaResource**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "capacity": "integer",
+  "description": "string"
+}
+```
+
+## Notas Importantes
+
+1. **Autenticación**: La mayoría de los endpoints requieren autenticación mediante JWT token en el header `Authorization: Bearer {token}`, excepto `/sign-in` que tiene el atributo `[AllowAnonymous]`.
+
+2. **Roles**: Existen dos roles en el sistema:
+
+   - `RoleAdmin`: Para administradores
+   - `RoleTeacher`: Para profesores
+
+3. **Validaciones de negocio**:
+
+   - Las reservaciones no pueden ser mayores a 2 horas
+   - Las reservaciones deben estar entre las 7am y 8pm
+   - Los reportes tienen estados: "in progress" y "completed"
+
+4. **Relaciones**:
+   - Un Teacher Profile pertenece a un Administrator
+   - Un Classroom pertenece a un Teacher
+   - Un Resource pertenece a un Classroom
+   - Una Meeting tiene un Administrator y un Classroom
+   - Una Reservation tiene un Teacher y un Area
 
 ### 5.2.8. Team Collaboration Insights
 
