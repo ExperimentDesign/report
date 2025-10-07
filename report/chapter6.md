@@ -65,16 +65,48 @@ Este conjunto verifica que los endpoints públicos de reservas respondan correct
 
 
 ### 6.1.3. Core Behavior-Driven Development
+Las pruebas Behavior-Driven Development (BDD) en EduSpace, realizadas con SpecFlow, permiten validar el comportamiento del sistema desde la perspectiva del usuario final, utilizando lenguaje natural para describir escenarios reales.
+
+<div align="center">
+<img src="/assets/chapter6/systemTests/US.png" alt="US" width="500">
+</div>
+
+### Inicio de sesión como profesor
+
+<div align="center">
+<img src="/assets/chapter6/systemTests/US06.png" alt="US06" width="500">
+</div>
+
+### Inicio de sesión administrador
+
+<div align="center">
+<img src="/assets/chapter6/systemTests/US07.png" alt="US07" width="500">
+</div>
+
+### Registro de información personal del docente
+
+<div align="center">
+<img src="/assets/chapter6/systemTests/US08.png" alt="US08" width="500">
+</div>
+
+### Registro de información de acceso del docente
+
+<div align="center">
+<img src="/assets/chapter6/systemTests/US09.png" alt="US09" width="500">
+</div>
+
+### Registro de espacios compartidos
+
+<div align="center">
+<img src="/assets/chapter6/systemTests/US11.png" alt="US11" width="500">
+</div>
 
 ### 6.1.4. Core System Tests
-
-## 6.1.4. Core System Tests
 
 Esta sección presenta las pruebas realizadas para validar las funcionalidades principales del sistema, como la accesibilidad, el registro, el inicio de sesión y la gestión de información. Las pruebas se ejecutaron con Selenium para simular la interacción de los usuarios y asegurar que cada flujo funcione correctamente. De esta manera, se garantizó una experiencia fluida, segura y acorde con los requisitos definidos en las historias de usuario.
 
 ---
 
-### US01
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -86,7 +118,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US02
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -98,7 +129,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US03
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -110,7 +140,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US04
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -122,7 +151,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US05
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -134,7 +162,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US06
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -146,7 +173,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US07
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -158,7 +184,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US08
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -170,7 +195,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US09
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -182,7 +206,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US10
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -194,7 +217,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US11
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -206,7 +228,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US13
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -218,7 +239,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US14
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -230,7 +250,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US15
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -242,8 +261,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US17
-
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
 | **US17** | Registrar docente encargado de un salón de clase | Como administrador, deseo registrar qué docente está encargado de cada salón de clase, para asignar responsabilidades y mejorar la gestión de los espacios. |
@@ -254,7 +271,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US18
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
@@ -266,7 +282,6 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 
 ---
 
-### US20
 
 | **ID** | **Título** | **Descripción** |
 |:------:|:-----------|:----------------|
