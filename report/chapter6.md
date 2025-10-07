@@ -71,31 +71,31 @@ Las pruebas Behavior-Driven Development (BDD) en EduSpace, realizadas con SpecFl
 <img src="/assets/chapter6/systemTests/US.png" alt="US" width="500">
 </div>
 
-### Inicio de sesión como profesor
+#### Inicio de sesión como profesor
 
 <div align="center">
 <img src="/assets/chapter6/systemTests/US06.png" alt="US06" width="500">
 </div>
 
-### Inicio de sesión administrador
+#### Inicio de sesión administrador
 
 <div align="center">
 <img src="/assets/chapter6/systemTests/US07.png" alt="US07" width="500">
 </div>
 
-### Registro de información personal del docente
+#### Registro de información personal del docente
 
 <div align="center">
 <img src="/assets/chapter6/systemTests/US08.png" alt="US08" width="500">
 </div>
 
-### Registro de información de acceso del docente
+#### Registro de información de acceso del docente
 
 <div align="center">
 <img src="/assets/chapter6/systemTests/US09.png" alt="US09" width="500">
 </div>
 
-### Registro de espacios compartidos
+#### Registro de espacios compartidos
 
 <div align="center">
 <img src="/assets/chapter6/systemTests/US11.png" alt="US11" width="500">
