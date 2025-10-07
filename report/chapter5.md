@@ -364,6 +364,562 @@ Se implementó una aplicación web funcional que permite a los usuarios interact
 
 ### 5.2.4. Acuerdo de Servicio - SaaS
 
+#### TÉRMINOS Y CONDICIONES DE SERVICIO - EDUSPACE
+
+**Última actualización:** 06 de septiembre de 2025
+
+##### 1. ACEPTACIÓN DE LOS TÉRMINOS
+
+Bienvenido a EduSpace. Estos Términos y Condiciones de Servicio (en adelante, los "Términos") constituyen un acuerdo legal vinculante entre usted (el "Usuario" o "Cliente") y EduSpace (el "Servicio", "nosotros" o "nuestra plataforma"), operado por el equipo de desarrollo Los ProDevs.
+
+Al acceder, registrarse o utilizar la plataforma EduSpace, usted acepta estar legalmente obligado por estos Términos. Si no está de acuerdo con alguna disposición de estos Términos, no deberá utilizar nuestros servicios.
+
+**Estos términos se aplican a:**
+
+- El sitio web accesible en https://experimentdesign.github.io/landing-page/
+- La aplicación web de EduSpace
+- Las aplicaciones móviles de EduSpace (Android e iOS)
+- Todos los servicios, funcionalidades y contenidos proporcionados a través de estas plataformas
+
+##### 2. DESCRIPCIÓN DEL SERVICIO
+
+EduSpace es una plataforma SaaS (Software as a Service) diseñada para optimizar la gestión integral de espacios educativos en instituciones como universidades, colegios, institutos y otras organizaciones educativas.
+
+**2.1. Funcionalidades principales:**
+
+El servicio ofrece las siguientes características:
+
+- **Gestión de Espacios Educativos:** Registro y administración de aulas, laboratorios, espacios deportivos y áreas comunes
+- **Gestión de Recursos:** Control de inventario de equipamiento y recursos disponibles en cada espacio
+- **Gestión de Personal:** Administración de datos de docentes y personal administrativo, incluyendo asignación de responsabilidades
+- **Sistema de Reservas:** Reserva y programación de espacios compartidos con validación de disponibilidad en tiempo real
+- **Gestión de Reuniones:** Programación de reuniones con invitación de participantes y notificaciones automáticas
+- **Sistema de Reportes:** Registro y seguimiento de averías e incidencias en recursos y espacios
+- **Panel de Control:** Dashboards personalizados según el rol del usuario (Administrador o Docente)
+
+**2.2. Tipos de Usuarios:**
+
+La plataforma distingue entre dos tipos de usuarios con diferentes niveles de acceso:
+
+- **Administradores:** Personal autorizado de la institución educativa con acceso completo para gestionar espacios, recursos, personal y configuraciones del sistema
+- **Docentes:** Personal docente con acceso a funcionalidades de consulta, reserva de espacios y registro de reportes
+
+**2.3. Naturaleza del Servicio:**
+
+EduSpace es proporcionado como un servicio en la nube. Nos reservamos el derecho de:
+
+- Modificar, mejorar o descontinuar características del servicio previo aviso
+- Realizar mantenimientos programados que puedan afectar temporalmente la disponibilidad
+- Actualizar la plataforma para mejorar la seguridad, funcionalidad y experiencia del usuario
+
+##### 3. REGISTRO Y CUENTAS DE USUARIO
+
+**3.1. Requisitos de Registro:**
+
+Para utilizar EduSpace, la institución educativa debe:
+
+- Proporcionar información completa, precisa y actualizada durante el proceso de registro
+- Designar un Administrador principal con correo electrónico institucional válido
+- Aceptar estos Términos y Condiciones y nuestra Política de Privacidad
+
+**3.2. Responsabilidades del Usuario:**
+
+El Usuario se compromete a:
+
+- Mantener la confidencialidad de sus credenciales de acceso (nombre de usuario y contraseña)
+- Notificar inmediatamente a EduSpace sobre cualquier uso no autorizado de su cuenta
+- Utilizar el servicio únicamente para los fines educativos y administrativos para los que fue diseñado
+- No compartir sus credenciales con terceros no autorizados
+- Actualizar su información de perfil cuando sea necesario
+
+**3.3. Prohibiciones:**
+
+Está estrictamente prohibido:
+
+- Crear cuentas utilizando información falsa o perteneciente a terceros
+- Utilizar bots, scripts o sistemas automatizados para acceder al servicio sin autorización expresa
+- Intentar acceder a áreas restringidas del sistema o a cuentas de otros usuarios
+- Realizar ingeniería inversa, descompilar o desensamblar cualquier parte del software
+
+##### 4. DERECHOS Y OBLIGACIONES DEL USUARIO
+
+**4.1. Derechos del Usuario:**
+
+Como usuario de EduSpace, usted tiene derecho a:
+
+- Acceder al servicio de acuerdo con el plan de suscripción contratado
+- Recibir soporte técnico según lo establecido en su plan
+- Exportar sus datos almacenados en la plataforma
+- Solicitar la eliminación de su cuenta y datos asociados
+- Recibir notificaciones sobre cambios sustanciales en estos Términos
+- Acceder a actualizaciones y mejoras del servicio incluidas en su plan
+
+**4.2. Obligaciones del Usuario:**
+
+El Usuario se obliga a:
+
+- Utilizar el servicio de manera responsable y ética
+- Respetar los derechos de propiedad intelectual de EduSpace y terceros
+- No utilizar el servicio para actividades ilegales, fraudulentas o que violen derechos de terceros
+- Mantener actualizada la información de contacto y facturación
+- Cumplir con las leyes de protección de datos aplicables en su jurisdicción
+- Realizar copias de seguridad periódicas de información crítica cuando sea apropiado
+- No sobrecargar intencionalmente los servidores con solicitudes excesivas
+
+**4.3. Uso Aceptable:**
+
+El Usuario acepta utilizar EduSpace exclusivamente para:
+
+- Gestión administrativa de espacios educativos de su institución
+- Coordinación de actividades académicas y administrativas legítimas
+- Comunicación profesional entre personal educativo
+- Optimización de recursos y espacios institucionales
+
+**4.4. Conductas Prohibidas:**
+
+Está prohibido utilizar EduSpace para:
+
+- Hostigar, acosar o amenazar a otros usuarios
+- Distribuir contenido ilegal, difamatorio, obsceno o inapropiado
+- Infringir derechos de propiedad intelectual de terceros
+- Realizar actividades que comprometan la seguridad del servicio
+- Suplantar la identidad de otras personas o instituciones
+- Recopilar información de otros usuarios sin su consentimiento
+
+##### 5. DERECHOS Y OBLIGACIONES DE EDUSPACE
+
+**5.1. Derechos de EduSpace:**
+
+Nos reservamos el derecho de:
+
+- Modificar o descontinuar características del servicio con previo aviso
+- Suspender o terminar cuentas que violen estos Términos
+- Monitorear el uso del servicio para detectar violaciones de seguridad o términos
+- Actualizar estos Términos según sea necesario
+- Establecer límites de uso razonables para garantizar el servicio óptimo a todos los usuarios
+
+**5.2. Obligaciones de EduSpace:**
+
+Nos comprometemos a:
+
+- Mantener la disponibilidad del servicio con un objetivo de uptime del 99.5% (excluyendo mantenimientos programados)
+- Proteger los datos de usuarios mediante medidas de seguridad apropiadas
+- Notificar a los usuarios sobre cambios significativos en el servicio
+- Proporcionar soporte técnico según el plan contratado
+- Respetar la privacidad de los usuarios conforme a nuestra Política de Privacidad
+- Mantener copias de seguridad de los datos almacenados
+- Procesar los datos personales conforme a las leyes aplicables de protección de datos
+
+**5.3. Limitaciones de Servicio:**
+
+EduSpace no garantiza:
+
+- Funcionamiento ininterrumpido o libre de errores del servicio
+- Que el servicio satisfará todos los requisitos específicos de cada institución
+- Que los resultados obtenidos serán exactos o confiables en todas las circunstancias
+- Compatibilidad con todos los dispositivos, navegadores o sistemas operativos
+
+##### 6. PRIVACIDAD Y PROTECCIÓN DE DATOS
+
+**6.1. Compromiso con la Privacidad:**
+
+EduSpace se compromete a proteger la privacidad y los datos personales de sus usuarios conforme a:
+
+- Las leyes aplicables de protección de datos (incluyendo GDPR cuando sea aplicable)
+- Nuestra Política de Privacidad detallada, disponible en el sitio web
+- Las mejores prácticas de seguridad de la industria
+
+**6.2. Datos Recopilados:**
+
+La plataforma recopila y procesa:
+
+- Datos de identificación (nombre, apellidos, DNI, correo electrónico)
+- Datos de contacto (teléfono, dirección)
+- Datos profesionales (cargo, área de trabajo, institución)
+- Datos de uso del servicio (logs de acceso, actividad en la plataforma)
+- Datos generados por el usuario (reservas, reportes, reuniones)
+
+**6.3. Uso de Datos:**
+
+Los datos se utilizan exclusivamente para:
+
+- Proporcionar y mejorar el servicio
+- Gestionar cuentas y autenticación de usuarios
+- Comunicar información relevante sobre el servicio
+- Cumplir con obligaciones legales
+- Analizar el uso del servicio para mejoras (datos anonimizados)
+
+**6.4. Derechos del Usuario sobre sus Datos:**
+
+Los usuarios tienen derecho a:
+
+- Acceder a sus datos personales almacenados
+- Rectificar datos inexactos o incompletos
+- Solicitar la eliminación de sus datos (derecho al olvido)
+- Oponerse al procesamiento de sus datos en ciertos casos
+- Solicitar la portabilidad de sus datos
+- Retirar el consentimiento cuando sea la base legal del procesamiento
+
+**6.5. Seguridad de Datos:**
+
+Implementamos medidas de seguridad incluyendo:
+
+- Encriptación de datos en tránsito (SSL/TLS)
+- Encriptación de contraseñas mediante hashing seguro
+- Controles de acceso basados en roles
+- Monitoreo de seguridad y detección de intrusiones
+- Copias de seguridad regulares
+- Auditorías de seguridad periódicas
+
+**6.6. Retención de Datos:**
+
+Los datos personales se conservarán mientras:
+
+- La cuenta esté activa
+- Sea necesario para proporcionar el servicio
+- Sea requerido por obligaciones legales
+- Existan reclamaciones legales pendientes
+
+Tras la eliminación de una cuenta, los datos serán borrados permanentemente en un plazo máximo de 90 días, excepto cuando la ley requiera su conservación.
+
+##### 7. PROPIEDAD INTELECTUAL
+
+**7.1. Propiedad de EduSpace:**
+
+Todo el contenido, diseño, código, marca, logos y materiales de EduSpace son propiedad exclusiva de Los ProDevs o sus licenciantes, y están protegidos por:
+
+- Leyes de derechos de autor
+- Leyes de marcas registradas
+- Leyes de secretos comerciales
+- Otras leyes de propiedad intelectual aplicables
+
+**7.2. Licencia de Uso:**
+
+EduSpace otorga al Usuario una licencia limitada, no exclusiva, no transferible y revocable para:
+
+- Acceder y utilizar el servicio conforme a estos Términos
+- Utilizar la plataforma únicamente para los fines educativos y administrativos establecidos
+
+Esta licencia no incluye derecho a:
+
+- Sublicenciar, vender, alquilar o transferir el acceso al servicio
+- Modificar, adaptar o crear obras derivadas del software
+- Realizar ingeniería inversa del código fuente
+- Utilizar el servicio para desarrollar productos competidores
+
+**7.3. Contenido Generado por el Usuario:**
+
+El Usuario retiene todos los derechos sobre los datos y contenido que carga en la plataforma. Sin embargo, otorga a EduSpace una licencia limitada para:
+
+- Almacenar y procesar dicho contenido para proporcionar el servicio
+- Realizar copias de seguridad
+- Realizar análisis agregados y anonimizados para mejorar el servicio
+
+**7.4. Marca EduSpace:**
+
+El nombre "EduSpace", el logotipo y otras marcas son propiedad de Los ProDevs. No se permite su uso sin autorización escrita previa.
+
+##### 8. PLANES DE SUSCRIPCIÓN Y FACTURACIÓN
+
+**8.1. Modelos de Suscripción:**
+
+EduSpace ofrece diferentes planes de suscripción adaptados a las necesidades de las instituciones:
+
+- **Plan Básico:** Para instituciones pequeñas con infraestructura limitada
+- **Plan Premium:** Para instituciones grandes con infraestructuras complejas y necesidades avanzadas
+
+Los detalles específicos de cada plan (funcionalidades, límites de uso, precio) están disponibles en nuestra página de precios.
+
+**8.2. Facturación y Pagos:**
+
+- Las suscripciones se facturan de forma mensual o anual según el plan seleccionado
+- Los pagos deben realizarse por adelantado
+- Las tarifas están sujetas a cambios con previo aviso de 30 días
+- Los métodos de pago aceptados incluyen: tarjetas de crédito, débito y transferencia bancaria
+- Las facturas se enviarán al correo electrónico de facturación registrado
+
+**8.3. Renovación Automática:**
+
+Las suscripciones se renuevan automáticamente al final de cada período de facturación, a menos que:
+
+- El Usuario cancele la suscripción antes del período de renovación
+- EduSpace suspenda o termine la cuenta
+
+**8.4. Política de Reembolsos:**
+
+- Los pagos son generalmente no reembolsables
+- En caso de problemas técnicos graves que impidan el uso del servicio, se evaluará cada caso individualmente
+- Los reembolsos, si se aprueban, se procesarán dentro de 30 días hábiles
+
+**8.5. Impuestos:**
+
+Los precios indicados pueden no incluir impuestos aplicables (IVA, IGV u otros). El Usuario es responsable de todos los impuestos asociados con la suscripción, excepto aquellos basados en los ingresos de EduSpace.
+
+**8.6. Morosidad:**
+
+- El incumplimiento en los pagos puede resultar en la suspensión inmediata del servicio
+- Se aplicará un período de gracia de 15 días antes de la suspensión
+- Tras 60 días de morosidad, la cuenta y los datos asociados pueden ser eliminados permanentemente
+
+##### 9. CANCELACIÓN Y TERMINACIÓN DEL SERVICIO
+
+**9.1. Cancelación por el Usuario:**
+
+El Usuario puede cancelar su suscripción en cualquier momento:
+
+- Desde la configuración de su cuenta
+- Contactando al soporte de EduSpace
+- La cancelación será efectiva al final del período de facturación actual
+- No se realizarán reembolsos por el tiempo restante del período pagado
+
+**9.2. Terminación por EduSpace:**
+
+Nos reservamos el derecho de suspender o terminar cuentas inmediatamente, sin previo aviso, en caso de:
+
+- Violación de estos Términos y Condiciones
+- Actividad fraudulenta o ilegal
+- Uso del servicio que ponga en riesgo la seguridad o integridad de la plataforma
+- Falta de pago persistente
+- Solicitud de autoridades gubernamentales o cumplimiento de leyes
+
+**9.3. Efectos de la Terminación:**
+
+Al terminar la relación:
+
+- El acceso del Usuario al servicio cesará inmediatamente
+- Los datos del Usuario serán eliminados conforme a nuestra política de retención de datos
+- El Usuario tendrá 30 días para exportar sus datos antes de la eliminación permanente
+- Todas las obligaciones financieras pendientes se mantendrán vigentes
+
+**9.4. Supervivencia de Cláusulas:**
+
+Las siguientes secciones sobrevivirán a la terminación de este acuerdo:
+
+- Propiedad Intelectual
+- Limitaciones de Responsabilidad
+- Indemnización
+- Ley Aplicable y Jurisdicción
+
+##### 10. LIMITACIÓN DE RESPONSABILIDAD
+
+**10.1. Exclusión de Garantías:**
+
+EL SERVICIO SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD", SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A:
+
+- Garantías de comerciabilidad
+- Adecuación para un propósito particular
+- No infracción de derechos de terceros
+- Disponibilidad ininterrumpida o libre de errores
+- Exactitud o confiabilidad de los resultados
+
+**10.2. Limitación de Responsabilidad:**
+
+EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, EDUSPACE Y SUS DESARROLLADORES NO SERÁN RESPONSABLES POR:
+
+- Daños indirectos, incidentales, especiales, consecuentes o punitivos
+- Pérdida de beneficios, ingresos, datos o uso del servicio
+- Interrupción del negocio o pérdida de oportunidades
+- Daños resultantes de errores, omisiones o inexactitudes en el servicio
+- Daños causados por virus, malware o elementos dañinos
+- Acciones de terceros o usuarios del servicio
+
+La responsabilidad total de EduSpace, por cualquier reclamación relacionada con el servicio, no excederá el monto pagado por el Usuario en los 12 meses anteriores a la reclamación.
+
+**10.3. Responsabilidad del Usuario:**
+
+El Usuario es el único responsable de:
+
+- El uso que haga del servicio
+- La veracidad y legalidad de los datos que cargue
+- El cumplimiento de las leyes aplicables en su jurisdicción
+- La seguridad de sus propias credenciales de acceso
+- Las decisiones tomadas basándose en la información del servicio
+
+**10.4. Fuerza Mayor:**
+
+EduSpace no será responsable por incumplimientos causados por circunstancias fuera de nuestro control razonable, incluyendo:
+
+- Desastres naturales
+- Guerras, terrorismo o disturbios civiles
+- Fallos en infraestructuras de terceros (proveedores de hosting, internet, etc.)
+- Ataques cibernéticos masivos
+- Cambios en legislación que impidan la operación del servicio
+- Pandemias u otras emergencias sanitarias
+
+##### 11. INDEMNIZACIÓN
+
+El Usuario acepta indemnizar, defender y mantener indemne a EduSpace, sus desarrolladores, empleados, contratistas y afiliados de y contra todas las reclamaciones, responsabilidades, daños, pérdidas y gastos (incluyendo honorarios legales razonables) que surjan de o estén relacionados con:
+
+- El uso o mal uso del servicio por parte del Usuario
+- La violación de estos Términos por parte del Usuario
+- La violación de derechos de terceros por parte del Usuario
+- Contenido o datos cargados por el Usuario en la plataforma
+- Acciones tomadas basándose en información del servicio
+
+Esta obligación de indemnización sobrevivirá a la terminación de este acuerdo.
+
+##### 12. MODIFICACIONES A LOS TÉRMINOS
+
+**12.1. Derecho de Modificación:**
+
+EduSpace se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios pueden realizarse por razones incluyendo, pero no limitadas a:
+
+- Cambios en la funcionalidad del servicio
+- Requisitos legales o regulatorios
+- Mejoras en la seguridad
+- Mejores prácticas de la industria
+
+**12.2. Notificación de Cambios:**
+
+Los cambios sustanciales serán notificados a los usuarios mediante:
+
+- Correo electrónico a la dirección registrada
+- Notificación destacada en la plataforma
+- Actualización de la fecha de "Última actualización" en este documento
+
+La notificación se realizará con al menos 30 días de anticipación para cambios significativos.
+
+**12.3. Aceptación de Cambios:**
+
+El uso continuado del servicio después de la fecha de entrada en vigor de los cambios constituye la aceptación de los nuevos términos. Si no está de acuerdo con los cambios, deberá:
+
+- Cesar el uso del servicio
+- Cancelar su suscripción antes de la fecha de entrada en vigor
+
+##### 13. RESOLUCIÓN DE DISPUTAS
+
+**13.1. Negociación Amistosa:**
+
+En caso de cualquier disputa, controversia o reclamación relacionada con estos Términos o el uso del servicio, las partes acuerdan intentar resolver el conflicto mediante negociación de buena fe durante un período mínimo de 30 días.
+
+**13.2. Arbitraje:**
+
+Si la negociación no resuelve la disputa, las partes acuerdan someter el asunto a arbitraje vinculante conforme a las reglas de arbitraje aplicables en la jurisdicción correspondiente.
+
+**13.3. Acciones Legales Individuales:**
+
+El Usuario acepta que cualquier acción legal debe presentarse en su capacidad individual y no como parte de una acción colectiva o representativa.
+
+##### 14. DISPOSICIONES GENERALES
+
+**14.1. Acuerdo Completo:**
+
+Estos Términos, junto con la Política de Privacidad y cualquier otro documento legal referenciado, constituyen el acuerdo completo entre el Usuario y EduSpace, y reemplazan todos los acuerdos anteriores, ya sean escritos u orales.
+
+**14.2. Divisibilidad:**
+
+Si alguna disposición de estos Términos se considera inválida o inaplicable por un tribunal competente, las disposiciones restantes permanecerán en pleno vigor y efecto.
+
+**14.3. Renuncia:**
+
+La falta de EduSpace para hacer cumplir cualquier derecho o disposición de estos Términos no constituirá una renuncia a ese derecho o disposición.
+
+**14.4. Cesión:**
+
+El Usuario no puede ceder o transferir estos Términos ni sus derechos u obligaciones sin el consentimiento previo por escrito de EduSpace. EduSpace puede ceder estos Términos sin restricción.
+
+**14.5. Relación de las Partes:**
+
+Estos Términos no crean ninguna asociación, empresa conjunta, relación de empleo o agencia entre el Usuario y EduSpace.
+
+**14.6. Avisos:**
+
+Todos los avisos requeridos bajo estos Términos deben enviarse por escrito a:
+
+- Para el Usuario: al correo electrónico registrado en la cuenta
+
+**14.7. Idioma:**
+
+Estos Términos están redactados en español. En caso de traducción a otros idiomas, la versión en español prevalecerá en caso de conflicto.
+
+##### 15. LEY APLICABLE Y JURISDICCIÓN
+
+**15.1. Ley Aplicable:**
+
+Estos Términos se regirán e interpretarán de acuerdo con las leyes de la República del Perú, sin dar efecto a sus disposiciones sobre conflictos de leyes.
+
+**15.2. Jurisdicción:**
+
+Las partes se someten irrevocablemente a la jurisdicción exclusiva de los tribunales de Lima, Perú, para la resolución de cualquier disputa relacionada con estos Términos o el uso del servicio.
+
+**15.3. Cumplimiento Legal:**
+
+EduSpace se compromete a cumplir con:
+
+- La Ley N° 29733 - Ley de Protección de Datos Personales del Perú
+- El Reglamento General de Protección de Datos (GDPR) cuando sea aplicable
+- Otras leyes aplicables en las jurisdicciones donde operamos
+
+##### 16. PRINCIPIOS ÉTICOS Y PROFESIONALES
+
+En cumplimiento con los códigos de ética de ACM/IEEE y del Colegio de Ingenieros del Perú (CIP), EduSpace se compromete a:
+
+**16.1. Responsabilidad Profesional:**
+
+- Desarrollar software seguro, confiable y de alta calidad
+- Mantener estándares profesionales en el diseño, implementación y mantenimiento del servicio
+- Actualizar y mejorar continuamente nuestras prácticas de desarrollo
+
+**16.2. Interés Público:**
+
+- Priorizar el bienestar público y la seguridad en todas nuestras decisiones
+- Contribuir positivamente al sector educativo
+- Promover la accesibilidad y la inclusión en el diseño de nuestro servicio
+
+**16.3. Integridad y Honestidad:**
+
+- Ser transparentes sobre las capacidades y limitaciones del servicio
+- Comunicar claramente riesgos y problemas a los usuarios
+- Actuar con honestidad en todas nuestras interacciones comerciales
+
+**16.4. Confidencialidad:**
+
+- Respetar la confidencialidad de la información de los usuarios
+- No divulgar información confidencial sin autorización
+- Proteger los datos con medidas de seguridad apropiadas
+
+**16.5. Competencia Profesional:**
+
+- Mantener y mejorar nuestras competencias técnicas
+- Aceptar únicamente trabajos para los que estemos calificados
+- Mantenernos actualizados con los avances tecnológicos y mejores prácticas
+
+**16.6. No Discriminación:**
+
+- Diseñar el servicio para ser accesible a personas de diversos orígenes
+- No discriminar por razones de raza, religión, género, edad, discapacidad u orientación sexual
+- Promover la diversidad e inclusión en nuestra plataforma
+
+**16.7. Sostenibilidad:**
+
+- Considerar el impacto ambiental de nuestras operaciones
+- Optimizar el uso de recursos computacionales
+- Promover prácticas sostenibles en la gestión de espacios educativos
+
+##### 17. CONTACTO Y SOPORTE
+
+Para cualquier pregunta, inquietud o solicitud relacionada con estos Términos y Condiciones o el servicio EduSpace, puede contactarnos a través de:
+
+**Sitio web:** https://experimentdesign.github.io/landing-page/
+
+**Horario de atención:** Lunes a Viernes, 9:00 AM - 6:00 PM (Hora de Perú)
+
+**Soporte técnico:** Disponible según el plan de suscripción contratado
+
+---
+
+**Declaración de Conformidad:**
+
+Estos Términos y Condiciones han sido elaborados conforme a:
+
+- El Código de Ética y Conducta Profesional de ACM (Association for Computing Machinery)
+- El Código de Ética de Ingeniería de Software de IEEE-CS/ACM
+- El Código de Ética del Colegio de Ingenieros del Perú (CIP)
+- Las mejores prácticas de la industria de SaaS
+- Las leyes de protección de datos aplicables
+
+Al aceptar estos términos, usted reconoce que ha leído, comprendido y acepta estar legalmente obligado por todas las disposiciones aquí establecidas.
+
 ### 5.2.5. Implemented Native-Mobile Application Evidence
 
 Se implementó una aplicación Mobile funcional que permite a los usuarios de android e IOS interactuar con la plataforma y acceder a sus funcionalidades principales.
