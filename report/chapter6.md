@@ -53,15 +53,9 @@ Este conjunto verifica que los endpoints públicos de reservas respondan correct
 
 **3.Pruebas de integración para Meeting controller**
 
+El MeetingsEndpointsTests valida los endpoints de reuniones usando un ApiFactory (WebApplicationFactory) y HttpClient sobre un servidor en memoria. Cubre los flujos principales del controlador: creación de reuniones (respuesta 201/OK y forma del recurso), validaciones de campos requeridos (400), obtención/listado, actualización y eliminación. Para aislar el comportamiento del controlador se inyectan servicios falsos (fakes) de comandos/queries, permitiendo afirmar códigos de estado y el shape del JSON sin depender de la capa de datos.
+
 ![Foto](/assets/chapter6/IntegralTests/3.png) 
-
-**4.**
-
-![Foto](/assets/chapter6/IntegralTests/4.png) 
-
-**5.**
-
-![Foto](/assets/chapter6/IntegralTests/5.png) 
 
 
 ### 6.1.3. Core Behavior-Driven Development
