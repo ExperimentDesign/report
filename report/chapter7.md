@@ -23,6 +23,8 @@ principales que utilizamos son:
 
 ### 7.1.2. Build & Test Suite Pipeline Components
 
+Para garantizar la calidad y confiabilidad del software, hemos implementado una pipeline de construcción y pruebas automatizada que 
+integra múltiples componentes especializados. Esta pipeline ejecuta secuencialmente diferentes tipos de pruebas y validaciones, asegurando que cada cambio en el código cumpla con los estándares establecidos antes de su despliegue.
 
 ## 7.2. Continuous Delivery
 
