@@ -30,7 +30,7 @@ Producto:
 | Luciana Celeste Sanchez Silva      | U202215979 |
 | Alejandro Franklin Mendoza Vergara | U202312343 |
 
-Octubre 2025
+Septiembre 2025
 
 </div>
 
