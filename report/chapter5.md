@@ -187,6 +187,26 @@ La landing page del proyecto se ha desplegado utilizando GitHub Pages, lo que pe
 
 Ruta de referencia: https://experimentdesign.github.io/landing-page/
 
+#### Web Application Deployment
+
+la aplicación web del proyecto se ha desplegado utilizando netlify, lo que permite alojar el sitio web de manera gratuita y sencilla directamente desde el repositorio de GitHub:
+
+![](../assets/chapter5/web-app-deployment.png)
+
+Ruta de referencia: https://eduspacewebapp.netlify.app/
+
+#### Backend Deployment
+
+El backend del proyecto se ha desplegado utilizando Railway, lo que permite alojar el sitio web de manera gratuita y sencilla directamente desde el repositorio de GitHub:
+
+![](../assets/chapter5/backend-deployment.png)
+
+#### Database Deployment
+
+La base de datos del proyecto se ha desplegado utilizando Aiven, lo que permite crear un servicio de base de datos gestionado en la nube:
+
+![](../assets/chapter5/database-deployment.png)
+
 ## 5.2. Product Implementation & Deployment
 
 ### 5.2.1. Sprint Backlogs
