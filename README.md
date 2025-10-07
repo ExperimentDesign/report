@@ -16,9 +16,9 @@ NRC: 7505
 
 Profesor: Noriega Melendez, Julio Manuel
 
-“Informe de TB1”
+“Informe de TP”
 
-Startup:
+Startup: EduSpace
 
 Producto:
 
@@ -30,25 +30,16 @@ Producto:
 | Luciana Celeste Sanchez Silva      | U202215979 |
 | Alejandro Franklin Mendoza Vergara | U202312343 |
 
-Septiembre 2025
+Octubre 2025
 
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 # **Registro de Versiones del Informe**
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| ------- | ----- | ----- | --------------------------- |
-| 1.0     |       |       |                             |
+| Versión | Fecha | Autor              | Descripción de modificación                                                                                                                                                                                          |
+| ------- | ----- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | 17/09 | Equipo de Eduspace | Se comienza el proyecto con el Capítulo I: Introducción, Capítulo II: Requirements Elicitation & Analysis, Capítulo III: Requirements Specification, Capítulo IV: Product Design, Capítulo V: Product Implementation |
+| 2.0     | 02/10 | Equipo de Eduspace | Se agregó el Capítulo VI: Product Verification & Validation y Capítulo VII: DevOps Practices                                                                                                                         |
 
 # **Project Report Collaboration Insights**
 
@@ -64,18 +55,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de
 conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro
 del ABET – EAC - Student Outcome 4.</p>
 
-<table style="border-collapse: collapse; width: 100%; border: 1px solid black;">
-  <thead>
-    <tr style="border-bottom: 1px solid black;">
-      <th style="border-right: 1px solid black;">Criterio Específico</th>
-      <th style="border-right: 1px solid black;">Acciones Realizadas</th>
-      <th>Conclusiones</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Contenido eliminado para nuevo proyecto -->
-  </tbody>
-</table>
+| Criterio Específico                                                                                                                                                               | Acciones Realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Conclusiones                                                                                                                                                                                                                                                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Student Outcome 4 – Proyecto de gestión de espacios educativos**<br><br>**Criterio 1** – Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software. | **Integrante: Andres Torres**<br>Acción realizada: Aplicó buenas prácticas en el control de versiones (uso de ramas y commits descriptivos) para asegurar trazabilidad y responsabilidad en el desarrollo.<br><br>**Integrante: Piero Velarde**<br>Acción realizada: Documentó de manera clara la API del backend para que otros desarrolladores puedan mantener el sistema de manera ética y profesional.<br><br>**Integrante: Marllely Arias**<br>Acción realizada: Implementó validaciones de datos en el frontend para garantizar que la información de los usuarios no sea manipulada de forma indebida.<br><br>**Integrante: Luciana Sanchez**<br>Acción realizada: Respetó las licencias de librerías y frameworks utilizados, evitando el uso de software no autorizado.<br><br>**Integrante: Alejandro Mendoza**<br>Acción realizada: Realizó pruebas de seguridad en la aplicación móvil para proteger la información sensible de los usuarios.                                                        | El equipo demostró responsabilidad ética y profesional mediante el cumplimiento de estándares de desarrollo seguro, documentación transparente, uso adecuado de recursos de terceros y compromiso con la protección de los datos de los usuarios. Esto asegura que el sistema de gestión de espacios educativos se construya de forma íntegra y confiable. |
+| **Criterio 2** – Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales.          | **Integrante: Andres Torres**<br>Acción realizada: Analizó el impacto social positivo del sistema, al permitir un uso más eficiente de los espacios educativos y mejorar la experiencia de estudiantes y docentes.<br><br>**Integrante: Piero Velarde**<br>Acción realizada: Evaluó el impacto económico, diseñando la solución de forma que reduzca costos de operación en la gestión de reservas y mantenimiento de aulas.<br><br>**Integrante: Marllely Arias**<br>Acción realizada: Consideró la accesibilidad en la interfaz, asegurando que el software sea inclusivo y usable por un público diverso.<br><br>**Integrante: Luciana Sanchez**<br>Acción realizada: Valoró el impacto ambiental al digitalizar procesos de reserva, reduciendo el uso de papel y trámites físicos.<br><br>**Integrante: Alejandro Mendoza**<br>Acción realizada: Revisó la escalabilidad y la capacidad de adaptación del sistema a nivel global, considerando su posible aplicación en distintas instituciones educativas. | El equipo emitió juicios informados sobre el alcance del sistema, valorando no solo la funcionalidad técnica, sino también su contribución social, económica y ambiental. El software desarrollado muestra un impacto positivo al promover eficiencia, accesibilidad, sostenibilidad y posibilidades de adaptación a diferentes contextos educativos.      |
 
 # **Contenido**
 
@@ -173,11 +156,32 @@ del ABET – EAC - Student Outcome 4.</p>
   - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
   - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
   - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-  - [5.2.4. Implemented Native-Mobile Application Evidence](#524-implemented-native-mobile-application-evidence)
-  - [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#525-implemented-restful-api-andor-serverless-backend-evidence)
-  - [5.2.6. RESTful API Documentation](#526-restful-api-documentation)
-  - [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
+  - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
+  - [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
+  - [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
+  - [5.2.7. RESTful API Documentation](#527-restful-api-documentation)
+  - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
 - [5.3. Video About-the-Product](#53-video-about-the-product)
+
+## [Capítulo VI: Product Verification & Validation](#capitulo-vi-product-verification--validation)
+
+- [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+  - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+  - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+  - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+  - [6.1.4. Core System Tests](#614-core-system-tests)
+
+## [Capítulo VII: DevOps Practices](#capitulo-vii-devops-practices)
+
+- [7.1. Continuous Integration](#71-continuous-integration)
+  - [7.1.1. Tools and Practices](#711-tools-and-practices)
+  - [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+- [7.2. Continuous Delivery](#72-continuous-delivery)
+  - [7.2.1. Tools and Practices](#721-tools-and-practices)
+  - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+- [7.3. Continuous Deployment](#73-continuous-deployment)
+  - [7.3.1. Tools and Practices](#731-tools-and-practices)
+  - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
 
 ### [Conclusiones](/report/chapter5/chapter-5.md#conclusiones)
 
