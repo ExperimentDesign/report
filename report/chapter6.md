@@ -63,6 +63,11 @@ Las dos pruebas de integración verifican el comportamiento real del MeetingsCon
 
 ![Foto](/assets/chapter6/IntegralTests/3.png) 
 
+**4.Pruebas de integración para Classrooms controller**
+
+Las dos pruebas de integración ejercitan el ClassroomsController a través del pipeline HTTP real con la API levantada y base SQLite en memoria: la primera llama GET /api/v1/Classrooms sobre una BD vacía y valida que responda 200 OK con un arreglo vacío (no hay aulas registradas), y la segunda consulta GET /api/v1/Classrooms/999999 para un id inexistente y confirma que el endpoint devuelva 404 NotFound; en conjunto, aseguran que el listado sin datos y la búsqueda por id inexistente estén manejados correctamente de extremo a extremo
+
+![Foto](/assets/chapter6/IntegralTests/4.png) 
 
 ### 6.1.3. Core Behavior-Driven Development
 Las pruebas Behavior-Driven Development (BDD) en EduSpace, realizadas con SpecFlow, permiten validar el comportamiento del sistema desde la perspectiva del usuario final, utilizando lenguaje natural para describir escenarios reales.
