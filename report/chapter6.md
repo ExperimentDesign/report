@@ -69,6 +69,18 @@ Las dos pruebas de integración ejercitan el ClassroomsController a través del 
 
 ![Foto](/assets/chapter6/IntegralTests/4.png) 
 
+**5.Pruebas de integración para SharedArea controller**
+
+Las dos pruebas de integración ejercitan el SharedAreaController a través del pipeline HTTP real con base SQLite en memoria: la primera invoca GET /api/v1/shared-area sobre una BD vacía y verifica que la API responda 200 OK con un arreglo vacío (no hay áreas compartidas registradas); la segunda consulta GET /api/v1/shared-area/999999 para un id inexistente y comprueba que el endpoint devuelva 404 NotFound. En conjunto, validan de extremo a extremo que el listado sin datos y la búsqueda por id no encontrado estén correctamente manejados.
+
+![Foto](/assets/chapter6/IntegralTests/5.png) 
+
+**6.Pruebas de integración para Resource controller**
+
+Estas dos pruebas de integración validan el ResourcesController de extremo a extremo usando la API real con SQLite en memoria: la primera invoca GET /api/v1/classrooms/1/resources sobre una BD vacía y confirma que responde 200 OK con un arreglo vacío (sin recursos en ese aula); la segunda consulta GET /api/v1/classrooms/999/resources/12345 y verifica que devuelva 404 NotFound cuando el recurso no existe o no pertenece al aula indicada. En conjunto, aseguran el manejo correcto del listado por aula sin datos y la verificación de pertenencia classroomId → resourceId, así como las respuestas HTTP esperadas.
+
+![Foto](/assets/chapter6/IntegralTests/6.png) 
+
 ### 6.1.3. Core Behavior-Driven Development
 Las pruebas Behavior-Driven Development (BDD) en EduSpace, realizadas con SpecFlow, permiten validar el comportamiento del sistema desde la perspectiva del usuario final, utilizando lenguaje natural para describir escenarios reales.
 
