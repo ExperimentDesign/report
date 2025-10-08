@@ -59,7 +59,7 @@ Este conjunto verifica que los endpoints públicos de reservas respondan correct
 
 **3.Pruebas de integración para Meeting controller**
 
-El MeetingsEndpointsTests valida los endpoints de reuniones usando un ApiFactory (WebApplicationFactory) y HttpClient sobre un servidor en memoria. Cubre los flujos principales del controlador: creación de reuniones (respuesta 201/OK y forma del recurso), validaciones de campos requeridos (400), obtención/listado, actualización y eliminación. Para aislar el comportamiento del controlador se inyectan servicios falsos (fakes) de comandos/queries, permitiendo afirmar códigos de estado y el shape del JSON sin depender de la capa de datos.
+Las dos pruebas de integración verifican el comportamiento real del MeetingsController a través de la API en ejecución con base de datos SQLite en memoria: la primera llama GET /api/v1/meetings sobre una BD vacía y confirma que el servicio responde 200 OK con un arreglo vacío (no hay reuniones registradas), y la segunda intenta eliminar una reunión inexistente con DELETE /api/v1/meetings/999999, comprobando que el endpoint devuelva 404 NotFound; en conjunto, aseguran que el listado sin datos y el borrado con id inválido estén correctamente gestionados de extremo a extremo.
 
 ![Foto](/assets/chapter6/IntegralTests/3.png) 
 
