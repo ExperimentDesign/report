@@ -15,11 +15,10 @@ por Pruebas (TDD) para asegurar que nuestras soluciones no solo cumplan con los 
 cliente, sino que también mantengan altos niveles de calidad técnica. Algunas de las herramientas
 principales que utilizamos son:
 
-| **Herramienta** | **Tipo** | **Descripción** | **Propósito** |
-|------------------|----------|-----------------|----------------|
-| **J Unit** | Herramienta para pruebas (TDD) | Es un programa que ayuda a probar pequeñas partes de aplicaciones en Java. | Hace más fácil crear y ejecutar pruebas para asegurarse de que las funciones de los componentes funcionen como deberían. |
-| **Mockito** | Herramienta de simulaciones (TDD) | Permite crear versiones simuladas de otros componentes para hacer pruebas sin usar las versiones reales. | Imitar cómo se comportan objetos externos, lo cual es útil para hacer pruebas de forma efectiva. |
-
+| **Herramienta** | **Tipo** | **Descripción**                                                                                          | **Propósito** |
+|-----------------|----------|----------------------------------------------------------------------------------------------------------|----------------|
+| **X Unit**      | Herramienta para pruebas (TDD) | Es un programa que ayuda a probar pequeñas partes de aplicaciones en C#.                                 | Hace más fácil crear y ejecutar pruebas para asegurarse de que las funciones de los componentes funcionen como deberían. |
+| **Cucumber**    | Herramienta para pruebas (BDD) | Permite escribir pruebas en un lenguaje sencillo que todos pueden entender.                              | Facilita la colaboración entre desarrolladores y no desarrolladores al definir cómo debería comportarse el software. |
 
 ### 7.1.2. Build & Test Suite Pipeline Components
 
@@ -126,10 +125,10 @@ confiable en producción.
 configurar workflows que incluyen la ejecución de pruebas y el despliegue automático a
 diferentes entornos (desarrollo, staging, producción).
 
-* Railway: Esta plataforma se encargará del despliegue automatizado del backend desarrollado en Spring Boot, 
+* Railway: Esta plataforma se encargará del despliegue automatizado del backend desarrollado en .net, 
 ofreciendo integración continua, escalabilidad y herramientas de monitoreo que facilitan la gestión del entorno de ejecución.
 
-* Netlify: Para el frontend desarrollado en Angular, Netlify permite realizar despliegues automáticos desde el repositorio, 
+* Netlify: Para el frontend desarrollado en Vue, Netlify permite realizar despliegues automáticos desde el repositorio, 
 garantizando velocidad, seguridad y soporte para configuraciones personalizadas de dominio y rutas.
 
 * Aiven: Como plataforma para la base de datos MySQL, Aiven ofrece una gestión completamente automatizada con soporte para copias de seguridad, alta disponibilidad y escalabilidad,
@@ -156,7 +155,7 @@ recuperación de fallos
 Este apartado describe los componentes que forman parte del pipeline de despliegue a producción para la base de datos MySQL gestionada en Aiven.
 
 1. Gestión de Migraciones Automáticas:
-Al realizar cambios en el modelo de datos del backend (Spring Boot), las migraciones se aplican automáticamente en la base de datos alojada en Aiven. Spring Boot sincroniza las modificaciones de las entidades con la estructura de la base de datos, garantizando coherencia entre el código y los datos.
+Al realizar cambios en el modelo de datos del backend , las migraciones se aplican automáticamente en la base de datos alojada en Aiven. Se sincroniza las modificaciones de las entidades con la estructura de la base de datos, garantizando coherencia entre el código y los datos.
 
 2. Backup y Restauración Automática:
 Aiven crea copias de seguridad automáticas de la base de datos antes de cada actualización crítica. Esto permite restaurar el estado anterior de la base de datos en caso de fallos durante la migración o el despliegue, evitando pérdida de información.
@@ -170,10 +169,10 @@ Tras las migraciones, se ejecutan pruebas automatizadas de validación de esquem
 5. Despliegue Continuo:
 Una vez completadas y validadas las migraciones, los cambios se aplican automáticamente en el entorno de producción de Aiven, asegurando un flujo de trabajo continuo y sin interrupciones.
 
-**Componentes del Pipeline del Backend (Railway para Spring Boot):**
+**Componentes del Pipeline del Backend (Railway para .Net):**
 
 1. Integración Continua:
-Cuando se realiza un commit en la rama principal o de desarrollo, Railway detecta los cambios y construye automáticamente el backend desarrollado en Spring Boot utilizando Maven.
+Cuando se realiza un commit en la rama principal o de desarrollo, Railway detecta los cambios y construye automáticamente el backend desarrollado en .net.
 
 2. Construcción y Despliegue Automatizado:
 Railway genera la imagen del backend, instala las dependencias necesarias y realiza el despliegue de forma automatizada en su infraestructura de ejecución, garantizando coherencia entre los entornos de desarrollo y producción.
@@ -187,10 +186,10 @@ Una vez desplegada la aplicación, Railway ofrece herramientas de monitoreo de l
 5. Despliegue Continuo:
 Cada nuevo cambio validado se despliega automáticamente en el entorno de producción, manteniendo un ciclo de integración y entrega continua (CI/CD).
 
-**Componentes del Pipeline del Frontend (Netlify para Angular):**
+**Componentes del Pipeline del Frontend (Netlify para Vue):**
 
 1. Compilación del Frontend:
-Al detectar un nuevo commit en el repositorio, Netlify ejecuta automáticamente el proceso de compilación del proyecto Angular en modo producción, optimizando los recursos para su despliegue.
+Al detectar un nuevo commit en el repositorio, Netlify ejecuta automáticamente el proceso de compilación del proyecto Vue en modo producción, optimizando los recursos para su despliegue.
 
 2. Ejecución de Pruebas Automatizadas:
 Antes del despliegue, Netlify puede ejecutar pruebas unitarias y de integración continua (E2E) para garantizar que la interfaz funciona correctamente y que no existen errores en el build.
