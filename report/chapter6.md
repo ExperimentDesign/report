@@ -307,3 +307,32 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 <div align="center">
 <img src="/assets/chapter6/systemTests/us_20.png" alt="US20" width="500">
 </div>
+
+## 6.2. Static testing & Verification
+### 6.2.1. Static Code Analysis
+<!--Marllely-->
+#### 6.2.1.1. Coding standard & Code conventions.
+<!--Marllely-->
+
+#### 6.2.1.2. Code Quality & Code Security.
+<!--Luciana-->
+### 6.2.2. Reviews
+<!--Luciana-->
+
+## 6.3. Validation Interviews.
+### 6.3.1. Diseño de Entrevistas.
+<!--Luciana-->
+### 6.3.2. Registro de Entrevistas.
+<!--Luciana y Marllely-->
+### 6.3.3. Evaluacionessegún heurísticas.
+<!--Marllely-->
+## 6.4. Auditoría de Experiencias de Usuario.
+### 6.4.1. Auditoría realizada. <!--Luciana-->
+#### 6.4.1.1. Información del grupo auditado.
+#### 6.4.1.2. Cronograma de auditoría realizada.
+#### 6.4.1.3. Contenido de auditoría realizada.
+### 6.4.2. Auditoría recibida. <!--Marllely-->
+#### 6.4.2.1. Información del grupo auditor.
+#### 6.4.2.2. Cronograma de auditoría recibida.
+#### 6.4.2.3. Contenido de auditoría recibida.
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
