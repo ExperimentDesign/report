@@ -315,14 +315,171 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 <!--Marllely-->
 
 #### 6.2.1.2. Code Quality & Code Security.
-<!--Luciana-->
+
+La calidad del código y la seguridad son pilares esenciales en el desarrollo de Eduspace, ya que la plataforma gestiona información sensible relacionada con docentes, instituciones educativas y procesos académicos. Mantener un código limpio, estandarizado y seguro garantiza la confiabilidad del sistema y la protección de los datos institucionales.
+
+**Calidad del Código** La calidad del código en Eduspace se evalúa mediante métricas objetivas que permiten identificar la mantenibilidad, legibilidad y eficiencia del software.
+Entre las métricas más relevantes se consideran:
+
+- Cobertura de pruebas: porcentaje de código cubierto por pruebas unitarias y de integración, asegurando el correcto funcionamiento de los módulos desarrollados.
+
+- Complejidad ciclomática: análisis de la cantidad de caminos lógicos dentro del código, con el objetivo de reducir la complejidad y mejorar la mantenibilidad.
+
+- Duplicación de código y comentarios: detección y eliminación de redundancias que dificultan la lectura y el mantenimiento.
+
+Para este propósito, se utiliza SonarQube, una herramienta de análisis continuo de calidad que examina el código de los repositorios de Eduspace y genera reportes automáticos sobre defectos, malas prácticas o violaciones de estándares.
+Esto permite al equipo de desarrollo detectar tempranamente posibles problemas y realizar acciones correctivas antes de que el código sea integrado a las ramas principales del proyecto.
+
+![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_urtf8Y2o-IfQrkYlzXlJ0ddz3ux39mRG9q_plNf93K8NVM1S4DWN6oTYcgENfW5wH0E&usqp=CAU)
+
+Asimismo, se promueve el cumplimiento de las convenciones de codificación definidas en el proyecto, basadas en guías oficiales para asegurar un estilo uniforme en todo el código fuente, facilitando la colaboración y reduciendo los errores en futuras implementaciones.
+
+**Seguridad del Código** La seguridad en el código es crítica para Eduspace, debido al manejo de datos institucionales y académicos. El equipo adopta prácticas de codificación segura para prevenir vulnerabilidades comunes como:
+
+- Inyección SQL (SQL Injection).
+
+- Cross-Site Scripting (XSS).
+
+- Manejo inadecuado de datos sensibles.
+
+- Estas vulnerabilidades son mitigadas a través de:
+
+- Validación y sanitización estricta de las entradas de usuario.
+
+- Uso de ORM (Object-Relational Mapping) en las consultas a base de datos para evitar inyecciones directas.
+
+- Implementación de autenticación segura con JWT (JSON Web Token).
+
+- Restricciones de acceso basadas en roles definidos (profesor y administrador institucional).
+
+- Herramientas de Monitoreo y Mejora Continua
+
+Para reforzar la cultura de calidad y seguridad, se emplea SonarLint, una extensión complementaria integrada en el entorno de desarrollo (Visual Studio Code), que realiza un análisis en tiempo real mientras los desarrolladores escriben código.
+SonarLint detecta problemas de sintaxis, vulnerabilidades y violaciones de convenciones, ofreciendo recomendaciones inmediatas para su corrección.
+
+![alt text](https://miro.medium.com/v2/resize:fit:1400/1*F1OT7yaGDcyH9Fb3wXngHw.png)
+
+De esta manera, se garantiza que cada módulo de la plataforma cumpla con altos estándares de calidad, seguridad y mantenibilidad.
+ 
 ### 6.2.2. Reviews
-<!--Luciana-->
+
+En Eduspace, las revisiones de código constituyen una práctica esencial para garantizar la calidad, mantenibilidad y seguridad del software desarrollado en la plataforma. Este proceso permite detectar errores de manera temprana, asegurar la correcta aplicación de los estándares definidos y fomentar la colaboración técnica entre los miembros del equipo.
+
+**Tipos de Revisiones**
+
+- Revisión de Código por Pares (Peer Review):
+Cada desarrollador es responsable de revisar el código de otro integrante antes de su integración al repositorio principal. Este enfoque promueve la comprensión colectiva del sistema y la detección oportuna de defectos lógicos o de diseño.
+
+- Revisión Formal:
+En cada cierre de sprint, se realiza una revisión estructurada del código mediante una reunión técnica en la que se evalúan los cambios implementados, siguiendo un checklist estandarizado que contempla claridad, cumplimiento de convenciones, eficiencia, y control de errores.
+
+- Revisión Automática:
+Se emplean herramientas de análisis estático como SonarLint (integrado en el entorno local) y SonarQube (para monitoreo continuo en el pipeline DevOps), con el fin de identificar vulnerabilidades, duplicación de código, errores de complejidad ciclomática y malas prácticas en tiempo real.
+
+**Proceso de Revisión**
+
+- **Creación del Pull Request (PR):** Todo nuevo desarrollo o corrección de bug requiere la creación de un Pull Request detallado en GitHub, indicando el propósito de los cambios, el issue asociado y la evidencia de pruebas unitarias o de integración.
+
+- **Aplicación del Checklist de Revisión:** Se utiliza una lista de verificación que abarca los siguientes aspectos:
+    - Legibilidad y consistencia con las coding conventions del proyecto.
+
+    - Correcta gestión de errores y excepciones.
+
+    - Cobertura de pruebas automatizadas mínima del 80%.
+
+    - Cumplimiento de patrones arquitectónicos definidos (por ejemplo, MVC y principios SOLID).
+
+    - Ausencia de vulnerabilidades detectadas por SonarQube.
+
+- **Comentarios y Retroalimentación:** Los revisores deben emitir observaciones constructivas y específicas sobre cada cambio propuesto. El desarrollador responsable debe atender y resolver todos los comentarios antes de solicitar una nueva revisión.
+
+- **Aprobación y Fusión del PR:** Una vez que el código cumple con los estándares y no presenta incidencias, el Pull Request es aprobado por al menos un revisor adicional y luego fusionado en la rama principal (main o develop), siguiendo el flujo definido por GitFlow.
 
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
-<!--Luciana-->
+
+**Segmento 1: Administradores**
+1. ¿El panel te muestra claramente el estado de los docentes, cursos y reportes activos?
+2. ¿El sistema te notifica correctamente al crear, modificar o eliminar usuarios?
+3. ¿Los términos usados en el panel de administración (como “periodo académico”, “usuario”, “reporte institucional”) son los mismos que usas en tu gestión real?
+4. ¿Sientes que las secciones reflejan la jerarquía y organización habitual de tu institución?
+5. ¿Puedes revertir fácilmente cambios en configuraciones o datos institucionales si cometes un error?
+6. ¿Existe una opción clara para salir o guardar antes de abandonar una tarea?
+7. ¿El diseño de los formularios y botones es coherente entre los diferentes módulos de gestión?
+8. ¿Notas que las acciones principales (crear, editar, eliminar) están siempre ubicadas en los mismos lugares?
+9. ¿El sistema valida correctamente los datos antes de guardarlos (por ejemplo, nombres duplicados, campos vacíos)?
+10. ¿Aparecen mensajes de advertencia antes de eliminar usuarios o cursos?
+11. ¿Las funciones más usadas (crear docente, generar reporte, ver estadísticas) están accesibles desde el panel principal?
+12. ¿Los íconos te ayudan a identificar cada sección sin tener que leer los títulos?
+13. ¿Puedes acceder a información relevante (como reportes o métricas) en pocos clics?
+14. ¿El sistema permite filtrar y ordenar fácilmente los datos que necesitas?
+15. ¿La interfaz del panel administrativo es visualmente clara y sin sobrecarga de información?
+16. ¿El color y la jerarquía visual te ayudan a identificar lo más importante rápidamente?
+17. ¿Existen guías o mensajes de ayuda dentro del panel para comprender las funciones más técnicas?
+18. ¿Sientes que podrías enseñar a otro usuario a manejar la plataforma sin dificultad?
+
+---
+
+**Segmento 2: Profesores**
+1. ¿La plataforma te informa claramente cuando una tarea o material se ha subido con éxito?
+2. ¿Recibes notificaciones o mensajes de confirmación al realizar acciones importantes (por ejemplo, publicar un curso o calificar una actividad)?
+3. ¿Los términos y etiquetas utilizados (por ejemplo, “curso”, “actividad”, “evaluación”) te resultan familiares y coherentes con tu trabajo docente?
+4. ¿Sientes que la estructura del menú refleja tu flujo de trabajo habitual como profesor?
+5. ¿Puedes deshacer o cancelar fácilmente una acción si te equivocas al subir contenido o editar una nota?
+6. ¿Te resulta sencillo volver a la pantalla anterior o al panel principal desde cualquier parte de la aplicación?
+7. ¿Notas que los botones, colores y acciones mantienen el mismo estilo y significado en toda la interfaz?
+8. ¿Las versiones web y móvil ofrecen una experiencia visual y funcional coherente?
+9. ¿El sistema te advierte antes de realizar acciones importantes como eliminar un curso o calificación?
+10. ¿Existen ayudas visuales o validaciones que te eviten cometer errores (por ejemplo, subir un archivo con formato incorrecto)?
+11. ¿Las funciones más usadas (crear curso, calificar, subir material) son fácilmente visibles sin tener que buscarlas?
+12. ¿Los iconos y etiquetas te ayudan a identificar rápidamente las opciones que necesitas?
+13. ¿Puedes realizar tus tareas de forma rápida, con pocos pasos?
+14. ¿El sistema recuerda tus preferencias (por ejemplo, filtros, vistas, o últimos cursos abiertos)?
+15. ¿La interfaz te parece limpia, sin elementos innecesarios o que distraigan de tu trabajo?
+16. ¿El contraste y la tipografía facilitan la lectura de textos y datos en pantalla?
+17. ¿La plataforma te brinda ayuda contextual o mensajes explicativos cuando algo no funciona como esperas?
+18. ¿Te resultó fácil entender cómo usar las funciones la primera vez que entraste a la aplicación?
+
 ### 6.3.2. Registro de Entrevistas.
+###  Segmento: Profesor
+
+| **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot** | **URL del video (Microsoft Stream)** | **Timing** | **Duración** |
+|------------------------|-----------|---------------|----------------|--------------------------------------|-------------|---------------|
+| - | - | - | ![Screenshot](ruta/imagen1.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo1) | 00:00:12 | 09:32 |
+| - | - | - | ![Screenshot](ruta/imagen2.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05 | 08:47 |
+| - | - | San Miguel | ![Screenshot](ruta/imagen3.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30 | 10:15 |
+
+####  **Resumen descriptivo**
+
+**Entrevistado:** Ana  
+El docente...
+
+**Entrevistada:** Ana   
+El docente...
+
+**Entrevistado:** Luis   
+El docente...
+
+---
+
+### Segmento: Administrador de Institución
+
+| **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot** | **URL del video (Microsoft Stream)** | **Timing** | **Duración** |
+|------------------------|-----------|---------------|----------------|--------------------------------------|-------------|---------------|
+| - | - | Santiago de Surco | ![Screenshot](ruta/imagen4.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo4) | 00:00:50 | 07:40 |
+| - | - | La Molina | ![Screenshot](ruta/imagen5.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo5) | 00:00:15 | 09:05 |
+| - | 39 | San Borja | ![Screenshot](ruta/imagen6.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo6) | 00:01:10 | 08:58 |
+
+####  **Resumen descriptivo**
+
+**Entrevistada:** Carla  
+Como administradora,
+
+**Entrevistado:** Carla  
+Como administradora,
+
+**Entrevistada:** Carla  
+Como administradora,
 <!--Luciana y Marllely-->
 ### 6.3.3. Evaluacionessegún heurísticas.
 <!--Marllely-->
