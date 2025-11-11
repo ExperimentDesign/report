@@ -445,7 +445,7 @@ Se emplean herramientas de análisis estático como SonarLint (integrado en el e
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot** | **URL del video (Microsoft Stream)** | **Timing** | **Duración** |
 |------------------------|-----------|---------------|----------------|--------------------------------------|-------------|---------------|
-| - | - | - | ![Screenshot](ruta/imagen1.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo1) | 00:00:12 | 09:32 |
+| Josep Melgarejo | 27 | San Miguel | ![Screenshot](../assets/chapter6/entrevistaProfesor1.png) | [Ver entrevista](https://youtu.be/unbCCAEqFME) | 00:00:20 | 05:17 |
 | - | - | - | ![Screenshot](ruta/imagen2.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05 | 08:47 |
 | - | - | San Miguel | ![Screenshot](ruta/imagen3.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30 | 10:15 |
 
