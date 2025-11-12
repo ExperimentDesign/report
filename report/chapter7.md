@@ -128,9 +128,6 @@ diferentes entornos (desarrollo, staging, producción).
 * Railway: Esta plataforma se encargará del despliegue automatizado del backend desarrollado en .net, 
 ofreciendo integración continua, escalabilidad y herramientas de monitoreo que facilitan la gestión del entorno de ejecución.
 
-* Netlify: Para el frontend desarrollado en Vue, Netlify permite realizar despliegues automáticos desde el repositorio, 
-garantizando velocidad, seguridad y soporte para configuraciones personalizadas de dominio y rutas.
-
 * Aiven: Como plataforma para la base de datos MySQL, Aiven ofrece una gestión completamente automatizada con soporte para copias de seguridad, alta disponibilidad y escalabilidad,
 asegurando la estabilidad y el rendimiento del servicio de datos.
 
@@ -186,22 +183,22 @@ Una vez desplegada la aplicación, Railway ofrece herramientas de monitoreo de l
 5. Despliegue Continuo:
 Cada nuevo cambio validado se despliega automáticamente en el entorno de producción, manteniendo un ciclo de integración y entrega continua (CI/CD).
 
-**Componentes del Pipeline del Frontend (Netlify para Vue):**
+**Componentes del Pipeline del Frontend (Railway para Vue):**
 
 1. Compilación del Frontend:
-Al detectar un nuevo commit en el repositorio, Netlify ejecuta automáticamente el proceso de compilación del proyecto Vue en modo producción, optimizando los recursos para su despliegue.
+Al detectar un nuevo commit en el repositorio, Railway ejecuta automáticamente el proceso de compilación del proyecto Vue en modo producción, optimizando los recursos para su despliegue.
 
 2. Ejecución de Pruebas Automatizadas:
-Antes del despliegue, Netlify puede ejecutar pruebas unitarias y de integración continua (E2E) para garantizar que la interfaz funciona correctamente y que no existen errores en el build.
+Antes del despliegue, Railway puede ejecutar pruebas unitarias y de integración continua (E2E) para garantizar que la interfaz funciona correctamente y que no existen errores en el build.
 
 3. Despliegue en Netlify:
-Si las pruebas se completan exitosamente, Netlify publica automáticamente la nueva versión de la aplicación en su red de entrega de contenido (CDN), garantizando una distribución global rápida y segura.
+Si las pruebas se completan exitosamente, Railway publica automáticamente la nueva versión de la aplicación en su red de entrega de contenido (CDN), garantizando una distribución global rápida y segura.
 
 4. Gestión de Caché y Versionado:
-Netlify invalida la caché automáticamente tras cada despliegue, asegurando que los usuarios siempre reciban la versión más reciente de la aplicación sin necesidad de actualizaciones manuales.
+Railway invalida la caché automáticamente tras cada despliegue, asegurando que los usuarios siempre reciban la versión más reciente de la aplicación sin necesidad de actualizaciones manuales.
 
 5. Monitoreo y Registro:
-Netlify ofrece herramientas de monitoreo del estado del sitio y registros de despliegue que permiten rastrear errores, tiempos de respuesta y rendimiento del frontend.
+Railway ofrece herramientas de monitoreo del estado del sitio y registros de despliegue que permiten rastrear errores, tiempos de respuesta y rendimiento del frontend.
 
 ## 7.4. Continuous monitoring
 
@@ -215,13 +212,13 @@ nuestra aplicación, son las siguientes:
 
 **Tools**
 
-| Herramienta                 | Tipo                         | Descripción                                                                                                                    | Propósito                                                                           |
-| --------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| **Prometheus**              | Monitoreo de métricas        | Sistema open source que recopila y almacena métricas en tiempo real, ideal para monitorear servicios backend y bases de datos. | Detectar anomalías en el rendimiento del backend y base de datos (Railway + Aiven). |
-| **Grafana**                 | Visualización de métricas    | Plataforma que se integra con Prometheus para generar dashboards interactivos.                                                 | Visualizar métricas clave de CPU, memoria, peticiones HTTP, latencia, etc.          |
-| **New Relic / Datadog**     | Observabilidad integral      | Ofrece trazabilidad completa del sistema (APM), logs, alertas y monitoreo de experiencia de usuario.                           | Supervisar la salud de los servicios y detectar errores en tiempo real.             |
-| **Netlify Analytics**       | Monitoreo de frontend        | Servicio integrado de Netlify que analiza el tráfico y rendimiento del sitio sin necesidad de scripts externos.                | Analizar rendimiento, tráfico y comportamiento del frontend Vue.                    |
-| **Google Lighthouse**       | Auditoría de rendimiento web | Evalúa la accesibilidad, SEO, performance y buenas prácticas del sitio web.                                                    | Mejorar la experiencia del usuario y la optimización del frontend.                  |
+| Herramienta       | Tipo                         | Descripción                                                                                                                    | Propósito                                                                           |
+|-------------------| ---------------------------- |--------------------------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------------------- |
+| **Prometheus**    | Monitoreo de métricas        | Sistema open source que recopila y almacena métricas en tiempo real, ideal para monitorear servicios backend y bases de datos. | Detectar anomalías en el rendimiento del backend y base de datos (Railway + Aiven). |
+| **Grafana**       | Visualización de métricas    | Plataforma que se integra con Prometheus para generar dashboards interactivos.                                                 | Visualizar métricas clave de CPU, memoria, peticiones HTTP, latencia, etc.          |
+| **New Relic / Datadog** | Observabilidad integral      | Ofrece trazabilidad completa del sistema (APM), logs, alertas y monitoreo de experiencia de usuario.                           | Supervisar la salud de los servicios y detectar errores en tiempo real.             |
+| **Railway**       | Monitoreo de frontend        | Servicio integrado de Railway que analiza el tráfico y rendimiento del sitio sin necesidad de scripts externos.                | Analizar rendimiento, tráfico y comportamiento del frontend Vue.                    |
+| **Google Lighthouse** | Auditoría de rendimiento web | Evalúa la accesibilidad, SEO, performance y buenas prácticas del sitio web.                                                    | Mejorar la experiencia del usuario y la optimización del frontend.                  |
 | **Aiven Metrics Dashboard** | Monitoreo de base de datos   | Panel nativo que muestra métricas de MySQL, rendimiento de consultas y estado de las conexiones.                               | Identificar cuellos de botella en la base de datos y optimizar rendimiento.         |
 
 **Practices**
@@ -261,10 +258,10 @@ de diseño.
 El sistema de alertas garantiza una respuesta inmediata ante incidentes mediante notificaciones automáticas.
 
 | Componente                  | Descripción                                                                                                                    |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+|-----------------------------| ------------------------------------------------------------------------------------------------------------------------------ |
 | **Prometheus Alertmanager** | Define reglas de alerta (por ejemplo, “latencia > 1s” o “errores 5xx > 5%”) y envía notificaciones a los canales configurados. |
 | **Grafana Alerts**          | Permite crear alertas visuales directamente desde los paneles, integradas con Slack, Discord o correo electrónico.             |
-| **Netlify Status**          | Supervisa el uptime del sitio y genera notificaciones cuando la aplicación frontend está inaccesible.                          |
+| **Railway**                 | Supervisa el uptime del sitio y genera notificaciones cuando la aplicación frontend está inaccesible.                          |
 | **Aiven Alerts**            | Envía alertas automáticas por correo o Slack ante caídas o alto uso de recursos en MySQL.                                      |
 
 
