@@ -330,7 +330,9 @@ Entre las métricas más relevantes se consideran:
 Para este propósito, se utiliza SonarQube, una herramienta de análisis continuo de calidad que examina el código de los repositorios de Eduspace y genera reportes automáticos sobre defectos, malas prácticas o violaciones de estándares.
 Esto permite al equipo de desarrollo detectar tempranamente posibles problemas y realizar acciones correctivas antes de que el código sea integrado a las ramas principales del proyecto.
 
-![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_urtf8Y2o-IfQrkYlzXlJ0ddz3ux39mRG9q_plNf93K8NVM1S4DWN6oTYcgENfW5wH0E&usqp=CAU)
+<div align="center">
+<img src="/assets/chapter6/tools/sonarqube.png" alt="SonarQube" width="300">
+</div>
 
 Asimismo, se promueve el cumplimiento de las convenciones de codificación definidas en el proyecto, basadas en guías oficiales para asegurar un estilo uniforme en todo el código fuente, facilitando la colaboración y reduciendo los errores en futuras implementaciones.
 
@@ -357,7 +359,9 @@ Asimismo, se promueve el cumplimiento de las convenciones de codificación defin
 Para reforzar la cultura de calidad y seguridad, se emplea SonarLint, una extensión complementaria integrada en el entorno de desarrollo (Visual Studio Code), que realiza un análisis en tiempo real mientras los desarrolladores escriben código.
 SonarLint detecta problemas de sintaxis, vulnerabilidades y violaciones de convenciones, ofreciendo recomendaciones inmediatas para su corrección.
 
-![alt text](https://miro.medium.com/v2/resize:fit:1400/1*F1OT7yaGDcyH9Fb3wXngHw.png)
+<div align="center">
+<img src="/assets/chapter6/tools/sonarlint.png" alt="SonarLint" width="500">
+</div>
 
 De esta manera, se garantiza que cada módulo de la plataforma cumpla con altos estándares de calidad, seguridad y mantenibilidad.
  
