@@ -202,3 +202,85 @@ Netlify invalida la caché automáticamente tras cada despliegue, asegurando que
 
 5. Monitoreo y Registro:
 Netlify ofrece herramientas de monitoreo del estado del sitio y registros de despliegue que permiten rastrear errores, tiempos de respuesta y rendimiento del frontend.
+
+## 7.4. Continuous monitoring
+
+El monitoreo continuo tiene como objetivo garantizar la disponibilidad, rendimiento y estabilidad del sistema en producción, detectando de manera temprana cualquier anomalía que pueda afectar la experiencia del usuario o la operación del negocio.
+A través de herramientas de observabilidad, se recopilan métricas, logs y trazas que permiten identificar y resolver incidencias rápidamente.
+
+### 7.4.1. Tools and Practices
+
+Algunas herramientas y prácticas que se emplearán para llevar a cabo un monitoreo continuo y eficaz en
+nuestra aplicación, son las siguientes:
+
+**Tools**
+
+| Herramienta                 | Tipo                         | Descripción                                                                                                                    | Propósito                                                                           |
+| --------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| **Prometheus**              | Monitoreo de métricas        | Sistema open source que recopila y almacena métricas en tiempo real, ideal para monitorear servicios backend y bases de datos. | Detectar anomalías en el rendimiento del backend y base de datos (Railway + Aiven). |
+| **Grafana**                 | Visualización de métricas    | Plataforma que se integra con Prometheus para generar dashboards interactivos.                                                 | Visualizar métricas clave de CPU, memoria, peticiones HTTP, latencia, etc.          |
+| **New Relic / Datadog**     | Observabilidad integral      | Ofrece trazabilidad completa del sistema (APM), logs, alertas y monitoreo de experiencia de usuario.                           | Supervisar la salud de los servicios y detectar errores en tiempo real.             |
+| **Netlify Analytics**       | Monitoreo de frontend        | Servicio integrado de Netlify que analiza el tráfico y rendimiento del sitio sin necesidad de scripts externos.                | Analizar rendimiento, tráfico y comportamiento del frontend Vue.                    |
+| **Google Lighthouse**       | Auditoría de rendimiento web | Evalúa la accesibilidad, SEO, performance y buenas prácticas del sitio web.                                                    | Mejorar la experiencia del usuario y la optimización del frontend.                  |
+| **Aiven Metrics Dashboard** | Monitoreo de base de datos   | Panel nativo que muestra métricas de MySQL, rendimiento de consultas y estado de las conexiones.                               | Identificar cuellos de botella en la base de datos y optimizar rendimiento.         |
+
+**Practices**
+
+* Monitoreo centralizado: Todas las métricas (backend, frontend y base de datos) se unifican en Grafana para una visualización global del sistema.
+
+* Métricas clave (KPI):
+
+   * Tasa de error de API
+
+   * Tiempo promedio de respuesta
+
+    * Tiempos de carga del frontend
+
+   * Uso de CPU/memoria en Railway
+
+   * Latencia de consultas MySQL (Aiven)
+
+* Auditorías automáticas: Lighthouse se ejecuta periódicamente (por ejemplo, mediante GitHub Actions) para detectar degradaciones de rendimiento o accesibilidad.
+
+
+
+### 7.4.2. Monitoring Pipeline Components
+
+Un pipeline de monitoreo constante integra diversas etapas que ayudan a mantener la calidad y el
+rendimiento de una aplicación. Estas etapas incluyen la recopilación de datos, el almacenamiento, el
+análisis y la visualización. Herramientas como Google Lighthouse juegan un papel
+fundamental en este proceso, ofreciendo evaluaciones complementarias que permiten entender y mejorar
+la experiencia del usuario.
+Google Lighthouse es ideal para realizar auditorías de calidad en sitios web, proporcionando análisis
+detallados de accesibilidad, buenas prácticas, SEO y rendimiento. Esta herramienta permite a los equipos
+identificar problemas que impactan la experiencia del usuario, tales como tiempos de carga y cambios
+de diseño.
+
+### 7.4.3. Alerting Pipeline Components
+
+El sistema de alertas garantiza una respuesta inmediata ante incidentes mediante notificaciones automáticas.
+
+| Componente                  | Descripción                                                                                                                    |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Prometheus Alertmanager** | Define reglas de alerta (por ejemplo, “latencia > 1s” o “errores 5xx > 5%”) y envía notificaciones a los canales configurados. |
+| **Grafana Alerts**          | Permite crear alertas visuales directamente desde los paneles, integradas con Slack, Discord o correo electrónico.             |
+| **Netlify Status**          | Supervisa el uptime del sitio y genera notificaciones cuando la aplicación frontend está inaccesible.                          |
+| **Aiven Alerts**            | Envía alertas automáticas por correo o Slack ante caídas o alto uso de recursos en MySQL.                                      |
+
+
+
+### 7.4.4. Notification Pipeline Components
+
+En un pipeline de notificaciones es esencial para comunicar de forma automática los resultados de las
+pruebas y el estado del pipeline. Jenkins juega un papel fundamental en este proceso, ya que permite
+configurar notificaciones detalladas sobre el progreso y los resultados de cada fase del pipeline de
+pruebas
+
+Con Jenkins, las notificaciones pueden configurarse para que se envíen automáticamente al finalizar
+cada build o etapa del pipeline, informando sobre el éxito o fallo de las pruebas, el tiempo de ejecución
+y los problemas específicos encontrados. Esto permite que el equipo reciba alertas en tiempo real sobre
+cualquier incidente o fallo en las pruebas, facilitando una respuesta inmediata. Jenkins también permite
+generar reportes detallados y automatizar el envío de resúmenes periódicos, proporcionando una visión
+completa del estado de calidad del software en cada ciclo de pruebas.
+
+
