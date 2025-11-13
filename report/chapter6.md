@@ -316,7 +316,7 @@ El análisis de código estático es una técnica utilizada para evaluar la cali
 Los estándares de codificación y las convenciones establecen lineamientos que garantizan que el código sea claro, coherente y fácil de mantener. En este proyecto, estas convenciones se encuentran alineadas con los principios de **Clean Code**, promoviendo el uso de nombres descriptivos, funciones con una única responsabilidad, eliminación de duplicaciones y una estructura simple y legible. La aplicación de estos lineamientos facilita la colaboración dentro del equipo y contribuye a un código más ordenado y sostenible en el tiempo.
 
 <div align="center">
-<img src="/assets/chapter6/tools/clean.png" alt="clean" width="300">
+<img src="../assets/chapter6/tools/clean.png" alt="clean" width="300">
 </div>
 
 #### 6.2.1.2. Code Quality & Code Security.
@@ -336,7 +336,7 @@ Para este propósito, se utiliza SonarQube, una herramienta de análisis continu
 Esto permite al equipo de desarrollo detectar tempranamente posibles problemas y realizar acciones correctivas antes de que el código sea integrado a las ramas principales del proyecto.
 
 <div align="center">
-<img src="/assets/chapter6/tools/sonarqube.png" alt="SonarQube" width="300">
+<img src="../assets/chapter6/tools/sonarqube.png" alt="SonarQube" width="300">
 </div>
 
 Asimismo, se promueve el cumplimiento de las convenciones de codificación definidas en el proyecto, basadas en guías oficiales para asegurar un estilo uniforme en todo el código fuente, facilitando la colaboración y reduciendo los errores en futuras implementaciones.
@@ -365,7 +365,7 @@ Para reforzar la cultura de calidad y seguridad, se emplea SonarLint, una extens
 SonarLint detecta problemas de sintaxis, vulnerabilidades y violaciones de convenciones, ofreciendo recomendaciones inmediatas para su corrección.
 
 <div align="center">
-<img src="/assets/chapter6/tools/sonarlint.png" alt="SonarLint" width="500">
+<img src="../assets/chapter6/tools/sonarlint.png" alt="SonarLint" width="500">
 </div>
 
 De esta manera, se garantiza que cada módulo de la plataforma cumpla con altos estándares de calidad, seguridad y mantenibilidad.
@@ -455,19 +455,10 @@ Se emplean herramientas de análisis estático como SonarLint (integrado en el e
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot** | **URL del video (Microsoft Stream)** | **Timing** | **Duración** |
 |------------------------|-----------|---------------|----------------|--------------------------------------|-------------|---------------|
 | Josep Melgarejo | 27 | San Miguel | ![Screenshot](/assets/chapter6/entrevistas/entrevistaProfesor1.png) | [Ver entrevista](https://youtu.be/unbCCAEqFME) | 00:00:20 | 05:17 |
-| - | - | - | ![Screenshot](ruta/imagen2.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05 | 08:47 |
-| - | - | San Miguel | ![Screenshot](ruta/imagen3.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30 | 10:15 |
+| Julian Fernandez | 30 | Los Olivos | ![Screenshot](ruta/imagen2.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05 | 08:47 |
+| Carmen Melgarejo | 42 | San Miguel | ![Screenshot](ruta/imagen3.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30 | 10:15 |
 
-####  **Resumen descriptivo**
 
-**Entrevistado:** Ana  
-El docente...
-
-**Entrevistada:** Ana   
-El docente...
-
-**Entrevistado:** Luis   
-El docente...
 
 ---
 
@@ -479,17 +470,6 @@ El docente...
 | Cameron Bustamante | 26 | Surco | ![Screenshot](/assets/chapter6/entrevistas/entrevista2.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQAS3ebMOaeBRr2TNxCp0xoRAQNuOMyjskqPavRM148pd7E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vP0Vl9) | 00:00:03 | 07:03 |
 | Jocelyn Almerco | 26 | San Isidro | ![Screenshot](/assets/chapter6/entrevistas/entrevista3.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQDwdXh2UJ8nTp1gV_Z3wOlwAayuuZ8q3_ty7rDIlMwJbz4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BQzq3I) | 00:00:03 | 06:20 |
 
-####  **Resumen descriptivo**
-
-**Entrevistada:** Carla  
-Como administradora,
-
-**Entrevistado:** Carla  
-Como administradora,
-
-**Entrevistada:** Carla  
-Como administradora,
-<!--Luciana y Marllely-->
 
 ### 6.3.3. Evaluaciones según heurísticas.
 ---
