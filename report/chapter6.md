@@ -309,10 +309,15 @@ Esta sección presenta las pruebas realizadas para validar las funcionalidades p
 </div>
 
 ## 6.2. Static testing & Verification
-### 6.2.1. Static Code Analysis
-<!--Marllely-->
-#### 6.2.1.1. Coding standard & Code conventions.
-<!--Marllely-->
+### 6.2.1. Static Code Analysis  
+El análisis de código estático es una técnica utilizada para evaluar la calidad interna del software sin ejecutar el programa. Este proceso permite identificar problemas de estructura, estilo, mantenibilidad y complejidad, así como detectar riesgos técnicos antes de que impacten durante la ejecución. También permite revisar la consistencia del código y asegurar que se mantenga un nivel adecuado de calidad a lo largo del desarrollo.
+
+#### 6.2.1.1. Coding standard & Code conventions  
+Los estándares de codificación y las convenciones establecen lineamientos que garantizan que el código sea claro, coherente y fácil de mantener. En este proyecto, estas convenciones se encuentran alineadas con los principios de **Clean Code**, promoviendo el uso de nombres descriptivos, funciones con una única responsabilidad, eliminación de duplicaciones y una estructura simple y legible. La aplicación de estos lineamientos facilita la colaboración dentro del equipo y contribuye a un código más ordenado y sostenible en el tiempo.
+
+<div align="center">
+<img src="/assets/chapter6/tools/clean.png" alt="clean" width="300">
+</div>
 
 #### 6.2.1.2. Code Quality & Code Security.
 
@@ -449,7 +454,7 @@ Se emplean herramientas de análisis estático como SonarLint (integrado en el e
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot** | **URL del video (Microsoft Stream)** | **Timing** | **Duración** |
 |------------------------|-----------|---------------|----------------|--------------------------------------|-------------|---------------|
-| Josep Melgarejo | 27 | San Miguel | ![Screenshot](../assets/chapter6/entrevistaProfesor1.png) | [Ver entrevista](https://youtu.be/unbCCAEqFME) | 00:00:20 | 05:17 |
+| Josep Melgarejo | 27 | San Miguel | ![Screenshot](/assets/chapter6/entrevistas/entrevistaProfesor1.png) | [Ver entrevista](https://youtu.be/unbCCAEqFME) | 00:00:20 | 05:17 |
 | - | - | - | ![Screenshot](ruta/imagen2.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05 | 08:47 |
 | - | - | San Miguel | ![Screenshot](ruta/imagen3.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30 | 10:15 |
 
@@ -487,10 +492,10 @@ Como administradora,
 <!--Luciana y Marllely-->
 
 ### 6.3.3. Evaluaciones según heurísticas.
-
+---
 ### UX Heuristics & Principles Evaluation  
 ### Usability – Inclusive Design – Information Architecture
-
+---
 **CARRERA:** Ingeniería de Software  
 
 **CURSO:** Diseño de Experimentos de Ingeniería de Software  
@@ -509,7 +514,7 @@ Como administradora,
 ### **SITE o APP A EVALUAR:**  
 
 **EduSpace**
-
+---
 ### **TAREAS A EVALUAR**
 
 Las tareas evaluadas según el flujo real del sistema fueron:
