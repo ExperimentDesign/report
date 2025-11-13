@@ -593,7 +593,7 @@ Mostrar modal:
 
 
 ## 6.4. Auditoría de Experiencias de Usuario.
-### 6.4.1. Auditoría realizada. <!--Luciana-->
+### 6.4.1. Auditoría realizada. 
 Como parte del proceso de evaluación cruzada, nuestro equipo "EduSpace" se encargo de auditar al proyecto "SplitEasy", proporcionando valiosos insights sobre la experiencia de usuario.
 #### 6.4.1.1. Información del grupo auditado.
 
