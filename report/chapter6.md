@@ -470,9 +470,9 @@ El docente...
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot** | **URL del video (Microsoft Stream)** | **Timing** | **Duración** |
 |------------------------|-----------|---------------|----------------|--------------------------------------|-------------|---------------|
-| - | - | Santiago de Surco | ![Screenshot](ruta/imagen4.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo4) | 00:00:50 | 07:40 |
-| - | - | La Molina | ![Screenshot](ruta/imagen5.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo5) | 00:00:15 | 09:05 |
-| - | 39 | San Borja | ![Screenshot](ruta/imagen6.png) | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo6) | 00:01:10 | 08:58 |
+| Jeremy Quijada | 28 | San Miguel | ![Screenshot](/assets/chapter6/entrevistas/entrevista1.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQAv4Q9oUvtQQZDb30CHHIjYARzfgQwtu-vBvCX_o0722I4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PDrN89) | 00:00:05 | 05:45 |
+| Cameron Bustamante | 26 | Surco | ![Screenshot](/assets/chapter6/entrevistas/entrevista2.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQAS3ebMOaeBRr2TNxCp0xoRAQNuOMyjskqPavRM148pd7E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vP0Vl9) | 00:00:03 | 07:03 |
+| Jocelyn Almerco | 26 | San Isidro | ![Screenshot](/assets/chapter6/entrevistas/entrevista3.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQDwdXh2UJ8nTp1gV_Z3wOlwAayuuZ8q3_ty7rDIlMwJbz4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BQzq3I) | 00:00:03 | 06:20 |
 
 ####  **Resumen descriptivo**
 
