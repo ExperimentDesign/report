@@ -594,13 +594,9 @@ Mostrar modal:
 
 ## 6.4. Auditoría de Experiencias de Usuario.
 ### 6.4.1. Auditoría realizada. <!--Luciana-->
+Como parte del proceso de evaluación cruzada, nuestro equipo "EduSpace" se encargo de auditar al proyecto "SplitEasy", proporcionando valiosos insights sobre la experiencia de usuario.
 #### 6.4.1.1. Información del grupo auditado.
-#### 6.4.1.2. Cronograma de auditoría realizada.
-#### 6.4.1.3. Contenido de auditoría realizada.
-### 6.4.2. Auditoría Recibida  
-Como parte del proceso de evaluación cruzada, nuestro proyecto **EduSpace** fue auditado por el equipo **"SplitEasy"**, quienes nos proporcionaron valiosos insights sobre nuestra experiencia de usuario.
 
-#### 6.4.2.1. Información del Grupo Auditor  
 **Equipo:** SplitEasy  
 
 **Integrantes:**  
@@ -608,6 +604,77 @@ Como parte del proceso de evaluación cruzada, nuestro proyecto **EduSpace** fue
 - Diego Fernando Herrera Enriquez  
 - Valentino Sandoval Paiva  
 - Eslander Celis Berrospi  
+
+#### 6.4.1.2. Cronograma de auditoría realizada.
+
+| Fecha | Actividad | Descripción |
+|-------|-----------|-------------|
+| 11/11/2025 | Presentación del proyecto | Reunión inicial en el que el equipo auditor explicó su enfoque de trabajo y definió los objetivos junto con el alcance de la evaluación del proyecto SplitEasy. |
+| 11/11/2025 | Evaluación de la interfaz del Administrador | Análisis detallado de la interfaz y usabilidad del representante del hogar de SplitEasy, aplicando principios heurísticos para identificar posibles problemas y mejoras. |
+| 11/11/2025 | Evaluación de flujos de creación | Revisión exhaustiva de los flujos de "Agregar Factura", "Nueva contribución" y "Agregar miembro". |
+| 11/11/2025 | Presentación y entrega de resultados | Sesión final donde el equipo auditor entregó y expuso los hallazgos principales y discutió las posibles soluciones con nuestro equipo, estableciendo las correcciones prioritarias. |
+
+#### 6.4.1.3. Contenido de auditoría realizada.
+
+Al equipo auditado se le realizó una evaluación exhaustiva de nuestras interfaces y flujos de usuario del “Representante del hogar” identificando los siguientes hallazgos:
+
+**Hallazgos críticos (Severidad 4):**
+
+- Se identificó que en la sección “Facturas del Hogar” la visualización de los registros es limitada, ya que solo presenta una tabla básica sin herramientas de búsqueda o filtrado. Esto puede dificultar la gestión eficiente de las facturas cuando el número de registros aumente.
+    - Recomendación: Implementar funciones de filtrado, ordenamiento y búsqueda dentro de la tabla, permitiendo al usuario localizar fácilmente facturas por fecha, monto o tipo. Además, se sugiere añadir indicadores visuales o etiquetas de estado (por ejemplo: pagado, pendiente, vencido).
+
+- Se identificó que el captcha no realiza correctamente la validación, ya que en algunos casos no carga y permite el acceso de forma automática. Esto representa una vulnerabilidad en la seguridad del sistema.
+    -  Recomendación: Se recomienda revisar la integración del captcha y asegurar que su validación sea obligatoria antes de permitir cualquier acción del usuario.
+
+**Hallazgos mayores (Severidad 3):**
+
+- Actualmente, el sistema requiere que los usuarios carguen o configuren manualmente los datos de pago en cada contribución, lo que puede generar demoras y errores al repetir el proceso para distintos servicios. Esta falta de automatización limita la eficiencia y la comodidad del usuario al gestionar sus pagos dentro de la plataforma.
+    -  Recomendación: Sería recomendable que cada perfil tenga asignado su propio código QR y número de cuenta predeterminado, vinculado directamente a su información de pago. De esta manera, el sistema podría autocompletar los datos al generar una nueva contribución.
+
+-	En la vista del miembro dentro del inicio, se observa que las contribuciones próximas a vencer se muestran de manera estática, sin ofrecer un acceso directo a su pago o gestión. Ello genera una experiencia menos práctica.
+
+    -  Recomendación: Sería conveniente en “Inicio” añadir en cada contribución próxima a vencer un botón de acción rápida (por ejemplo, “Pagar ahora” o “Ir a contribuciones”), que redirija directamente al flujo de pago correspondiente.
+
+**Aspectos positivos destacados:**
+
+- La interfaz presenta una explicación clara y contextual del funcionamiento del tipo de comportamiento al crear una contribución, lo que facilita la comprensión del usuario. Al detallar la lógica de reparto proporcional y acompañarla con un ejemplo práctico.
+
+- La integración del chatbot con inteligencia artificial mejora la interacción entre el usuario y la aplicación, pues ofrece asistencia inmediata, respuestas personalizadas y una guía fluida durante todo el proceso de uso. Esto contribuye a una experiencia más intuitiva y eficiente.
+
+- La incorporación de códigos QR para automatizar los pagos agiliza las transacciones y minimiza los errores al permitir que los usuarios realicen aportes de manera rápida y segura. Esta funcionalidad moderniza la plataforma y optimiza los tiempos de gestión.
+
+- Navegación Intuitiva: El menú de navegación lateral es consistente y jerárquico, permitiendo un fácil acceso a las funciones principales (Inicio, Miembros, Cuentas, Contribuciones, Ajustes).
+
+#### 6.4.1.4. Resumen de modificaciones para subsanar hallazgos
+
+En respuesta a la auditoría recibida, deberan implementar las siguientes mejoras para resolver los problemas identificados:
+
+**Optimización de la sección “Facturas del Hogar”:**  
+Se tiene previsto incorporar funcionalidades de búsqueda, filtrado y ordenamiento en la tabla de facturas, de manera que el usuario pueda organizar los registros por fecha, monto o tipo de servicio. Asimismo, se planea incluir etiquetas visuales de estado (pagada, pendiente o vencida) para facilitar la identificación de cada factura y mejorar el control de los pagos.
+
+**Corrección del sistema de captcha:**  
+Se contempla revisar e integrar un sistema de captcha funcional con validación obligatoria, garantizando que solo se permita el acceso tras una verificación exitosa. Esta mejora incrementará la seguridad y reducirá la posibilidad de accesos automatizados o no autorizados.
+
+**Automatización de los datos de pago:**  
+En futuras versiones, se proyecta que cada usuario cuente con un código QR y número de cuenta preasignado, los cuales se autocompleten al generar nuevas contribuciones. Esta automatización permitirá reducir los errores, ahorrar tiempo y ofrecer una experiencia más fluida.
+
+**Incorporación de accesos rápidos en el inicio:**  
+Se prevé añadir un botón de acción directa “Pagar ahora” en las contribuciones próximas a vencer dentro del panel de inicio, para que el usuario pueda acceder rápidamente al flujo de pago sin tener que desplazarse por múltiples secciones. Esto mejorará la usabilidad y agilidad del sistema.
+
+
+### 6.4.2. Auditoría Recibida  
+Como parte del proceso de evaluación cruzada, nuestro proyecto **EduSpace** fue auditado por el equipo **"SplitEasy"**, quienes nos proporcionaron valiosos insights sobre nuestra experiencia de usuario.
+
+#### 6.4.2.1. Información del Grupo Auditor 
+
+**Equipo:** EduSpace
+
+**Integrantes:**
+•	Andrés Alberto Torres García 
+•	Piero Alberto Velarde Luyo	
+•	Marllely Anahi Arias Segil	
+•	Luciana Celeste Sanchez Silva	
+•	Alejandro Franklin Mendoza Vergara 
 
 #### 6.4.2.2. Cronograma de Auditoría Recibida  
 
