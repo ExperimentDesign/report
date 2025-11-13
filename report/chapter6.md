@@ -485,14 +485,124 @@ Como administradora,
 **Entrevistada:** Carla  
 Como administradora,
 <!--Luciana y Marllely-->
-### 6.3.3. Evaluacionessegún heurísticas.
-<!--Marllely-->
+
+### 6.3.3. Evaluaciones según heurísticas.
+
+## UX Heuristics & Principles Evaluation  
+### Usability – Inclusive Design – Information Architecture
+
+**CARRERA:** Ingeniería de Software  
+**CURSO:** Diseño de Experimentos de Ingeniería de Software  
+**SECCIÓN:** 7505  
+**PROFESORES:** Noriega Melendez, Julio Manuel  
+**AUDITOR:** 
+**CLIENTE(S):** 
+- Jeremy Quijada
+- Jocelyn Almerco
+- Cameron Bustamante
+
+---
+
+## **SITE o APP A EVALUAR:**  
+**EduSpace**
+
+---
+
+# **TAREAS A EVALUAR**
+
+Las tareas evaluadas según el flujo real del sistema fueron:
+
+1. Gestión y visualización de **Aulas** (Jocelyn)  
+2. Registro y edición de **Docentes** (Cameron)  
+3. Gestión de **Ambientes compartidos** (Jeremy)
+4. 
+5. 
+6. 
+
+---
+
+### **Escala de Severidad**
+
+| Nivel | Descripción |
+|------|-------------|
+| **1** | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.  |
+| **2** | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de 
+superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente 
+reléase |
+| **3** | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es 
+importante que sean corregidos y se les debe asignar una prioridad alta.  |
+| **4** | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de 
+la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+# **Tabla resumen de problemas (basado en entrevistas)**
+
+| # | Problema identificado | Severidad | Heurística violada |
+|---|------------------------|-----------|---------------------|
+| 1 | La pantalla carece de un botón de “Volver” que permita regresar sin descartar datos | 3 | Usability: Libertad y Control del Usuario |
+| 2 | En Ambientes no aparece mensaje de confirmación al editar | 2 | Usability: Visibilidad del Estado del Sistema |
+| 3 | No hay advertencia antes de eliminar un Ambiente | 3 | Usability: Prevención de Errores |
+
+---
+
+### **Descripción de problemas (basado directamente en las entrevistas)**
+
+---
+
+### PROBLEMA #1: La pantalla carece de un botón de “Volver” que permita regresar sin descartar datos  
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Libertad y control del usuario  
+
+**Descripción:**  
+En los módulos de Aulas y Ambientes existe un botón de **“Cancel”**, pero este descarta los cambios en lugar de permitir regresar a la vista anterior. Los entrevistados expresaron que, para navegar hacia atrás, deben usar el menu, lo cual puede provocar pérdida de información no intencional y genera inseguridad en el flujo de trabajo.
+
+**Recomendación:**  
+Agregar un botón claro de **“Volver”** o un breadcrumb interactivo que permita regresar sin forzar al usuario a cancelar o cerrar la vista. Esto mejora la navegación y mantiene el control del usuario sobre su flujo.
+
+<div align="center">
+<img src="/assets/chapter6/heuristicas/1.png" alt="1" width="500">
+</div>
+
+### **PROBLEMA #2: No aparece mensaje de confirmación al editar un Ambiente**  
+**Severidad:** 2  
+**Heurística violada:** Visibilidad del estado del sistema  
+
+**Descripción:**  
+Diego menciona que al guardar cambios en un ambiente no aparece un mensaje de “Cambios guardados”. Esto impide estar seguro de que la acción funcionó.
+
+**Recomendación:**  
+Agregar notificación tipo toast: “Ambiente actualizado correctamente”.
+
+<div align="center">
+<img src="/assets/chapter6/heuristicas/2.png" alt="1" width="500">
+</div>
+
+### **PROBLEMA #3: No hay advertencia antes de eliminar un Ambiente**  
+**Severidad:** 3  
+**Heurística violada:** Prevención de Errores  
+
+**Descripción:**  
+Diego señala que si presiona “Delete”, se elimina directamente sin preguntar. Esto es arriesgado y puede generar pérdidas irreversibles.
+
+**Recomendación:**  
+Mostrar modal:  
+> “¿Estás seguro de eliminar este ambiente? Esta acción no se puede deshacer.”
+
+<div align="center">
+<img src="/assets/chapter6/heuristicas/3.png" alt="1" width="500">
+</div>
+
+
 ## 6.4. Auditoría de Experiencias de Usuario.
 ### 6.4.1. Auditoría realizada. <!--Luciana-->
 #### 6.4.1.1. Información del grupo auditado.
 #### 6.4.1.2. Cronograma de auditoría realizada.
 #### 6.4.1.3. Contenido de auditoría realizada.
-### 6.4.2. Auditoría recibida. <!--Marllely-->
+### 6.4.2. Auditoría recibida.
+Como parte del proceso de evaluación cruzada, nuestro proyecto EduSpace fue 
+auditado por el equipo "SplitEasy", quienes nos proporcionaron valiosos insights 
+sobre nuestra experiencia de usuario.
 #### 6.4.2.1. Información del grupo auditor.
 #### 6.4.2.2. Cronograma de auditoría recibida.
 #### 6.4.2.3. Contenido de auditoría recibida.
