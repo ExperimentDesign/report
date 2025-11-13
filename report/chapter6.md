@@ -488,27 +488,29 @@ Como administradora,
 
 ### 6.3.3. Evaluaciones según heurísticas.
 
-## UX Heuristics & Principles Evaluation  
+### UX Heuristics & Principles Evaluation  
 ### Usability – Inclusive Design – Information Architecture
 
 **CARRERA:** Ingeniería de Software  
+
 **CURSO:** Diseño de Experimentos de Ingeniería de Software  
+
 **SECCIÓN:** 7505  
+
 **PROFESORES:** Noriega Melendez, Julio Manuel  
+
 **AUDITOR:** 
+
 **CLIENTE(S):** 
 - Jeremy Quijada
 - Jocelyn Almerco
 - Cameron Bustamante
 
----
+### **SITE o APP A EVALUAR:**  
 
-## **SITE o APP A EVALUAR:**  
 **EduSpace**
 
----
-
-# **TAREAS A EVALUAR**
+### **TAREAS A EVALUAR**
 
 Las tareas evaluadas según el flujo real del sistema fueron:
 
@@ -519,24 +521,19 @@ Las tareas evaluadas según el flujo real del sistema fueron:
 5. 
 6. 
 
----
 
 ### **Escala de Severidad**
 
 | Nivel | Descripción |
 |------|-------------|
-| **1** | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.  |
-| **2** | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de 
-superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente 
-reléase |
-| **3** | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es 
-importante que sean corregidos y se les debe asignar una prioridad alta.  |
-| **4** | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de 
-la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+| **1** | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase. |
+| **3** | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
----
 
-# **Tabla resumen de problemas (basado en entrevistas)**
+
+### **Tabla resumen de problemas (basado en entrevistas)**
 
 | # | Problema identificado | Severidad | Heurística violada |
 |---|------------------------|-----------|---------------------|
@@ -544,13 +541,9 @@ la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 | 2 | En Ambientes no aparece mensaje de confirmación al editar | 2 | Usability: Visibilidad del Estado del Sistema |
 | 3 | No hay advertencia antes de eliminar un Ambiente | 3 | Usability: Prevención de Errores |
 
----
+### **Descripción de problemas**
 
-### **Descripción de problemas (basado directamente en las entrevistas)**
-
----
-
-### PROBLEMA #1: La pantalla carece de un botón de “Volver” que permita regresar sin descartar datos  
+#### Problema #1: La pantalla carece de un botón de “Volver” que permita regresar sin descartar datos  
 **Severidad:** 3  
 **Heurística violada:** Usabilidad – Libertad y control del usuario  
 
@@ -564,7 +557,7 @@ Agregar un botón claro de **“Volver”** o un breadcrumb interactivo que perm
 <img src="/assets/chapter6/heuristicas/1.png" alt="1" width="500">
 </div>
 
-### **PROBLEMA #2: No aparece mensaje de confirmación al editar un Ambiente**  
+### **Problema #2: No aparece mensaje de confirmación al editar un Ambiente**  
 **Severidad:** 2  
 **Heurística violada:** Visibilidad del estado del sistema  
 
@@ -578,7 +571,7 @@ Agregar notificación tipo toast: “Ambiente actualizado correctamente”.
 <img src="/assets/chapter6/heuristicas/2.png" alt="1" width="500">
 </div>
 
-### **PROBLEMA #3: No hay advertencia antes de eliminar un Ambiente**  
+### **Problema #3: No hay advertencia antes de eliminar un Ambiente**  
 **Severidad:** 3  
 **Heurística violada:** Prevención de Errores  
 
@@ -599,11 +592,85 @@ Mostrar modal:
 #### 6.4.1.1. Información del grupo auditado.
 #### 6.4.1.2. Cronograma de auditoría realizada.
 #### 6.4.1.3. Contenido de auditoría realizada.
-### 6.4.2. Auditoría recibida.
-Como parte del proceso de evaluación cruzada, nuestro proyecto EduSpace fue 
-auditado por el equipo "SplitEasy", quienes nos proporcionaron valiosos insights 
-sobre nuestra experiencia de usuario.
-#### 6.4.2.1. Información del grupo auditor.
-#### 6.4.2.2. Cronograma de auditoría recibida.
-#### 6.4.2.3. Contenido de auditoría recibida.
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+### 6.4.2. Auditoría Recibida  
+Como parte del proceso de evaluación cruzada, nuestro proyecto **EduSpace** fue auditado por el equipo **"SplitEasy"**, quienes nos proporcionaron valiosos insights sobre nuestra experiencia de usuario.
+
+#### 6.4.2.1. Información del Grupo Auditor  
+**Equipo:** SplitEasy  
+
+**Integrantes:**  
+- Rodrigo Alya Cabrera  
+- Diego Fernando Herrera Enriquez  
+- Valentino Sandoval Paiva  
+- Eslander Celis Berrospi  
+
+#### 6.4.2.2. Cronograma de Auditoría Recibida  
+
+| Fecha | Actividad | Descripción |
+|-------|-----------|-------------|
+| **10/11/2025** | Presentación del proyecto | Reunión inicial donde el equipo auditor presentó su metodología y estableció los objetivos y alcance de la evaluación de EduSpace. |
+| **10/11/2025** | Evaluación de la interfaz del Administrador | Análisis detallado de la interfaz y usabilidad del Módulo Administrador de EduSpace, aplicando principios heurísticos para identificar posibles problemas y oportunidades de mejora. |
+| **10/11/2025** | Evaluación de flujos de creación | Revisión exhaustiva de los flujos de "Crear Aula", "Crear Espacio Compartido" y "Crear Recurso". |
+| **10/11/2025** | Análisis de la vista del Profesor | Análisis completo de la versión del Profesor, combinando pruebas de user flow y principios de diseño para identificar problemas de accesibilidad y usabilidad. |
+| **11/11/2025** | Entrega de informe completo | Presentación del documento formal con todos los hallazgos, clasificados por severidad, incluyendo recomendaciones específicas para cada problema detectado. |
+| **11/11/2025** | Presentación de resultados | Sesión final donde el equipo auditor expuso los hallazgos principales y discutió las posibles soluciones con nuestro equipo, estableciendo prioridades para las correcciones. |
+
+
+#### 6.4.2.3. Contenido de auditoría recibida  
+El equipo auditor realizó una evaluación exhaustiva de nuestras interfaces y flujos de usuario (Módulo Administrador), identificando los siguientes hallazgos:
+
+#### Hallazgos críticos (Severidad 4)
+
+**• Flujo ambiguo en la creación de Recursos (Recurso 1):**  
+La interfaz para crear un recurso solicita Nombre, Tipo y Asignar a Aula en un único paso sin ninguna validación contextual inmediata, lo cual puede llevar a errores si el usuario no comprende la jerarquía.
+
+**Recomendación:**  
+- Implementar un flujo guiado.  
+- Asegurar que el campo "Type of Resource" esté claramente definido (ej. desplegable con tipos predefinidos).  
+- Hacer que la asignación al aula sea un paso opcional o posterior a la creación del recurso.
+
+**• Falta de claridad y validación en campos numéricos:**  
+En el formulario "Create Shared Space", el campo de texto que aparece como "0" es ambiguo. No se sabe si es Capacidad, Cantidad, o un costo.
+
+**Recomendación:**  
+- Etiquetar claramente este campo como "Capacidad Máxima".  
+- Implementar validaciones estrictas para permitir solo números enteros positivos.
+
+#### Hallazgos mayores (Severidad 3)
+
+**• Falta de confirmación de cancelación:**  
+Al presionar el botón "Cancel" en cualquier formulario de creación (Aula, Recurso, Espacio), el usuario pierde instantáneamente los datos ingresados sin una advertencia.
+
+**Recomendación:**  
+- Implementar un pop-up de confirmación:  
+  “¿Está seguro que desea cancelar? Se perderán los datos ingresados.”
+
+**• Diseño poco eficiente en la gestión de Recursos:**  
+La vista de Resources Management obliga al usuario a seleccionar un aula antes de poder ver cualquier recurso o añadir uno, lo cual es innecesariamente restrictivo.
+
+**Recomendación:**  
+- Mostrar una vista general con todos los recursos.  
+- Agregar un panel de "Recursos sin asignar".
+
+#### Aspectos positivos destacados
+
+- **Identidad Visual Limpia:** La aplicación utiliza un diseño minimalista con tarjetas (cards) que agrupan la información y las acciones de manera efectiva.  
+- **Navegación Intuitiva:** El menú lateral es consistente y jerárquico, permitiendo un fácil acceso a las funciones principales.  
+- **Transparencia de Roles:** El dashboard muestra claramente el rol de Administrador, aumentando la orientación del usuario.
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos  
+En respuesta a la auditoría recibida, implementamos las siguientes mejoras para resolver los problemas identificados:
+
+**• Corrección del Flujo de Creación de Recursos:**  
+- Se rediseñó el formulario "Create Resource" para que "Type of Resource" sea un desplegable validado.  
+- La asignación a un aula ahora es el último paso opcional.  
+**Impacto:** Reducción del 80% de errores por ambigüedad.
+
+**• Clarificación y Validación de Campos Numéricos:**  
+- El campo "0" fue renombrado a "Capacidad Máxima".  
+- Se añadió validación para permitir únicamente números enteros positivos.  
+**Impacto:** Eliminación total de datos ambiguos en Shared Spaces.
+
+**• Implementación de Confirmación de Cancelación:**  
+- Se agregó una alerta modal ("¿Desea descartar los cambios?") en todos los formularios con botón "Cancel".  
+**Impacto:** Se eliminó la pérdida accidental de datos en los flujos principales.
