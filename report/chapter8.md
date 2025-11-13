@@ -25,10 +25,10 @@ La aplicación actual EduSpace (rama `main` en producción) se centra en la **ge
 
 **Arquitectura Técnica:**
 
-- **Frontend Web:** Vue 3 + Vite + PrimeVue, desplegado en Netlify
+- **Frontend Web:** Vue 3 + Vite + PrimeVue, desplegado en Railway (https://eduspace-frontend-web-app-production.up.railway.app/)
 - **Mobile App:** Flutter (iOS/Android nativo)
-- **Backend API:** .NET 8.0 con Clean Architecture + DDD, desplegado en Railway
-- **Base de Datos:** MySQL en Aiven
+- **Backend API:** .NET 8.0 con Clean Architecture + DDD, desplegado en Railway (https://eduspace-platform-production.up.railway.app/)
+- **Base de Datos:** MySQL gestionada por Railway
 - **Autenticación:** JWT con 2FA vía SendGrid
 
 El sistema está operativo y accesible en producción para ambos segmentos de usuarios (administradores y profesores).
@@ -631,13 +631,17 @@ El experimento **NO se ejecutará en la base de datos de producción** para evit
 
 **Configuración del Entorno:**
 
-- **Entorno de Staging:** Se utilizará un entorno de staging (`https://staging.eduspace.app`) que es una réplica exacta del entorno de producción, incluyendo:
+- **Entorno de Producción (Main):**
+  - Frontend Web: https://eduspace-frontend-web-app-production.up.railway.app/
+  - Backend API: https://eduspace-platform-production.up.railway.app/
+  - Base de Datos: MySQL gestionada por Railway (instancia de producción)
 
-  - Backend API (.NET 8.0) con Clean Architecture + DDD
-  - Frontend Web (Vue 3 + Vite + PrimeVue)
-  - Mobile App (Flutter) configurada para apuntar al staging backend
+- **Entorno de Experimento:**
+  - Frontend Web Experimental: https://eduspace-frontend-web-app-experiment-production.up.railway.app/
+  - Backend API: https://eduspace-platform-production.up.railway.app/ (mismo backend con soporte para ambas versiones)
+  - Mobile App (Flutter) configurada para apuntar al backend de producción
 
-- **Base de Datos de Prueba (Sandbox):** Se conectará a una instancia de MySQL dedicada (`eduspacedb_sandbox`) precargada con datos ficticios realistas para simular un entorno operativo:
+- **Base de Datos de Prueba (Sandbox):** Se conectará a una instancia de MySQL dedicada (`eduspacedb_sandbox`) gestionada por Railway, precargada con datos ficticios realistas para simular un entorno operativo:
   - 50 profesores registrados con datos completos (nombre, DNI, email, teléfono, foto)
   - 20 aulas con asignación de responsables
   - 10 reportes de averías activos
@@ -647,8 +651,10 @@ El experimento **NO se ejecutará en la base de datos de producción** para evit
 
 **Configuración de Acceso:**
 
-- Los participantes recibirán credenciales temporales (`admin_test1@eduspace.app`, `profesor_test1@eduspace.app`) válidas únicamente para el entorno de staging
-- El acceso al entorno de staging estará activo durante el período del experimento (4 semanas)
+- **Grupo A (Experimental):** Accederán a https://eduspace-frontend-web-app-experiment-production.up.railway.app/
+- **Grupo B (Control):** Accederán a https://eduspace-frontend-web-app-production.up.railway.app/
+- Los participantes recibirán credenciales temporales (`admin_test1@eduspace.app`, `profesor_test1@eduspace.app`) válidas para conectarse a la base de datos sandbox
+- El acceso a ambos entornos estará activo durante el período del experimento (4 semanas)
 - Los datos generados durante el experimento (nuevas reuniones, ediciones, eliminaciones) no afectarán la base de datos de producción
 
 ---
@@ -659,7 +665,7 @@ Dividiremos a los 20 participantes en dos grupos de 10 usuarios para realizar un
 
 **Grupo A (Experimental - 10 usuarios):**
 
-Usarán la **versión experimental** de la aplicación (rama `experimental` del repositorio), que incluye:
+Usarán la **versión experimental** de la aplicación desplegada en https://eduspace-frontend-web-app-experiment-production.up.railway.app/ (rama `experimental` del repositorio), que incluye:
 
 - **5 Administradores:**
 
@@ -672,7 +678,7 @@ Usarán la **versión experimental** de la aplicación (rama `experimental` del 
 
 **Grupo B (Control - 10 usuarios):**
 
-Usarán la **versión main** (producción actual) del sistema, sin las funcionalidades experimentales:
+Usarán la **versión main** desplegada en https://eduspace-frontend-web-app-production.up.railway.app/ (producción actual) del sistema, sin las funcionalidades experimentales:
 
 - **5 Administradores:**
 
