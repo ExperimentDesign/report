@@ -632,11 +632,13 @@ El experimento **NO se ejecutará en la base de datos de producción** para evit
 **Configuración del Entorno:**
 
 - **Entorno de Producción (Main):**
+
   - Frontend Web: https://eduspace-frontend-web-app-production.up.railway.app/
   - Backend API: https://eduspace-platform-production.up.railway.app/
   - Base de Datos: MySQL gestionada por Railway (instancia de producción)
 
 - **Entorno de Experimento:**
+
   - Frontend Web Experimental: https://eduspace-frontend-web-app-experiment-production.up.railway.app/
   - Backend API: https://eduspace-platform-production.up.railway.app/ (mismo backend con soporte para ambas versiones)
   - Mobile App (Flutter) configurada para apuntar al backend de producción
@@ -1251,3 +1253,37 @@ A continuación, se presenta el backlog de las 7 historias de usuario "To-Be" qu
 | **TOTAL EXPERIMENTO**                          |                        | **21 Story Points** |
 
 El experimento completo representa un esfuerzo de **21 Story Points**, siendo la **Hipótesis 3 (Módulo de Meetings)** la más compleja con 10 puntos (47.6% del esfuerzo total), seguida por las hipótesis de CRUD de Profesores y Dashboards con 3 puntos cada una.
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+#### 8.3.3.6. Team Collaboration Insights
+
+### 8.3.4. To-Be Validation Interviews
+
+#### 8.3.4.1. Diseño de Entrevistas.
+
+#### 8.3.4.2. Registro de Entrevistas.
+
+## 8.4. Experiment Aftermath & Analysis
+
+### 8.4.1. Analysis and Interpretation of Results
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+## 8.5. Continuous Learning
+
+### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+## 8.6. To-Be Software Platform Pre-launch
+
+### 8.6.1. About-the-Product Intro Video
