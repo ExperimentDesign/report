@@ -262,11 +262,11 @@ En esta sección se presentará una representación de la landing page tanto par
 
 **Landing Page para Desktop Web Browser:**
 
-![LandingPage](/assets/chapter4/LandingPage.png)
+![LandingPage](../assets/chapter4/LandingPage.png)
 
 **Web Mobile Browser**
 
-![LandingPage](/assets/chapter4/MobileBrowser.png)
+![LandingPage](../assets/chapter4/MobileBrowser.png)
 
 ## 4.4. Mobile Applications UX/UI Design.
 
@@ -274,19 +274,19 @@ En esta sección se presentará una representación de la landing page tanto par
 
 En esta sección se presentan los wireframes de la aplicación móvil, los cuales representan la estructura base de cada pantalla y su disposición de elementos antes de pasar a la etapa de diseño visual. Los wireframes fueron elaborados siguiendo los principios de diseño centrado en el usuario, priorizando la claridad, simplicidad y eficiencia en la navegación.
 
-![WireframeMobile1](/assets/chapter4/WireframeMobile1.png)
+![WireframeMobile1](../assets/chapter4/WireframeMobile1.png)
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
 
 En esta sección se presentan los wireflows de la aplicación móvil, que muestran la secuencia de navegación entre pantallas y el comportamiento de la interfaz según las interacciones del usuario. Cada wireflow está diseñado en torno a un User Goal específico y se basa en los User Personas definidos para el proyecto.
 
-![WireflowMobile1](/assets/chapter4/WireflowMobile.png)
+![WireflowMobile1](../assets/chapter4/WireflowMobile.png)
 
 ### 4.4.3. Mobile Applications Mock-ups.
 
 En esta sección se presentan los Mock-ups de la aplicación mobile de EduSpace, que representan una versión más elaborada de los wireframes iniciales. Los mock-ups permiten visualizar la propuesta de diseño con un mayor nivel de detalle gráfico, aplicando los principios de diseño de interfaces, los elementos de diseño visual, y asegurando la integración de un diseño inclusivo y accesible para todos los usuarios.
 
-![MockUpsMobile1](/assets/chapter4/mockups.png)
+![MockUpsMobile1](../assets/chapter4/mockups.png)
 
 Link del figma: [Figma mobile](https://www.figma.com/design/qUn8pAF3qzp0iGbJJZ8Aeq/EduSpace-Mobile?node-id=5-2&t=JWZjVwhiNOdh3fyN-1)
 
@@ -294,24 +294,25 @@ Link del figma: [Figma mobile](https://www.figma.com/design/qUn8pAF3qzp0iGbJJZ8A
 
 En esta sección se presentan los User Flow Diagrams de EduSpace, que describen de manera visual y estructurada los recorridos que realizan los usuarios al interactuar con la aplicación
 
-![UserflowMobile1](/assets/chapter4/userFlow.png)
+![UserflowMobile1](../assets/chapter4/userFlow.png)
 
 Link del video: [Ver Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/ESvVuWYZQNxAjYTT9hkmZagBbYaMuJ3fYdusq5y7VxWY4Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=sFRpAq)
+
 ## 4.5. Mobile Applications Prototyping.
 
 ### 4.5.1. Android Mobile Applications Prototyping.
 
 El prototipo para Android de EduSpace permite experimentar de manera práctica las principales funcionalidades de la aplicación en un entorno simulado. Este prototipo incluye los flujos definidos en los User Flow Diagrams y utiliza los mock-ups adaptados al ecosistema Android, respetando sus guías de diseño (Material Design), tipografías, patrones de interacción y componentes nativos.
 
-![PrototipoMobileAndroid](/assets/chapter4/PrototipoMobileAndroid.png)
+![PrototipoMobileAndroid](../assets/chapter4/PrototipoMobileAndroid.png)
 
-Link de video en Youtube: https://youtu.be/VKWHkonuago 
+Link de video en Youtube: https://youtu.be/VKWHkonuago
 
 ### 4.5.2. iOS Mobile Applications Prototyping.
 
 El prototipo para iOS de EduSpace presenta la aplicación adaptada al entorno visual y de interacción propio del sistema operativo de Apple. Basado en los mock-ups, este prototipo integra las guías de diseño de iOS (Human Interface Guidelines), aplicando tipografías, íconos y patrones de navegación característicos de la plataforma.
 
-![PrototipoMobileIos](/assets/chapter4/PrototipoMobileIos.png)
+![PrototipoMobileIos](../assets/chapter4/PrototipoMobileIos.png)
 
 Link de video en Youtube: https://youtu.be/5Jz9PoaT5I8
 

@@ -1155,10 +1155,6 @@ Estos datos cuantitativos se complementarán con los datos cualitativos obtenido
 
 ### 8.3.1. To-Be User Stories
 
-Estas historias de usuario ("To-Be") representan el incremento de funcionalidad que se validará en los experimentos. Corresponden a las 5 hipótesis definidas en la sección 8.2.1 y describen las funcionalidades implementadas en el código experimental (rama `experimental`).
-
----
-
 | Story ID   | Título                                             | Descripción (User Story)                                                                                                                                                               | Criterios de Aceptación (Gherkin)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ---------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **TBU-01** | Permitir edición de datos de profesor              | Como **Administrador**, quiero **editar** la información de un profesor existente (DNI, email, foto, etc.) **para** corregir errores de registro sin tener que contactar a soporte.    | **Escenario 1: Edición exitosa de un profesor**<br>**Dado** que el administrador está en la página de "Gestión de Personal" y ve la lista de profesores.<br>**Cuando** hace clic en el ícono "Editar" del "Profesor A".<br>**Y** se abre un modal con la información actual del "Profesor A".<br>**Y** cambia el campo DNI de "123" a "456" y hace clic en "Guardar".<br>**Entonces** el sistema valida los datos, guarda el cambio, cierra el modal, y la lista de profesores muestra al "Profesor A" con el DNI "456".<br><br>**Escenario 2: Intento de guardar datos inválidos**<br>**Dado** que el administrador está en el modal de "Editar Profesor".<br>**Cuando** borra el campo DNI (dejándolo vacío) y hace clic en "Guardar".<br>**Entonces** el sistema muestra un mensaje de error ("El DNI es un campo obligatorio") y el modal no se cierra.                          |
@@ -1168,103 +1164,92 @@ Estas historias de usuario ("To-Be") representan el incremento de funcionalidad 
 | **TBU-05** | Permitir al admin eliminar reuniones               | Como **Administrador**, quiero **eliminar reuniones canceladas** **para** mantener el calendario de reuniones actualizado.                                                             | **Escenario 1: Eliminación exitosa de una reunión**<br>**Dado** que el administrador está en el módulo "Meeting Management" y ve una reunión cancelada.<br>**Cuando** hace clic en el ícono "Eliminar" de la reunión.<br>**Y** se abre un modal de confirmación ("¿Estás seguro de eliminar esta reunión?").<br>**Y** hace clic en "Confirmar".<br>**Entonces** el sistema elimina la reunión de la base de datos, y la reunión ya no aparece en la lista.<br><br>**Escenario 2: Cancelación de eliminación**<br>**Dado** que el administrador está en el modal de confirmación para eliminar una reunión.<br>**Cuando** hace clic en "Cancelar".<br>**Entonces** el modal se cierra y la reunión NO es eliminada.                                                                                                                                                                   |
 | **TBU-06** | Visualizar resumen de reuniones en dashboard admin | Como **Administrador**, quiero **ver un resumen de mis reuniones del día en el dashboard principal** **para** mantener visibilidad de mis compromisos sin salir de la aplicación.      | **Escenario 1: Dashboard muestra reuniones del día**<br>**Dado** que el administrador tiene 3 reuniones programadas para hoy.<br>**Cuando** accede al dashboard principal.<br>**Entonces** el sistema muestra un componente "Resumen de Reuniones" con las 3 reuniones del día, incluyendo: título, hora, lugar, y cantidad de invitados.<br><br>**Escenario 2: Dashboard sin reuniones programadas**<br>**Dado** que el administrador NO tiene reuniones programadas para hoy.<br>**Cuando** accede al dashboard principal.<br>**Entonces** el sistema muestra el componente "Resumen de Reuniones" con el mensaje "No tienes reuniones programadas para hoy".                                                                                                                                                                                                                      |
 | **TBU-07** | Visualizar "Mis Reuniones" en dashboard profesor   | Como **Profesor**, quiero **ver mis próximas reuniones en mi dashboard** **para** recordar mis compromisos y prepararme adecuadamente.                                                 | **Escenario 1: Dashboard muestra próximas reuniones**<br>**Dado** que el profesor ha sido invitado a 2 reuniones esta semana.<br>**Cuando** accede a su dashboard principal.<br>**Entonces** el sistema muestra una sección "Mis Reuniones" con las 2 reuniones próximas, incluyendo: título, fecha, hora, lugar, y organizador.<br><br>**Escenario 2: Dashboard sin reuniones próximas**<br>**Dado** que el profesor NO tiene reuniones programadas en los próximos 7 días.<br>**Cuando** accede a su dashboard principal.<br>**Entonces** el sistema muestra la sección "Mis Reuniones" con el mensaje "No tienes reuniones programadas próximamente".                                                                                                                                                                                                                             |
-
----
-
-#### Mapeo de User Stories a Hipótesis
-
-| Hipótesis                                                         | User Stories Relacionadas |
-| ----------------------------------------------------------------- | ------------------------- |
-| **H1:** Validación de Eficiencia en "Editar Profesor"             | TBU-01                    |
-| **H2:** Validación de Integridad de Datos con "Eliminar Profesor" | TBU-02                    |
-| **H3:** Validación de Adopción del Módulo de "Meetings"           | TBU-03, TBU-04, TBU-05    |
-| **H4:** Validación del Dashboard de Admin (Resumen de Reuniones)  | TBU-06                    |
-| **H5:** Validación del Dashboard de Profesor ("Mis Reuniones")    | TBU-07                    |
-
-Estas 7 User Stories representan el alcance completo del código experimental implementado en la rama `experimental` del repositorio `eduspace-frontend-web-app`, y constituyen el incremento de funcionalidad que será validado mediante los experimentos definidos en las secciones anteriores.
+| **TBU-08** | Editar perfil de administrador                     | Como **Administrador**, quiero **editar mi propio perfil** (nombre, teléfono, contraseña) **para** mantener mi información de contacto y seguridad actualizada.                        | **Escenario 1: Actualización de perfil**<br>**Dado** que el administrador está en su perfil.<br>**Cuando** edita su teléfono y guarda.<br>**Entonces** el sistema actualiza la información exitosamente.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **TBU-09** | Eliminar cuenta de administrador                   | Como **Administrador**, quiero **eliminar mi propia cuenta** **para** darme de baja del servicio si ya no requiero utilizar la plataforma.                                             | **Escenario 1: Eliminación de cuenta propia**<br>**Dado** que el administrador desea darse de baja.<br>**Cuando** solicita eliminar su cuenta y confirma la acción crítica.<br>**Entonces** su sesión se cierra y sus datos son eliminados o anonimizados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ### 8.3.2. To-Be Product Backlog
-
-A continuación, se presenta el backlog de las 7 historias de usuario "To-Be" que componen el alcance del experimento, con su estimación de esfuerzo correspondiente en Story Points (basado en la secuencia de Fibonacci: 1, 2, 3, 5, 8).
-
----
 
 | # Orden | User Story ID | Título                                             | Story Points (1/2/3/5/8) |
 | ------- | ------------- | -------------------------------------------------- | ------------------------ |
 | 1       | **TBU-01**    | Permitir edición de datos de profesor              | **3**                    |
 | 2       | **TBU-02**    | Permitir eliminación de profesor                   | **2**                    |
-| 3       | **TBU-03**    | Permitir al admin crear reuniones                  | **5**                    |
-| 4       | **TBU-04**    | Permitir al admin editar reuniones                 | **3**                    |
-| 5       | **TBU-05**    | Permitir al admin eliminar reuniones               | **2**                    |
-| 6       | **TBU-06**    | Visualizar resumen de reuniones en dashboard admin | **3**                    |
-| 7       | **TBU-07**    | Visualizar "Mis Reuniones" en dashboard profesor   | **3**                    |
-|         |               | **TOTAL**                                          | **21 Story Points**      |
-
----
-
-#### Justificación de Estimaciones
-
-**TBU-01 (Editar Profesor): 3 puntos**
-
-- Tarea estándar que implica: cargar datos actuales en un modal, validar formulario (DNI, email, teléfono), realizar llamada `PUT` al endpoint `/api/v1/profiles/teachers/{id}`, y actualizar la vista al recibir confirmación.
-- Complejidad media debido a validación de campos y manejo de estados del modal.
-
-**TBU-02 (Eliminar Profesor): 2 puntos**
-
-- Tarea simple: mostrar modal de confirmación con advertencia, realizar llamada `DELETE` al endpoint `/api/v1/profiles/teachers/{id}`, y actualizar lista de profesores.
-- Más simple que editar porque no requiere formulario ni validación compleja, solo confirmación del usuario.
-
-**TBU-03 (Crear Reunión): 5 puntos**
-
-- Tarea compleja que requiere: formulario con múltiples campos (título, fecha, hora, lugar, descripción), **selección múltiple de profesores como invitados**, llamada `POST` al endpoint `/api/v1/meetings`, y **envío de notificaciones** a profesores invitados.
-- Mayor complejidad que TBU-01 debido a selección múltiple de participantes, manejo de fechas/horas (validación de formato `DateOnly`/`TimeOnly`), y lógica de notificaciones.
-
-**TBU-04 (Editar Reunión): 3 puntos**
-
-- Tarea estándar: cargar datos actuales de la reunión en modal, validar formulario, actualizar lista de invitados (añadir/remover participantes), realizar llamada `PUT` al endpoint `/api/v1/meetings/{id}`.
-- Complejidad similar a TBU-01, aunque con más campos que editar profesor.
-
-**TBU-05 (Eliminar Reunión): 2 puntos**
-
-- Tarea simple: modal de confirmación, llamada `DELETE` al endpoint `/api/v1/meetings/{id}`, actualización de lista de reuniones.
-- Idéntica complejidad a TBU-02 (eliminar profesor).
-
-**TBU-06 (Resumen de Reuniones en Dashboard Admin): 3 puntos**
-
-- Tarea estándar: crear componente nuevo (`classroom-changes-meetings.component.vue`), realizar llamada `GET` para obtener reuniones del día, implementar lógica de filtrado (reuniones del día actual), mostrar información visual (título, hora, lugar, cantidad de invitados), y añadir indicadores visuales ("En 1 hora").
-- Complejidad media debido a creación de componente completo con lógica de filtrado y actualización automática.
-
-**TBU-07 ("Mis Reuniones" en Dashboard Profesor): 3 puntos**
-
-- Tarea estándar: modificar componente existente (`home-teacher.component.vue`), realizar llamada `GET /api/v1/meetings?teacherId={id}` para obtener reuniones del profesor, implementar lógica de filtrado (próximas reuniones), mostrar información visual (título, fecha, hora, lugar, organizador), y añadir badges ("HOY", "MAÑANA") y contador ("tienes X reuniones esta semana").
-- Complejidad similar a TBU-06, aunque es modificación de componente existente en lugar de creación desde cero.
-
----
-
-#### Resumen de Esfuerzo por Hipótesis
-
-| Hipótesis                                      | User Stories           | Total Story Points  |
-| ---------------------------------------------- | ---------------------- | ------------------- |
-| **H1:** Editar Profesor                        | TBU-01                 | **3**               |
-| **H2:** Eliminar Profesor                      | TBU-02                 | **2**               |
-| **H3:** Módulo de Meetings                     | TBU-03, TBU-04, TBU-05 | **10**              |
-| **H4:** Dashboard Admin (Resumen de Reuniones) | TBU-06                 | **3**               |
-| **H5:** Dashboard Profesor ("Mis Reuniones")   | TBU-07                 | **3**               |
-| **TOTAL EXPERIMENTO**                          |                        | **21 Story Points** |
-
-El experimento completo representa un esfuerzo de **21 Story Points**, siendo la **Hipótesis 3 (Módulo de Meetings)** la más compleja con 10 puntos (47.6% del esfuerzo total), seguida por las hipótesis de CRUD de Profesores y Dashboards con 3 puntos cada una.
+| 3       | **TBU-08**    | Editar perfil de administrador                     | **3**                    |
+| 4       | **TBU-09**    | Eliminar cuenta de administrador                   | **2**                    |
+| 5       | **TBU-03**    | Permitir al admin crear reuniones                  | **5**                    |
+| 6       | **TBU-04**    | Permitir al admin editar reuniones                 | **3**                    |
+| 7       | **TBU-05**    | Permitir al admin eliminar reuniones               | **2**                    |
+| 8       | **TBU-06**    | Visualizar resumen de reuniones en dashboard admin | **3**                    |
+| 9       | **TBU-07**    | Visualizar "Mis Reuniones" en dashboard profesor   | **3**                    |
+|         |               | **TOTAL**                                          | **26 Story Points**      |
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 #### 8.3.3.1. To-Be Sprint Backlogs
 
+| User Story ID | Task ID | Título de Tarea                              | Descripción                                                                          | Estimación (Horas) | Asignado a        | Estado |
+| ------------- | ------- | -------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------ | ----------------- | ------ |
+| TBU-01        | T-01    | Backend: Endpoint PUT Teacher                | Implementar endpoint PUT /api/v1/teachers/{id} para actualizar datos.                | 3h                 | Andrés Torres     | Done   |
+| TBU-01        | T-02    | Frontend: Modal de Edición Docente           | Crear modal en Vue con formulario reactivo para editar datos del docente.            | 4h                 | Marllely Arias    | Done   |
+| TBU-02        | T-03    | Backend: Endpoint DELETE Teacher             | Implementar endpoint DELETE /api/v1/teachers/{id}.                                   | 2h                 | Andrés Torres     | Done   |
+| TBU-02        | T-04    | Frontend: Confirmación de Eliminación        | Implementar lógica de eliminación y modal de confirmación en la lista de docentes.   | 2h                 | Marllely Arias    | Done   |
+| TBU-08        | T-05    | Backend: Endpoint PUT Admin Profile          | Implementar PUT /api/v1/admins/profile para actualización de datos propios.          | 3h                 | Alejandro Mendoza | Done   |
+| TBU-08        | T-06    | Frontend: Vista Perfil Admin                 | Crear vista de "Mi Perfil" con formulario de edición para el administrador.          | 4h                 | Luciana Sanchez   | Done   |
+| TBU-09        | T-07    | Backend: Endpoint DELETE Admin               | Implementar lógica segura para eliminación de cuenta propia DELETE /api/v1/admins.   | 2h                 | Alejandro Mendoza | Done   |
+| TBU-09        | T-08    | Frontend: Flujo de baja de cuenta            | Implementar botón de "Eliminar Cuenta" con doble confirmación en el perfil.          | 2h                 | Luciana Sanchez   | Done   |
+| TBU-03        | T-09    | Backend: Endpoint POST Meetings              | Crear endpoint para agendar reuniones, validando fechas y participantes.             | 5h                 | Piero Velarde     | Done   |
+| TBU-03        | T-10    | Frontend: Formulario Crear Reunión           | Diseñar formulario complejo con selector múltiple de profesores invitados.           | 6h                 | Marllely Arias    | Done   |
+| TBU-04        | T-11    | Backend: Endpoint PUT Meetings               | Implementar actualización de reuniones (fecha, hora, lugar).                         | 3h                 | Piero Velarde     | Done   |
+| TBU-04        | T-12    | Frontend: Lógica de Edición Reunión          | Adaptar formulario de reunión para modo edición cargando datos existentes.           | 3h                 | Marllely Arias    | Done   |
+| TBU-05        | T-13    | Backend: Endpoint DELETE Meetings            | Implementar borrado lógico o físico de reuniones.                                    | 2h                 | Piero Velarde     | Done   |
+| TBU-06        | T-14    | Frontend: Componente Resumen Dashboard Admin | Crear widget para el dashboard que consuma GET /meetings?date=today.                 | 4h                 | Luciana Sanchez   | Done   |
+| TBU-07        | T-15    | Backend: Endpoint GET MyMeetings             | Crear endpoint optimizado para listar reuniones de un profesor específico.           | 3h                 | Alejandro Mendoza | Done   |
+| TBU-07        | T-16    | Frontend: Componente Mis Reuniones Teacher   | Crear sección "Mis Reuniones" en el home del profesor mostrando tarjetas de eventos. | 4h                 | Luciana Sanchez   | Done   |
+| General       | T-17    | Integración y Pruebas                        | Verificar flujo completo de creación de reuniones y visualización en dashboards.     | 5h                 | Todo el Equipo    | Done   |
+| General       | T-18    | Despliegue a Ambiente Experimental           | Configurar y desplegar la rama feature/experiment en Railway para pruebas.           | 3h                 | Andrés Torres     | Done   |
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
+##### Editar Profesor
+
+![Modal de edición de información del docente](../assets/chapter8/implement-frontend/teacher-edit.png)
+
+##### Módulo de Reuniones
+
+![Vista de gestión de reuniones con opciones de crear, editar y eliminar](../assets/chapter8/implement-frontend/meeting-module.png)
+
+##### Crear Reunión
+
+![Formulario de creación de reunión con asignación de participantes](../assets/chapter8/implement-frontend/meeting-create.png)
+
+##### Perfil Admin
+
+![Vista de gestión de perfil del administrador](../assets/chapter8/implement-frontend/admin-profile.png)
+
+##### Dashboard Admin
+
+![Dashboard de administrador con resumen de actividad diaria](../assets/chapter8/implement-frontend/admin-dashboard.png)
+
+##### Dashboard Profesor
+
+![Dashboard de docente con visualización de próximas reuniones](../assets/chapter8/implement-frontend/teacher-dashboard.png)
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+#### Teachers API
+
+[](../assets/chapter8/implement-backend/teachers-profiles.png)
+
+#### Meetings API
+
+[](../assets/chapter8/implement-backend/meetings.png)
+
+#### Administrator Profiles API
+
+[](../assets/chapter8/implement-backend/admin-profile.png)
 
 #### 8.3.3.6. Team Collaboration Insights
 
