@@ -1257,11 +1257,158 @@ Estos datos cuantitativos se complementarán con los datos cualitativos obtenido
 
 #### 8.3.4.1. Diseño de Entrevistas.
 
+**Segmento 1: Profesores**
+
+Objetivo: Validar impacto real del dashboard “Mis Reuniones”, olvidos, puntualidad y adopción del módulo nativo.
+
+### A. Validación de Visibilidad – Dashboard “Mis Reuniones”
+
+1. ¿Con qué frecuencia le avisan de reuniones por WhatsApp o correo personal?
+
+2. ¿Alguna vez ha olvidado una reunión por no tener un lugar único donde revisarlas?
+
+3. ¿Con qué frecuencia revisa EduSpace durante su día laboral?
+
+4. ¿Le sería útil tener sus próximas reuniones en el dashboard de la app?
+
+5. ¿Qué información debería mostrarse para ayudarle a preparar sus clases o compromisos?
+
+### B. Olvidos y Conflictos Operativos
+
+6. En el último mes, ¿ha olvidado alguna reunión o ha llegado tarde?
+
+7. ¿Por qué cree que ocurrió? (falta de visibilidad, demasiadas apps, distracciones)
+
+8. ¿Cree que un recordatorio dentro de EduSpace reduciría olvidos o retrasos?  
+
+9. ¿Qué tan probable es que revise un dashboard si ahí aparece todo lo importante?
+
+### C. Uso Actual de Herramientas Externas
+
+10. ¿Qué herramienta usa más para enterarse de reuniones?  
+
+11. ¿Le resulta cómodo depender de WhatsApp, correos y calendarios a la vez? 
+
+12. ¿Preferiría que todo estuviera centralizado dentro de EduSpace?
+
+### D. Adopción Potencial del Módulo de Reuniones
+
+13. Si EduSpace mostrara todas sus reuniones con claridad, ¿lo usaría diariamente?  
+
+14. ¿Qué características harían que definitivamente adopte el módulo nativo?  
+
+15. ¿Qué haría que prefiera seguir usando WhatsApp o correo?
+
+## E. Diseño, accesibilidad y fricción operativa
+
+16. ¿Preferiría que las reuniones se muestren como lista o como tarjetas?
+
+17. ¿Qué tan útil sería ver un color distinto para reuniones urgentes?
+
+18. ¿Le gustaría tener una barra de búsqueda para encontrar reuniones antiguas?
+
+19. ¿Cuánta información debe estar visible sin abrir la reunión?
+
+20. ¿Le gustaría tener etiquetas como “Importante”, “Reunión urgente”, “Coordinación”?
+
+21. ¿Necesita que las reuniones aparezcan ordenadas por hora automáticamente?
+
+**Segmento 2: Administradores**
+
+Objetivo: Validar las hipótesis experimentales sobre CRUD de profesores, módulo de reuniones y dashboards.
+
+### A. Validación del CRUD Completo – “Editar Profesor”
+
+1. ¿Con qué frecuencia comete errores al registrar a un profesor?
+
+2. ¿Qué tipo de errores son más comunes? (DNI, correo, nombre, foto, teléfono)
+
+3. ¿Qué hace actualmente cuando se equivoca en un dato?
+
+4. ¿Cuánto tiempo le toma resolver ese error con el proceso actual?
+
+5. ¿Cómo afectaría su trabajo poder editar un profesor directamente sin contactar soporte?
+
+6. Si pudiera corregir un error en menos de 1 minuto, ¿lo usaría siempre? ¿Por qué?
+
+### B. Validación del CRUD Completo – “Eliminar Profesor”
+
+7. ¿Cuántos profesores suelen darse de baja en un semestre o año?
+
+8. ¿Qué problemas le genera ver profesores inactivos dentro del sistema?
+
+9. ¿Cómo afecta esto su confianza en los datos de EduSpace?
+
+10. ¿Le daría más seguridad poder eliminar usted mismo a un profesor inactivo?
+
+11. ¿Qué tan importante es evitar que ex-empleados mantengan cuentas activas?
+
+### C. Validación del Módulo Nativo de Reuniones
+
+12. ¿Cuántas reuniones coordina normalmente por semana o mes?
+
+13. ¿Qué herramientas utiliza actualmente para organizarlas?
+
+14. ¿Qué problemas enfrenta usando WhatsApp, Google Calendar o Excel?
+
+15. Si pudiera crear reuniones directamente en EduSpace, ¿lo usaría? ¿Por qué?
+
+16. ¿Qué necesitaría que tenga el módulo para dejar de usar WhatsApp?
+
+17. ¿Qué función considera crítica dentro de un módulo de reuniones?
+
+18. ¿Qué escenarios lo harían seguir usando sus herramientas externas?
+
+### D. Validación del Dashboard del Administrador (Resumen de Reuniones)
+
+19. Cuando desea saber cuántas reuniones tiene en el día, ¿dónde lo revisa?
+
+20. ¿Le toma tiempo encontrar esta información entre aplicaciones externas?
+
+21. ¿Le sería útil ver un resumen de reuniones del día en su dashboard de EduSpace?
+
+22. ¿Qué información debería mostrarse para ser realmente útil?
+
+23. ¿Cree que esto le ayudaría a tomar decisiones más rápido o evitar olvidos?
+
+### E. Validación de Gaps y Contexto Real
+
+24. ¿Con qué frecuencia necesita actualizar datos de un profesor ya registrado?
+
+25. ¿Cuánto tiempo pierde esperando que soporte corrija errores de registro?
+
+26. ¿Qué tanto afecta su operación tener datos incorrectos o desactualizados?
+
+27. ¿Qué tan dispuesto estaría a dejar WhatsApp y usar EduSpace como canal principal?
+
+28. ¿Qué tan grave considera la falta de historial y centralización de reuniones?
+
 #### 8.3.4.2. Registro de Entrevistas.
+
+### Segmento: Profesores
+
+| **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
+| --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
+| Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2v1.png)   | [Ver entrevista](https://)                   | 00:00:00   | 00:00        |
+| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2v2.png)   | [Ver entrevista]() | 00:00:00   | 00:00        |
+| Angela Olivera        | 24       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2v3.png)   | [Ver entrevista]() | 00:00:00   | 00:00        |
+
+---
+
+### Segmento: Administradores
+
+| **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
+| --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
+| a       |       | al   | ![Screenshot](../assets/chapter6/entrevistas/Administradores2v1.png)   | [Ver entrevista](https://)                   | 00:00:00   | 00:00        |
+| a        |        | Sa   | ![Screenshot](../assets/chapter6/entrevistas/Administradores2v2.png)   | [Ver entrevista](https:/) | 00:00:00   | 00:00        |
+| a        |        | Sa   | ![Screenshot](../assets/chapter6/entrevistas/Administradores2v3.png)   | [Ver entrevista](https://) | 00:00:00   | 00:00        |
+
 
 ## 8.4. Experiment Aftermath & Analysis
 
 ### 8.4.1. Analysis and Interpretation of Results
+
+<!-- Luciana -->
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
