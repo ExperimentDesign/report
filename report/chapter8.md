@@ -1389,9 +1389,9 @@ Objetivo: Validar las hipótesis experimentales sobre CRUD de profesores, módul
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
 | --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
-| Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2v1.png)   | [Ver entrevista](https://)                   | 00:00:00   | 00:00        |
-| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2v2.png)   | [Ver entrevista]() | 00:00:00   | 00:00        |
-| Angela Olivera        | 24       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2v3.png)   | [Ver entrevista]() | 00:00:00   | 00:00        |
+| Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor1.jpg)   | [Ver entrevista](https://youtu.be/bn_aKf9ONlI)                   | 00:01:15   | 07:15        |
+| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor2v2.png)   | [Ver entrevista]() | 00:00:00   | 00:00        |
+| Angela Olivera        | 24       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor3.png)   | [Ver entrevista](https://youtu.be/qicqN21uUM8) | 00:01:00   | 09:10        |
 
 ---
 
