@@ -1389,9 +1389,9 @@ Objetivo: Validar las hipótesis experimentales sobre CRUD de profesores, módul
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
 | --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
-| Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor1.jpg)   | [Ver entrevista](https://youtu.be/bn_aKf9ONlI)                   | 00:01:15   | 07:15        |
-| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor2v2.png)   | [Ver entrevista]() | 00:00:00   | 00:00        |
-| Angela Olivera        | 24       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor3.png)   | [Ver entrevista](https://youtu.be/qicqN21uUM8) | 00:01:00   | 09:10        |
+| Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor1.jpg)     | [Ver entrevista](https://youtu.be/bn_aKf9ONlI)                   | 00:01:15   | 07:15        |
+| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor2v2.png)   | [Ver entrevista]()                                               | 00:00:00   | 00:00        |
+| Angela Olivera        | 24       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor3.png)     | [Ver entrevista](https://youtu.be/qicqN21uUM8)                   | 00:01:00   | 09:10        |
 
 ---
 
@@ -1399,22 +1399,134 @@ Objetivo: Validar las hipótesis experimentales sobre CRUD de profesores, módul
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
 | --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
-| a       |       | al   | ![Screenshot](../assets/chapter6/entrevistas/Administradores2v1.png)   | [Ver entrevista](https://)                   | 00:00:00   | 00:00        |
-| a        |        | Sa   | ![Screenshot](../assets/chapter6/entrevistas/Administradores2v2.png)   | [Ver entrevista](https:/) | 00:00:00   | 00:00        |
-| a        |        | Sa   | ![Screenshot](../assets/chapter6/entrevistas/Administradores2v3.png)   | [Ver entrevista](https://) | 00:00:00   | 00:00        |
+| a       |       | al   | ![Screenshot](../assets/chapter8/entrevistas/Administradores2v1.png)   | [Ver entrevista](https://)                   | 00:00:00   | 00:00        |
+| a        |        | Sa   | ![Screenshot](../assets/chapter6¿8/entrevistas/Administradores2v2.png)   | [Ver entrevista](https:/) | 00:00:00   | 00:00        |
+| a        |        | Sa   | ![Screenshot](../assets/chapter8/entrevistas/Administradores2v3.png)   | [Ver entrevista](https://) | 00:00:00   | 00:00        |
 
 
 ## 8.4. Experiment Aftermath & Analysis
 
 ### 8.4.1. Analysis and Interpretation of Results
 
-<!-- Luciana -->
+En el estudio, las preguntas fueron reformuladas y organizadas con el propósito de obtener respuestas precisas sobre la experiencia de los usuarios con las funcionalidades experimentales de EduSpace, específicamente el módulo nativo de reuniones y el dashboard “Mis Reuniones”.
+Este enfoque permitió analizar la utilidad percibida, el nivel de adopción esperado y los problemas actuales que enfrentan profesores y administradores al gestionar reuniones mediante herramientas externas.
+
+## Preguntas formuladas
+
+Para evaluar la experiencia de los usuarios con el prototipo experimental, se aplicaron las siguientes diez preguntas:
+
+1. ¿Le sería útil ver todas sus próximas reuniones directamente en el dashboard de EduSpace?
+
+2. ¿Alguna vez ha olvidado o llegado tarde a una reunión por no tener un lugar centralizado donde revisarlas?
+
+3. ¿Con qué frecuencia depende de herramientas externas como WhatsApp, Google Calendar o correo para enterarse de reuniones?
+
+4. ¿Le resultaría más conveniente que toda la información de reuniones estuviera integrada dentro de EduSpace?
+
+5. ¿Qué tan probable es que utilice un módulo nativo de reuniones si muestra claramente fecha, hora, lugar y asistentes?
+
+6. ¿Cree que un recordatorio dentro de EduSpace reduciría olvidos o retrasos?
+
+7. ¿Qué formato de visualización considera más útil para sus reuniones (lista, tarjetas o calendario)?
+
+8. ¿Considera necesario que las reuniones se organicen automáticamente por fecha y hora?
+
+9. ¿Le gustaría contar con etiquetas como “Urgente” o “Importante” para priorizar reuniones?
+
+10. ¿Qué tan cómodo se sentiría usando EduSpace como su única herramienta para gestionar reuniones institucionales?
+
+Las preguntas fueron aplicadas a una muestra de 25 participantes compuesta por profesores y administradores de instituciones educativas privadas de diversos distritos. A continuación, se explican los resultados obtenidos.
+
+## Análisis de datos de la muestra
+
+- **Utilidad del dashboard:** 
+
+  Los resultados muestran que la mayoría de los participantes considera que incorporar las reuniones en el dashboard de EduSpace sería beneficioso. Entre las 25 respuestas, predominan las opciones “Útil” y “Muy útil”, lo cual indica una valoración positiva hacia la visibilidad centralizada de las reuniones. Por otro lado, un grupo menor manifestó posiciones neutras o de baja utilidad, lo que sugiere que, aunque esta funcionalidad es ampliamente percibida como valiosa, algunos usuarios aún no la consideran indispensable para su flujo de trabajo.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta1.png"></div>
+
+- **Análisis de Olvidos y Retrasos**
+  
+  El gráfico muestra que la mayoría de los participantes ha olvidado o llegado tarde a una reunión al menos alguna vez, principalmente por no contar con un espacio centralizado para consultarlas. Aunque un pequeño grupo indicó que nunca ha tenido este problema, la tendencia general evidencia que los olvidos son relativamente frecuentes, lo que refuerza la necesidad de una funcionalidad que unifique la información de reuniones dentro de EduSpace.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta2.png"></div>
+
+- **Dependencia de herramientas externas**
+
+  El gráfico evidencia que la mayoría de los participantes depende frecuentemente de herramientas externas como WhatsApp, Google Calendar o correo para enterarse de reuniones, destacando las categorías “Casi siempre” y “A veces”. Esto indica que la comunicación institucional está fragmentada y distribuida en múltiples canales, lo que refuerza la necesidad de centralizar esta información dentro de EduSpace.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta3.png"></div>
+
+- **Conveniencia de centralizar la información**
+
+  La mayoría de los participantes considera totalmente conveniente que la información de reuniones esté integrada dentro de EduSpace, consolidándose esta opción como la más frecuente. Aunque algunos usuarios indicaron respuestas como “En parte” o “Neutral”, estas representan una proporción menor. El resultado refuerza que la centralización es vista como una mejora clara y necesaria para reducir la dispersión de información entre múltiples aplicaciones externas.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta4.png"></div>
+
+- **Probabilidad de uso del módulo nativo**
+
+  Los resultados indican que la mayoría de los usuarios estaría dispuesta a usar un módulo nativo de reuniones siempre que muestre claramente la información clave (fecha, hora, lugar y asistentes). Las opciones “Muy probable” y “Probable” concentran la mayor parte de las respuestas, mientras que las categorías de baja probabilidad representan una proporción menor. Esto sugiere una alta intención de adopción del módulo propuesto.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta5.png"></div>
+
+- **Utilidad de los recordatorios dentro de EduSpace**
+
+  La mayoría de los participantes considera que un recordatorio integrado en EduSpace sería poco o nada útil, concentrando estas dos opciones la mayor parte de las respuestas. Aunque algunos usuarios indicaron que podría ayudarles un poco o de forma neutral, estos representan una proporción menor. En conjunto, los resultados sugieren que los recordatorios, por sí solos, no son percibidos como una solución significativa para reducir olvidos o retrasos.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta6.png"></div>
+
+- **Formato preferido para visualizar reuniones**
+
+  El gráfico muestra que la opción “Lista” es claramente la preferida por la mayoría de los participantes, representando casi la mitad de las respuestas. Otras opciones como “Calendario” y “Cualquiera” aparecen en proporciones similares pero menores, mientras que formatos como “Tarjetas” o “Ninguno” tienen una presencia más reducida. En general, los resultados señalan que los usuarios prefieren una vista simple y directa para revisar sus reuniones.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta7.png"></div>
+
+- **Necesidad de ordenar reuniones automáticamente**
+
+  Los resultados muestran una distribución equilibrada, aunque con una ligera inclinación hacia considerar esta función como necesaria o útil, representando una parte importante de las respuestas. Las opciones “Neutral” y “Poco necesario” también tienen presencia relevante, lo que indica que, si bien muchos usuarios valoran el orden automático, otros no lo consideran indispensable. En general, la funcionalidad es vista como beneficiosa, pero no crítica para todos los participantes.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta8.png"></div>
+
+- **Uso de etiquetas para priorizar reuniones**
+
+  El gráfico revela opiniones divididas sobre la utilidad de incorporar etiquetas como “Urgente” o “Importante”. Aunque una parte significativa de los participantes seleccionó “Neutral” o “No mucho”, también existe un grupo relevante que considera esta funcionalidad útil o incluso definitivamente necesaria. En conjunto, los resultados sugieren que las etiquetas son percibidas como un complemento útil, aunque no prioritario para todos los usuarios.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta9.png"></div>
+
+- **Comodidad al usar EduSpace como única herramienta**
+
+  El gráfico muestra una distribución equilibrada respecto a la comodidad de usar EduSpace como la única herramienta para gestionar reuniones. Aunque un porcentaje importante señala sentirse cómodo o muy cómodo, también existe una proporción similar que manifiesta incomodidad o una postura neutral. Esto sugiere que, si bien la plataforma tiene potencial para centralizar la gestión, aún requiere mejoras para generar mayor confianza y comodidad en todos los usuarios.
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/pregunta10.png"></div>
+
+**Recomendaciones de los Usuarios**
+
+Entre los aspectos que los usuarios consideran más relevantes para mejorar la experiencia con EduSpace, destacan:
+
+- La centralización de la información de reuniones dentro de la plataforma.
+
+- La preferencia por vistas simples como la lista, que facilitan la revisión rápida de reuniones.
+
+- La necesidad de orden automático por fecha y hora para agilizar la organización.
+
+- El interés moderado en funcionalidades complementarias como etiquetas o recordatorios.
+
+
+  <div style="text-align: center;"><img src="../assets/chapter8/stats/GraficoFinal.png"></div>
+
+**Conclusión**
+
+Los resultados muestran una clara preferencia por centralizar las reuniones dentro de EduSpace, evitando la dependencia de WhatsApp, correo y otras herramientas externas. Los usuarios consideran útil visualizar sus reuniones en el dashboard, y la mayoría adoptaría un módulo nativo siempre que ofrezca información clara y organizada.
+
+También se observa una fuerte inclinación hacia la vista en formato de lista y el orden automático por fecha y hora, lo que confirma que los usuarios priorizan la simplicidad y la rapidez al revisar sus reuniones. Funcionalidades como etiquetas o recordatorios generan interés moderado, pero no son decisivas.
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
 ## 8.5. Continuous Learning
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+<!-- Luciana -->
 
 ## 8.6. To-Be Software Platform Pre-launch
 
