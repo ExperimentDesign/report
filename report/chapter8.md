@@ -1522,6 +1522,16 @@ También se observa una fuerte inclinación hacia la vista en formato de lista y
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
+| **Prioridad (1,2,3,5,8)** | **Pregunta** |
+|---------------------------|--------------|
+| **1** | ¿Los profesores realmente necesitan editar todos sus campos o solo algunos? |
+| **2** | ¿Los profesores consultan “Mis Reuniones” diariamente o solo eventualmente? |
+| **3** | ¿Eliminar un profesor debe afectar reuniones pasadas o solo futuras? |
+| **5** | ¿El dashboard del administrador necesita métricas avanzadas o solo un listado simple? |
+| **8** | ¿Crear reuniones requiere lógica compleja, como detectar solapamientos o conflictos de horario? |
+| **3** | ¿Los administradores cambian frecuentemente su perfil o solo lo usan esporádicamente? |
+
+
 ## 8.5. Continuous Learning
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
