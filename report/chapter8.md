@@ -1541,3 +1541,17 @@ También se observa una fuerte inclinación hacia la vista en formato de lista y
 ## 8.6. To-Be Software Platform Pre-launch
 
 ### 8.6.1. About-the-Product Intro Video
+
+### Concluciones y Recomendaciones
+- A través del análisis competitivo y las entrevistas realizadas, identificamos que plataformas consolidadas como Facilio y Archibus se orientan a grandes instalaciones y poseen altos costos o complejidades de implementación. En contraste, las instituciones educativas locales dependen principalmente de Excel y WhatsApp. Como equipo concluimos que existe una oportunidad directa y no atendida: EduSpace puede posicionarse como una solución accesible, simple y especializada para el sector educativo, evitando la complejidad de los sistemas empresariales tradicionales.
+
+- Tras comparar visualizaciones en forma de tarjetas, calendarios y listas, confirmamos que las List Views ordenadas automáticamente por fecha y hora son las que ofrecen mejor rendimiento y facilidad de uso para nuestros usuarios. Durante las pruebas, los docentes y administradores interactuaron de manera más ágil con interfaces simples, lo que nos señala una dirección clara para el diseño frontend futuro.
+
+- Logramos desplegar una arquitectura integral compuesta por una Landing Page (GitHub Pages), una Aplicación Web (Netlify), una Aplicación Móvil (Android/iOS) y un Backend RESTful (Railway). El uso consistente de GitFlow, los principios DDD en el backend y los componentes reutilizables en Vue/Flutter permitieron asegurar una experiencia sincronizada para los diferentes tipos de usuario. Esto nos permitió validar que EduSpace tiene el potencial técnico para operar como un producto SaaS.
+
+- Recomendamos mantener las entrevistas y actividades de levantamiento de necesidades como un proceso obligatorio previo a cualquier implementación. Los resultados demostraron que varias de nuestras suposiciones iniciales no coincidían con las necesidades reales, y que escuchar al usuario nos permitió orientar correctamente el diseño del Dashboard. Como equipo, creemos que seguir un enfoque centrado en el usuario evitará desperdicio de recursos y asegurará que EduSpace continúe resolviendo problemas genuinos.
+
+- Aunque Railway y Aiven facilitan el despliegue, recomendamos integrar herramientas de monitoreo, trazabilidad y alertas en tiempo real tanto para el backend como para la base de datos. Para operar bajo un modelo SaaS, necesitamos detectar fallos con anticipación y garantizar una experiencia estable a los usuarios. Esto permitirá mantener los estándares de calidad y confiabilidad que buscamos como equipo.
+
+- Finalmente, recomendamos que las próximas decisiones de diseño y arquitectura se fundamenten en los datos obtenidos de la User Task Matrix. Este análisis nos permitió priorizar correctamente tareas de alta frecuencia —como “ver mis reuniones del día”— sobre funcionalidades menos críticas. Aplicar esta lógica de priorización permitirá que EduSpace evolucione optimizando siempre las actividades más importantes para docentes y administradores.
+
