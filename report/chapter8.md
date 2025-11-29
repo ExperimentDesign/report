@@ -1252,6 +1252,9 @@ Estos datos cuantitativos se complementarán con los datos cualitativos obtenido
 [](../assets/chapter8/implement-backend/admin-profile.png)
 
 #### 8.3.3.6. Team Collaboration Insights
+<img src="../assets/chapter8/8.3.3.6_1.png" alt="Sprint collaboration insights" />
+
+<img src="../assets/chapter8/8.3.3.6_2.png" alt="Sprint collaboration insights 2" />
 
 ### 8.3.4. To-Be Validation Interviews
 
