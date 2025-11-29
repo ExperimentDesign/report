@@ -1390,7 +1390,7 @@ Objetivo: Validar las hipótesis experimentales sobre CRUD de profesores, módul
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
 | --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
 | Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor1.jpg)     | [Ver entrevista](https://youtu.be/bn_aKf9ONlI)                   | 00:01:15   | 07:15        |
-| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor2v2.png)   | [Ver entrevista]()                                               | 00:00:00   | 00:00        |
+| Kiara Gallardo        | 25       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor2.png)   | [Ver entrevista](https://youtu.be/tp1iUxHLFeo)                            | 00:01:05   | 07:28        |
 | Angela Olivera        | 24       | San Miguel   | ![Screenshot](../assets/chapter8/entrevistas/entrevistaProfesor3.png)     | [Ver entrevista](https://youtu.be/qicqN21uUM8)                   | 00:01:00   | 09:10        |
 
 ---
@@ -1526,7 +1526,17 @@ También se observa una fuerte inclinación hacia la vista en formato de lista y
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 
-<!-- Luciana -->
+- **Figma (Prototipo):** El prototipo interactivo creado en Figma presenta las interfaces y soluciones planteadas, elaboradas a partir de las necesidades y expectativas de los usuarios. Este recurso evidencia cómo el equipo fue iterando y ajustando los componentes visuales y funcionales a lo largo del proceso de diseño.
+
+  Enlace al figma: https://www.figma.com/design/ha9PEeQR6YhDHD61hSilZY/EduSpace-Mobile-experiments?node-id=0-1&t=aj6O9CJtBsPMOKbG-1
+
+  <div style="text-align: center;"><img src="../assets/chapter8/evidenciaFigma.png"></div>
+
+- **Encuesta de Experiencia del Usuario – EduSpace:** Se empleó una encuesta elaborada en Google Forms con el propósito de obtener las opiniones de los usuarios y comprobar las hipótesis definidas durante el proceso de diseño. Esta herramienta permitió analizar la experiencia de uso y recopilar información relevante que respalda las decisiones tomadas para optimizar la aplicación.
+
+  Link del formulario: https://forms.gle/5vBZvvnjENZhTk4P8
+
+  <div style="text-align: center;"><img src="../assets/chapter8/EncuestaForm.png"></div>
 
 ## 8.6. To-Be Software Platform Pre-launch
 
