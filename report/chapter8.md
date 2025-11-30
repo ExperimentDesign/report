@@ -1399,9 +1399,9 @@ Objetivo: Validar las hipótesis experimentales sobre CRUD de profesores, módul
 
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                            | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
 | --------------------- | -------- | ------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
-| a       |       | al   | ![Screenshot](../assets/chapter8/entrevistas/Administradores2v1.png)   | [Ver entrevista](https://)                   | 00:00:00   | 00:00        |
-| a        |        | Sa   | ![Screenshot](../assets/chapter6¿8/entrevistas/Administradores2v2.png)   | [Ver entrevista](https:/) | 00:00:00   | 00:00        |
-| a        |        | Sa   | ![Screenshot](../assets/chapter8/entrevistas/Administradores2v3.png)   | [Ver entrevista](https://) | 00:00:00   | 00:00        |
+| Cameron Bustamante       |   26    | Surso   | ![Screenshot](../assets/chapter8/entrevistas/administrador_entrevista1.png)   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQCWBtWOEAzLSK6C8mqgX1UDAQYuzAUSd3cDUQEbCMO3E04?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hoqfqU)                   | 00:00:00   | 04:00        |
+| Jocelyn Almerco       |    26    | San Isidro   | ![Screenshot](../assets/chapter8/entrevistas/administrador_entrevista2.png)   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQCpqJtCjR7MRIYLMIUwEPtEAWx6fpwnAPQxYVoAz_re_co?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CtTWx4) | 00:00:00   | 05:41        |
+| Omar Rivera       |     28   | La Victoria   | ![Screenshot](../assets/chapter8/entrevistas/administrador_entrevista3.png)   | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223984_upc_edu_pe/IQBsSVAdLsR5R7m8ACTWf_7JAegf3PogW_2u6VtAibHA5rw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IBSUSU) | 00:00:00   | 04:00        |
 
 
 ## 8.4. Experiment Aftermath & Analysis
@@ -1541,6 +1541,10 @@ También se observa una fuerte inclinación hacia la vista en formato de lista y
 ## 8.6. To-Be Software Platform Pre-launch
 
 ### 8.6.1. About-the-Product Intro Video
+
+El siguiente video tiene como objetivo presentar EduSpace, una startup enfocada en mejorar el manejo integral de espacios educativos dentro de instituciones con grandes infraestructuras.
+
+[Ver Video](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202223984_upc_edu_pe/IgCg82iII60VSL900WerGvEIAZqCRrDZ4k0m3ehubh2HsSU?e=slvqrZ)
 
 ### Concluciones y Recomendaciones
 - A través del análisis competitivo y las entrevistas realizadas, identificamos que plataformas consolidadas como Facilio y Archibus se orientan a grandes instalaciones y poseen altos costos o complejidades de implementación. En contraste, las instituciones educativas locales dependen principalmente de Excel y WhatsApp. Como equipo concluimos que existe una oportunidad directa y no atendida: EduSpace puede posicionarse como una solución accesible, simple y especializada para el sector educativo, evitando la complejidad de los sistemas empresariales tradicionales.
