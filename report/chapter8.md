@@ -1209,6 +1209,47 @@ Estos datos cuantitativos se complementarán con los datos cualitativos obtenido
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
+##### Inicio
+
+![Parte inicial de la landing page](../assets/chapter8/implement-landing/home.png)
+
+##### Sobre Nosotros
+
+![Apartado Sobre Nosotros de la landing page](../assets/chapter8/implement-landing/about-us.png)
+
+##### Equipo de Desarrollo
+
+![Apartado del equipo de desarrollo de la landing page](../assets/chapter8/implement-landing/team.png)
+
+##### Herramientas
+
+![Apartado de las herramientas de nuestra solución de la landing page](../assets/chapter8/implement-landing/tools.png)
+
+##### Dashboard Admin
+
+![Apartado del dashboard del admin de la landing page](../assets/chapter8/implement-landing/admin-dashboard.png)
+
+##### Dashboard Teacher
+
+![Apartado del dashboard del teacher de la landing page](../assets/chapter8/implement-landing/teacher-dashboard.png)
+
+##### Reseñas
+
+![Apartado de las reseñas de la landing page](../assets/chapter8/implement-landing/reviews.png)
+
+##### Planes
+
+![Apartado de los distintos planes de la landing page](../assets/chapter8/implement-landing/payments.png)
+
+##### Contáctanos
+
+![Apartado final de la landing page](../assets/chapter8/implement-landing/contact-us.png)
+
+##### Libro de reclamaciones
+
+![Vista del libro de reclamaciones de nuestra start up](../assets/chapter8/implement-landing/complaints-book.png)
+
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
 ##### Editar Profesor
