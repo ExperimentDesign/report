@@ -448,8 +448,8 @@ En Eduspace, las revisiones de código constituyen una práctica esencial para g
 | **Nombre y Apellido** | **Edad** | **Distrito** | **Screenshot**                                                        | **URL del video (Microsoft Stream)**                             | **Timing** | **Duración** |
 | --------------------- | -------- | ------------ | --------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- | ------------ |
 | Josep Melgarejo       | 27       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor1.png) | [Ver entrevista](https://youtu.be/unbCCAEqFME)                   | 00:00:20   | 05:17        |
-| Julian Fernandez      | 30       | Los Olivos   | ![Screenshot](ruta/imagen2.png)                                       | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05   | 08:47        |
-| Carmen Melgarejo      | 42       | San Miguel   | ![Screenshot](ruta/imagen3.png)                                       | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30   | 10:15        |
+| Kiara Gallardo      | 25      | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor2.png)                                       | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo2) | 00:01:05   | 08:47        |
+| Nicolas Melgarejo      | 29       | San Miguel   | ![Screenshot](../assets/chapter6/entrevistas/entrevistaProfesor3.png)                                       | [Ver entrevista](https://web.microsoftstream.com/video/ejemplo3) | 00:00:30   | 10:15        |
 
 ---
 
